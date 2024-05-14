@@ -7,20 +7,22 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 body {
   width: 100vw;
-  background-image: url('images/background4.gif') ;
+  background-image: url("images/background4.gif");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 120vw;
 }
 
-header, main {
-  background-color: rgba(0, 0, 0, .8);
+header,
+main {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @font-face {
@@ -45,7 +47,7 @@ button {
 }
 
 button {
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out 0.3s;
 }
 
 button:hover {
@@ -64,11 +66,11 @@ input {
 
 @keyframes animacao {
   0% {
-      background-position: 0 0;
+    background-position: 0 0;
   }
 
   100% {
-      background-position: 300% 300%;
+    background-position: 300% 300%;
   }
 }
 
@@ -76,11 +78,11 @@ input {
   cursor: pointer;
   color: white;
   border: 1px solid transparent;
-  background: linear-gradient(90deg, #12B3EB, #5460F9, #12B3EB);
+  background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   background-size: 150% 150%;
   /* font-family: jetbrains mono regular, calibri; */
   border-radius: 8px;
-  box-shadow: 0 0 10px #12B3EB;
+  box-shadow: 0 0 10px #12b3eb;
 
   animation: animacao;
   animation-timing-function: linear;
@@ -91,8 +93,8 @@ input {
 }
 
 .div-dentro {
-  text-shadow: 0 0 10px #5460F988;
-  color: #5460F9;
+  text-shadow: 0 0 10px #5460f988;
+  color: #5460f9;
   font-weight: bold;
   background: white;
   padding: 30px;
@@ -103,9 +105,8 @@ input {
 .div-normal:hover .div-dentro {
   color: white;
   background: transparent;
-  text-shadow: 0 0 10px #FFFFFFAA;
+  text-shadow: 0 0 10px #ffffffaa;
 }
-
 
 /* HEADER */
 
@@ -139,11 +140,11 @@ header .bottom-header .options-list {
 }
 
 .options-list li {
-  transition: all ease-in-out .2s;
+  transition: all ease-in-out 0.2s;
 }
 
 .options-list li:hover {
-  opacity: .6;
+  opacity: 0.6;
   cursor: pointer;
 }
 
@@ -166,17 +167,20 @@ main .form {
   padding: 0 100px;
   gap: 20px;
 }
-main .form .card-form  {
+main .form .card-form {
   /* width: 40vw; */
   color: #ffffff;
-  background: linear-gradient(90deg, #092831 0%, rgba(3, 10, 12, 0.8) 58%);
+  background: linear-gradient(90deg, #071a1f 0%, rgba(5, 24, 30, 0.55) 58%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   padding: 30px 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 .card-form .title-form {
   font-size: 25px;
@@ -256,7 +260,7 @@ main .form .card-form  {
   font-family: Toxigenesis;
 }
 
-.card-form .converter-options{
+.card-form .converter-options {
   font-size: 18px;
   margin-top: -20px;
 }
@@ -298,7 +302,9 @@ main .form .card-form  {
   margin-right: 8px;
 }
 
-input::-webkit-inner-spin-button { -webkit-appearance:none }
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 main .card-form .converter input {
   gap: 10px;
@@ -307,7 +313,7 @@ main .card-form .converter input {
   border-radius: 5px;
   padding: 8px;
   height: 25px;
-  width: 500px; 
+  width: 500px;
   color: #ffffff;
 }
 
@@ -317,23 +323,22 @@ main .card-form .converter input:focus {
 
 .converter label {
   display: block;
-  margin-bottom: -12px; 
+  margin-bottom: -12px;
 }
-.form .buttons{
+.form .buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:20px;
+  gap: 20px;
   padding: 0 100px;
-  
 }
 
 .form .buttons .connect-wallet button {
   cursor: pointer;
   color: white;
   border: 1px solid transparent;
-  background: linear-gradient(90deg, #12B3EB, #5460F9, #12B3EB);
+  background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   background-size: 150% 150%;
   /* font-family: jetbrains mono regular, calibri; */
   border-radius: 8px;
@@ -348,8 +353,8 @@ main .card-form .converter input:focus {
 }
 
 .form .buttons .connect-wallet button:hover {
-  box-shadow: 0 0 10px #12B3EB;
-  background: linear-gradient(90deg, #12B3EB, #5460F9, #12B3EB);
+  box-shadow: 0 0 10px #12b3eb;
+  background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   animation: animacao;
   animation-timing-function: linear;
   animation-duration: 1s;
@@ -363,7 +368,7 @@ main .card-form .converter input:focus {
   cursor: pointer;
   color: white;
   border: 1px solid transparent;
-  background: linear-gradient(90deg, #12B3EB, #5460F9, #12B3EB);
+  background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   background-size: 150% 150%;
   /* font-family: jetbrains mono regular, calibri; */
   border-radius: 8px;
@@ -377,8 +382,8 @@ main .card-form .converter input:focus {
   transition: 0.2s all;
 }
 .form .buttons .how-to-buy button:hover {
-  box-shadow: 0 0 10px #12B3EB;
-  background: linear-gradient(90deg, #12B3EB, #5460F9, #12B3EB);
+  box-shadow: 0 0 10px #12b3eb;
+  background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   animation: animacao;
   animation-timing-function: linear;
   animation-duration: 1s;
@@ -396,7 +401,6 @@ main .card-form .converter input:focus {
 .buttons {
   width: 300px;
   margin: 0 15px;
-  
 }
 
 /* banner */
@@ -421,7 +425,6 @@ main .banner .banner-area {
   align-items: center;
   gap: 30px;
   border-radius: 8px;
-
 }
 
 main .banner .banner-area .banner-text {
@@ -494,16 +497,15 @@ main .choose-card h3 {
   font-size: 18px;
 }
 
-main .choose-card p{
+main .choose-card p {
   margin-top: 10px;
   font-size: 14px;
 }
 
-main .choose-card img{
+main .choose-card img {
   width: 100px;
   height: 120px;
 }
-
 
 main .ai-action {
   background-image: url(images/Presale_V3_04.png);
@@ -515,7 +517,7 @@ main .ai-action {
   gap: 20px;
   color: #ffff;
 }
-main .ai-action .ai-action-card{
+main .ai-action .ai-action-card {
   margin-top: 40px;
   padding: 30px 60px;
   display: flex;
@@ -536,7 +538,7 @@ main .ai-action-card .subtitle {
   font-size: 30px;
 }
 
-main .ai-action-card .descript{
+main .ai-action-card .descript {
   width: 60%;
   text-align: center;
   padding-bottom: 35px;
@@ -557,7 +559,7 @@ main .ai-action-card .ai-buttons button {
   cursor: pointer;
   color: white;
   border: 1px solid transparent;
-  background: linear-gradient(90deg, #12B3EB, #5460F9, #12B3EB);
+  background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   background-size: 150% 150%;
   /* font-family: jetbrains mono regular, calibri; */
   border-radius: 8px;
@@ -572,8 +574,8 @@ main .ai-action-card .ai-buttons button {
 }
 
 .ai-action-card .ai-buttons button:hover {
-  box-shadow: 0 0 10px #12B3EB;
-  background: linear-gradient(90deg, #12B3EB, #5460F9, #12B3EB);
+  box-shadow: 0 0 10px #12b3eb;
+  background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   animation: animacao;
   animation-timing-function: linear;
   animation-duration: 1s;
@@ -583,9 +585,7 @@ main .ai-action-card .ai-buttons button {
   color: #ffff;
 }
 
-
-
-main .ai-action-card .channels{
+main .ai-action-card .channels {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -608,7 +608,7 @@ main .ai-action-card .channels{
   align-items: center;
   gap: 20px;
 }
-.channels li{
+.channels li {
   list-style: none;
   margin: 0;
 }
@@ -629,8 +629,6 @@ main .ai-action-card .channels{
   width: 100px;
 }
 
-
-
 main .how-it-works {
   background-image: url(images/Presale_V3_05.png);
   display: flex;
@@ -640,10 +638,9 @@ main .how-it-works {
   padding: 0 auto;
   gap: 20px;
   color: #ffff;
-  
 }
 
-main .how-it-works .how-it-works-card{
+main .how-it-works .how-it-works-card {
   /* margin-top: 40px; */
   padding: 0 60px;
   display: flex;
@@ -661,7 +658,7 @@ main .how-it-works .title {
   text-align: center;
 }
 
-main .how-it-works .how-it-works-card .image{
+main .how-it-works .how-it-works-card .image {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -680,12 +677,14 @@ footer .ai-startups {
   padding: 50px auto;
   gap: 20px;
   color: #ffff;
-  
 }
 
 footer .ai-startups .ai-startups-card {
   color: #ffffff;
-  background: linear-gradient(90deg, #092831 0%, rgba(3, 10, 12, 0.8) 58%);
+  background: rgba(5, 24, 30, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
   margin: 80px auto;
   padding: 30px 60px;
   display: flex;
@@ -696,11 +695,11 @@ footer .ai-startups .ai-startups-card {
   border-radius: 8px;
 }
 
-.ai-startups .ai-startups-card h1{
+.ai-startups .ai-startups-card h1 {
   font-family: toxigenesis;
 }
 
-.ai-startups .ai-startups-text{
+.ai-startups .ai-startups-text {
   width: 650px;
   text-align: center;
   display: flex;
@@ -724,7 +723,7 @@ footer .ai-startups .ai-startups-card {
   cursor: pointer;
   color: white;
   border: 1px solid transparent;
-  background: linear-gradient(90deg, #12B3EB, #5460F9, #12B3EB);
+  background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   background-size: 150% 150%;
   /* font-family: jetbrains mono regular, calibri; */
   border-radius: 8px;
@@ -739,8 +738,8 @@ footer .ai-startups .ai-startups-card {
 }
 
 .ai-startups .startup-buttons button:hover {
-  box-shadow: 0 0 10px #12B3EB;
-  background: linear-gradient(90deg, #12B3EB, #5460F9, #12B3EB);
+  box-shadow: 0 0 10px #12b3eb;
+  background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   animation: animacao;
   animation-timing-function: linear;
   animation-duration: 1s;
@@ -752,12 +751,12 @@ footer .ai-startups .ai-startups-card {
 
 footer {
   width: 100vw;
-  background-image: url('images/4693486_View_Travel_Globe_1920x1080.gif') ;
+  background-image: url("images/4693486_View_Travel_Globe_1920x1080.gif");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
- 
+
 footer .footer {
   width: auto;
   display: flex;
@@ -765,10 +764,10 @@ footer .footer {
   justify-content: center;
   align-items: center;
   padding: 30px auto;
-  background: transparent rgb(0, 0, 0, .4);
+  background: transparent rgb(0, 0, 0, 0.4);
 }
 
-footer .footer{
+footer .footer {
   padding: 80px 0px;
   /* width: 100%; */
   display: flex;
@@ -777,7 +776,7 @@ footer .footer{
   align-items: center;
   margin-top: 70px;
   margin-bottom: 0px;
-  background: rgb(0, 0, 0, .7);
+  background: rgb(0, 0, 0, 0.7);
 }
 
 footer .footer .footer-card {
@@ -799,24 +798,24 @@ footer .footer .logo {
 }
 footer .footer .logo img {
   width: 250px;
-  margin-bottom: 10px ;
+  margin-bottom: 10px;
 }
 
-footer .footer .logo p{
+footer .footer .logo p {
   font-size: 10px;
 }
 
-footer .our-sociais{
+footer .our-sociais {
   color: #ffffff;
 }
 
-footer .our-sociais p{
+footer .our-sociais p {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-footer .channels{
+footer .channels {
   width: 80px;
   display: flex;
   flex-direction: row;
@@ -838,14 +837,14 @@ footer .text {
   text-align: left;
 }
 footer .footer .footer-card .text hr {
-    border: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #ffffff; /* cor da linha */
-    margin: 10px 0; /* espaçamento acima e abaixo da linha */
+  border: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff; /* cor da linha */
+  margin: 10px 0; /* espaçamento acima e abaixo da linha */
 }
 
-footer .text p{
+footer .text p {
   font-size: 10px;
 }
 

@@ -317,6 +317,26 @@ main .card-form .converter input {
   color: #ffffff;
 }
 
+.input-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#pay {
+  padding-right: 10px;
+}
+
+#payment-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  display: none;
+}
+
 main .card-form .converter input:focus {
   border: 1px solid #0e3f4e;
 }

@@ -69,19 +69,19 @@
           <div class="buy-options">
             <ul>
               <li>
-                <button>
+                <button id="bnbpay" onclick="selectPaymentMethod('bnbpay')">
                   <img src="images/bnb.svg" alt="" width="30px" />
                   <span>BNB</span>
                 </button>
               </li>
               <li>
-                <button>
+                <button id="usdtpay" onclick="selectPaymentMethod('usdtpay')">
                   <img src="images/usdt.svg" alt="" width="30px" />
                   USDT
                 </button>
               </li>
               <li>
-                <button>
+                <button id="cardpay">
                   <img src="images/card.svg" alt="" width="30px" />
                   Card
                 </button>
@@ -90,11 +90,16 @@
           </div>
           <div class="converter">
             <form action="/processar_formulario.php" method="POST">
-              <label for="pay">Amount you pay?</label><br />
-              <input type="number" id="pay" name="pay" /><br /><br />
+              <label for="pay">Amount you pay?</label><br /> 
+              <div class="input-container">
+                <input type="text" id="pay" name="pay" value="0" />
+                <span id="payment-icon"></span>
+              </div>
 
               <label for="pay">Cellesti you recive</label><br />
-              <input type="number" id="nome" name="nome" /><br /><br />
+              <input type="text" id="recive" name="nome" /><br /><br />
+
+              <input type="hidden" id="selected-payment-method" name="selected-payment-method" />
             </form>
           </div>
         </div>
@@ -479,6 +484,60 @@
         </div>
       </div>
     </footer>
+    <script>
+      function formatCurrency(value) {
+        return new Intl.NumberFormat('en-US', {
+          style: 'currency',
+          currency: 'USD',
+          minimumFractionDigits: 2,
+        }).format(value);
+      }
+
+      function updateReceiveValue() {
+        const payInput = document.getElementById('pay');
+        const receiveInput = document.getElementById('recive');
+
+        const payValue = parseFloat(payInput.value) || 0;
+        const receiveValue = payValue * 0.007;
+
+        receiveInput.value = formatCurrency(receiveValue);
+      }
+
+      // Adicionar evento de input no campo pay
+      document.getElementById('pay').addEventListener('change', function() {
+        this.value = formatCurrency(this.value.replace(/[^\d.-]/g, ''));
+        updateReceiveValue();
+      });
+      function selectPaymentMethod(method) {
+        const paymentIcon = document.getElementById('payment-icon');
+        const selectedPaymentMethod = document.getElementById('selected-payment-method');
+  
+        let iconSrc = '';
+        switch (method) {
+          case 'bnbpay':
+            iconSrc = 'images/bnb.svg';
+            break;
+          case 'usdtpay':
+            iconSrc = 'images/usdt.svg';
+            break;
+          case 'cardpay':
+            iconSrc = 'images/card.svg';
+            break;
+        }
+  
+        if (iconSrc) {
+          paymentIcon.style.display = 'block';
+          paymentIcon.style.backgroundImage = `url(${iconSrc})`;
+          paymentIcon.style.backgroundSize = 'cover';
+        } else {
+          paymentIcon.style.display = 'none';
+        }
+  
+        selectedPaymentMethod.value = method;
+      }
+
+      selectPaymentMethod('bnbpay')
+    </script>
     <script>
       const swiper = new Swiper(".swiper", {
         // Optional parameters

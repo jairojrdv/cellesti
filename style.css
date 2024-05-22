@@ -851,10 +851,22 @@ main .notebook .notebook-card img{
   width: 800px;
 }
 
+main .giveaway {
+  background: linear-gradient(to bottom, #090e0f, #010d11);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
+main .giveaway .giveaway-card {
+  margin: 50px 30px;
+}
 
-
-
+main .giveaway .giveaway-card img {
+  width: 800px;
+}
 
 main .apostrofo{
   background: linear-gradient(to bottom, #010d11, #090e0f);

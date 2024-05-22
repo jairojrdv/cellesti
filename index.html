@@ -406,7 +406,9 @@
       </div>
 
       <div class="giveaway">
-        <div class="giveaway-card"></div>
+        <div class="giveaway-card">
+          <img src="images/GIVEAWAY.png" alt="">
+        </div>
       </div>
 
       <div class="apostrofo">
@@ -494,7 +496,7 @@
         const receiveInput = document.getElementById('recive');
 
         const payValue = parseFloat(payInput.value) || 0;
-        const receiveValue = payValue * 0.007;
+        const receiveValue = payValue / 0.007;
 
         receiveInput.value = formatCurrency(receiveValue)
       }

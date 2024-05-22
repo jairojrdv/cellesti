@@ -407,7 +407,7 @@ main .card-form .converter input:focus {
 
 main .banner {
   margin-top: 40px;
-  background-image: url(images/Presale_V3_02.png);
+  background-image: url(images/Presale_V3_02.webp);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -444,7 +444,7 @@ main .banner .banner-area .banner-text {
 }
 
 main .choose-us {
-  background-image: url(images/Presale_V3_03.png);
+  background-image: url(images/Presale_V3_03.webp);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -508,7 +508,7 @@ main .choose-card img {
 }
 
 main .ai-action {
-  background-image: url(images/Presale_V3_04.png);
+  background-image: url(images/Presale_V3_04.webp);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -630,7 +630,7 @@ main .ai-action-card .channels {
 }
 
 main .how-it-works {
-  background-image: url(images/Presale_V3_05.png);
+  background-image: url(images/Presale_V3_05.webp);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -664,6 +664,193 @@ main .how-it-works .how-it-works-card .image {
   justify-content: center;
   align-items: center;
   /* margin-left: 1000px; */
+}
+
+main .tokenomics {
+  background: linear-gradient(to bottom, #020a0c, #071e25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+  color: #ffff;
+}
+
+main .tokenomics .tokenomics-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px auto;
+  width: 50vw;
+}
+
+main .tokenomics .tokenomics-card .title {
+  font-family: Toxigenesis;
+}
+
+main .tokenomics .tokenomics-card .coin{
+  margin: 50px 0;
+}
+
+main .percents {
+  width: 100%;
+}
+
+main .percents .progress-container {
+  width: 100%;
+  background-color: #0e3f4d;
+  border-radius: 5px;
+  padding: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main .percents .percents-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  text-align: start;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+main .percents .percents-text .title {
+  color: #2ed0ff;
+}
+
+main .percents .progress {
+  display: flex;
+  align-items: center;
+}
+
+main .percents .progress-bar {
+  width: 0;
+  height: 10px;
+  background-color: #2ed0ff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  animation: progress-animation 2s ease-in-out forwards;
+}
+
+main .percents .progress-bar-15 {
+  width: 0;
+  height: 10px;
+  background-color: #2ed0ff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  animation: progress-animation-15 2s ease-in-out forwards;
+}
+
+main .percents .progress-bar-10 {
+  width: 0;
+  height: 10px;
+  background-color: #2ed0ff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  animation: progress-animation-10 2s ease-in-out forwards;
+}
+
+main .percents .progress-bar-5 {
+  width: 0;
+  height: 10px;
+  background-color: #2ed0ff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  animation: progress-animation-5
+   2s ease-in-out forwards;
+}
+
+main .percents .progress-value {
+  margin-left: 10px;
+  color: #2ed0ff;
+  font-family: Toxigenesis;
+  color: #2ed0ff;
+}
+
+
+@keyframes progress-animation {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 65%;
+  }
+}
+
+@keyframes progress-animation-15 {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 15%;
+  }
+}
+
+@keyframes progress-animation-10 {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 10%;
+  }
+}
+
+@keyframes progress-animation-5 {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 5%;
+  }
+}
+
+
+main .notebook {
+  background: linear-gradient(to bottom, #010d11, #090e0f);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+main .notebook .notebook-card {
+  margin: 50px 30px;
+}
+
+main .notebook .notebook-card img{
+  width: 800px;
+}
+
+
+
+
+
+
+main .apostrofo{
+  background: linear-gradient(to bottom, #010d11, #090e0f);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+main .apostrofo .apostrofo-card{
+  margin: 50px 30px;
+}
+
+main .apostrofo .apostrofo-card img {
+  width: 800px;
 }
 
 footer .ai-startups {

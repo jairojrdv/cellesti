@@ -457,12 +457,20 @@ main .banner .banner-area {
   border-radius: 8px;
 }
 
+main .banner .banner-area .token-img {
+  width: 80vw;
+  max-width: 800px;
+}
+
+main .banner .banner-area .token-img img {
+  width: 100%;
+}
+
 main .banner .banner-area .banner-text {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: left;
-  width: 500px;
   gap: 15px;
 }
 
@@ -1148,6 +1156,18 @@ footer .text p {
   .ai-startups .startup-buttons {
     flex-direction: column;
   }
+  footer .footer .footer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  footer .footer .footer-card h4 {
+    margin: 0 auto;
+  }
+  footer .footer .footer-card .text {
+    text-align: center;
+  }
 }
 
 /* Media Screen para tablets */
@@ -1172,6 +1192,9 @@ footer .text p {
   }
   main .card-form .converter input {
     max-width: 80vw;
+  }
+  main .banner .banner-area .banner-text {
+    font-size: 16px;
   }
   main .ai-action-card .title {
     font-size: 24px;

@@ -6,6 +6,8 @@
     <title>Cellesti</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script type="text/javascript" src="https://javascript.wert.io/wert-5.2.0.js"></script>
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -39,7 +41,7 @@
           <li>FAQs</li>
         </ul>
         <div class="div-normal">
-          <button id="div-dentro">Connect Wallet</button>
+          <button id="open-wert">Connect Wallet</button>
         </div>
       </div>
     </header>
@@ -101,14 +103,14 @@
 
               <input type="hidden" id="selected-payment-method" name="selected-payment-method" />
             </form>
-          </div>
-        </div>
-        <div class="buttons">
-          <div class="connect-wallet">
-            <button>Connect Wallet</button>
-          </div>
-          <div class="how-to-buy">
-            <button>How to buy?</button>
+            <div class="buttons">
+              <div class="connect-wallet">
+                <button id="open-wert-2">Connect Wallet</button>
+              </div>
+              <div class="how-to-buy">
+                <button>How to buy?</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -321,7 +323,7 @@
       <div class="tokenomics">
         <div class="tokenomics-card">
           <div class="title">
-            <h1 style="font-size: 50px;">TOKENOMICS</h1>
+            <h1>TOKENOMICS</h1>
           </div>
           <div class="coin">
             <img src="images/ELEMENT.png" alt="" width="700px">
@@ -486,6 +488,26 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      document.getElementById('open-wert').addEventListener('click', function() {
+        const wertWidget = new WertWidget({
+          "partner_id": "01HQ3W5T1RBS8DFT3Q746CH9W4",
+          "origin": "https://sandbox.wert.io",
+          "theme": "dark",
+          "lang": "en"
+        });
+        wertWidget.open();
+      });
+      document.getElementById('open-wert-2').addEventListener('click', function() {
+        const wertWidget = new WertWidget({
+          "partner_id": "01HQ3W5T1RBS8DFT3Q746CH9W4",
+          "origin": "https://sandbox.wert.io",
+          "theme": "dark",
+          "lang": "en"
+        });
+        wertWidget.open();
+      });
+    </script>
     <script>
       function formatCurrency(value) {
         return parseFloat(value).toFixed(2)

@@ -1007,7 +1007,7 @@ footer .ai-startups .ai-startups-card {
 }
 
 footer {
-  width: 99vw;
+  width: 100%;
   overflow-x: hidden;
   background-image: url("images/4693486_View_Travel_Globe_1920x1080.gif");
   background-position: top center;
@@ -1038,7 +1038,7 @@ footer .footer {
 }
 
 footer .footer .footer-card {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

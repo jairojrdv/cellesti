@@ -43,11 +43,42 @@
         <div class="div-normal">
           <button id="open-wert">Connect Wallet</button>
         </div>
+        <div class="menu-container">
+          <button id="hamburger-btn" class="hamburger-btn">&#9776;</button>
+          <div id="modal-menu" class="modal-menu">
+            <span id="close-btn" class="close-btn">&times;</span>
+            <ul class="options-list-mobile">
+              <li>
+                <a href="#home">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#why-chose-us">
+                  Why chose us?
+                </a>
+              </li>
+              <li>
+                <a href="#token-details">
+                  Token Details
+                </a>
+              </li>
+              <li>
+                <a href="#faqs">
+                  FAQs
+                </a>
+              </li>
+              <li>
+                <button id="open-wert">Connect Wallet</button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
-      <div class="form">
+      <div class="form" id="home">
         <div class="card-form">
           <div class="title-form">
             <h1>
@@ -152,7 +183,7 @@
           </div>
         </div>
       </div>
-      <div class="choose-us">
+      <div class="choose-us" id="why-chose-us">
         <div class="choose-us-card">
           <div class="title-choose">
             <h1>WHY CHOSE US?</h1>
@@ -237,8 +268,8 @@
             </p>
           </div>
           <div class="ai-buttons">
-            <button>Whitepaper</button>
-            <button>Ai-Startup</button>
+            <button>Buy $CLLS</button>
+            <button>Read more</button>
           </div>
           <div class="channels">
             <ul>
@@ -320,7 +351,7 @@
         </div>
       </div>
 
-      <div class="tokenomics">
+      <div class="tokenomics" id="token-details">
         <div class="tokenomics-card">
           <div class="title">
             <h1>TOKENOMICS</h1>
@@ -440,8 +471,8 @@
               the growth of Al technology
             </p>
             <div class="startup-buttons">
-              <button>Aplly</button>
-              <button>Whitepaper</button>
+              <button>Apply</button>
+              <button>Buy $CLLS</button>
             </div>
           </div>
         </div>
@@ -506,6 +537,21 @@
           "lang": "en"
         });
         wertWidget.open();
+      });
+    </script>
+    <script>
+      document.getElementById('hamburger-btn').addEventListener('click', function() {
+        document.getElementById('modal-menu').classList.add('active');
+      });
+
+      document.getElementById('close-btn').addEventListener('click', function() {
+        document.getElementById('modal-menu').classList.remove('active');
+      });
+
+      document.querySelectorAll('.options-list-mobile li').forEach(item => {
+        item.addEventListener('click', function() {
+          document.getElementById('modal-menu').classList.remove('active');
+        });
       });
     </script>
     <script>
@@ -574,4 +620,5 @@
       });
     </script>
   </body>
+  
 </html>

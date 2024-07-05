@@ -6,7 +6,10 @@
     <title>Cellesti</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <script type="text/javascript" src="https://javascript.wert.io/wert-5.2.0.js"></script>
+    <script
+      type="text/javascript"
+      src="https://javascript.wert.io/wert-5.2.0.js"
+    ></script>
 
     <link
       rel="stylesheet"
@@ -49,24 +52,16 @@
             <span id="close-btn" class="close-btn">&times;</span>
             <ul class="options-list-mobile">
               <li>
-                <a href="#home">
-                  Home
-                </a>
+                <a href="#home"> Home </a>
               </li>
               <li>
-                <a href="#why-chose-us">
-                  Why chose us?
-                </a>
+                <a href="#why-chose-us"> Why chose us? </a>
               </li>
               <li>
-                <a href="#token-details">
-                  Token Details
-                </a>
+                <a href="#token-details"> Token Details </a>
               </li>
               <li>
-                <a href="#faqs">
-                  FAQs
-                </a>
+                <a href="#faqs"> FAQs </a>
               </li>
               <li>
                 <button id="open-wert">Connect Wallet</button>
@@ -103,8 +98,8 @@
             <ul>
               <li>
                 <button id="bnbpay" onclick="selectPaymentMethod('bnbpay')">
-                  <img src="images/bnb.svg" alt="" width="30px" />
-                  <span>BNB</span>
+                  <img src="images/eth.svg" alt="" width="30px" />
+                  <span>ETH</span>
                 </button>
               </li>
               <li>
@@ -123,7 +118,7 @@
           </div>
           <div class="converter">
             <form action="/processar_formulario.php" method="POST">
-              <label for="pay">Amount you pay?</label><br /> 
+              <label for="pay">Amount you pay?</label><br />
               <div class="input-container">
                 <input type="text" id="pay" name="pay" value="0" />
                 <span id="payment-icon"></span>
@@ -132,14 +127,20 @@
               <label for="pay">Cellesti you recive</label><br />
               <input type="text" id="recive" readonly name="nome" /><br /><br />
 
-              <input type="hidden" id="selected-payment-method" name="selected-payment-method" />
+              <input
+                type="hidden"
+                id="selected-payment-method"
+                name="selected-payment-method"
+              />
             </form>
             <div class="buttons">
               <div class="connect-wallet">
                 <button id="open-wert-2">Connect Wallet</button>
               </div>
               <div class="how-to-buy">
-                <button>How to buy?</button>
+                <a href="Whitepapaper Cellesti V2.pdf" target="_blank">
+                  <button>Whitepaper</button>
+                </a>
               </div>
             </div>
           </div>
@@ -175,8 +176,8 @@
           </div>
           <div class="token-img">
             <img
-              src="images/CELLESTI@2x.webp"
-              width="600px"
+              src="images/moeda_site_2.png"
+              width="800px"
               style="margin-left: -80px; margin-top: 50px"
               alt=""
             />
@@ -335,6 +336,23 @@
         </div>
       </div>
 
+      <div class="staking">
+        <div class="card-staking">
+          <div class="staking-title">
+            <h1>STAKING</h1>
+          </div>
+          <div class="staking-text">
+            By staking $CLLS tokens, investors can earn rewards from our 5% sell
+            tax, which goes to a dedicated reward pool. Staking provides a
+            unique opportunity for our community to earn $CLLS token rewards
+            while supporting the growth of Al technology start-ups.
+          </div>
+          <div class="staking-image">
+            <img src="images/Macbook Pro.png" width="1000px" alt="" />
+          </div>
+        </div>
+      </div>
+
       <div class="how-it-works">
         <div class="how-it-works-card">
           <div class="title">
@@ -357,7 +375,7 @@
             <h1>TOKENOMICS</h1>
           </div>
           <div class="coin">
-            <img src="images/ELEMENT.png" alt="" width="700px">
+            <img src="images/ELEMENT.png" alt="" width="700px" />
           </div>
           <div class="percents">
             <div class="percents-text">
@@ -431,28 +449,42 @@
           </div>
         </div>
       </div>
-      
+
       <div class="notebook">
+        
         <div class="notebook-card">
-          <img src="images/Macbook Pro_01.png" alt="">
+          <div class="notebook-title">
+            <h1>GOVERNANCE</h1>
+          </div>
+          <div class="notebook-text">
+            <p>
+              The $CLLS token is designed to act as a governance token, empowering
+              its holders to actively participate in the decision-making processes
+              of the platform. As a governance token, $CLLS holders will have the
+              ability to propose, discuss, and vote on various aspects related to
+              the platform's development, operation, and future direction.
+              Cellesti is creating a more democratic and community-driven
+              ecosystem. This function encourages active participation from token
+              holders, allowing them to shape the platform's future and contribute
+              to the growth and success of Al technology start-ups.
+            </p>
+          </div>
+          <img src="images/Macbook Pro_01.png" alt="" />
         </div>
       </div>
 
       <div class="giveaway">
         <div class="giveaway-card">
-          <img src="images/GIVEAWAY.png" alt="">
+          <img src="images/GIVEAWAY.png" alt="" />
         </div>
       </div>
 
       <div class="apostrofo">
         <div class="apostrofo-card">
-          <img src="images/REFERENCE.png" alt="">
+          <img src="images/REFERENCE.png" alt="" />
         </div>
       </div>
 
-    </main>
-
-    <footer>
       <div class="ai-startups">
         <div class="ai-startups-card">
           <h1>AI START-UPS APPLY</h1>
@@ -477,7 +509,9 @@
           </div>
         </div>
       </div>
+    </main>
 
+    <footer>
       <div class="footer">
         <div class="footer-card">
           <div class="logo">
@@ -520,89 +554,99 @@
       </div>
     </footer>
     <script type="text/javascript">
-      document.getElementById('open-wert').addEventListener('click', function() {
-        const wertWidget = new WertWidget({
-          "partner_id": "01HQ3W5T1RBS8DFT3Q746CH9W4",
-          "origin": "https://sandbox.wert.io",
-          "theme": "dark",
-          "lang": "en"
+      document
+        .getElementById("open-wert")
+        .addEventListener("click", function () {
+          const wertWidget = new WertWidget({
+            partner_id: "01HQ3W5T1RBS8DFT3Q746CH9W4",
+            origin: "https://sandbox.wert.io",
+            theme: "dark",
+            lang: "en",
+          });
+          wertWidget.open();
         });
-        wertWidget.open();
-      });
-      document.getElementById('open-wert-2').addEventListener('click', function() {
-        const wertWidget = new WertWidget({
-          "partner_id": "01HQ3W5T1RBS8DFT3Q746CH9W4",
-          "origin": "https://sandbox.wert.io",
-          "theme": "dark",
-          "lang": "en"
+      document
+        .getElementById("open-wert-2")
+        .addEventListener("click", function () {
+          const wertWidget = new WertWidget({
+            partner_id: "01HQ3W5T1RBS8DFT3Q746CH9W4",
+            origin: "https://sandbox.wert.io",
+            theme: "dark",
+            lang: "en",
+          });
+          wertWidget.open();
         });
-        wertWidget.open();
-      });
     </script>
     <script>
-      document.getElementById('hamburger-btn').addEventListener('click', function() {
-        document.getElementById('modal-menu').classList.add('active');
-      });
+      document
+        .getElementById("hamburger-btn")
+        .addEventListener("click", function () {
+          document.getElementById("modal-menu").classList.add("active");
+        });
 
-      document.getElementById('close-btn').addEventListener('click', function() {
-        document.getElementById('modal-menu').classList.remove('active');
-      });
+      document
+        .getElementById("close-btn")
+        .addEventListener("click", function () {
+          document.getElementById("modal-menu").classList.remove("active");
+        });
 
-      document.querySelectorAll('.options-list-mobile li').forEach(item => {
-        item.addEventListener('click', function() {
-          document.getElementById('modal-menu').classList.remove('active');
+      document.querySelectorAll(".options-list-mobile li").forEach((item) => {
+        item.addEventListener("click", function () {
+          document.getElementById("modal-menu").classList.remove("active");
         });
       });
     </script>
     <script>
       function formatCurrency(value) {
-        return parseFloat(value).toFixed(2)
+        return parseFloat(value).toFixed(2);
       }
 
       function updateReceiveValue() {
-        const payInput = document.getElementById('pay');
-        const receiveInput = document.getElementById('recive');
+        const payInput = document.getElementById("pay");
+        const receiveInput = document.getElementById("recive");
 
         const payValue = parseFloat(payInput.value) || 0;
         const receiveValue = payValue / 0.007;
 
-        receiveInput.value = formatCurrency(receiveValue)
+        receiveInput.value = formatCurrency(receiveValue);
       }
 
-      document.getElementById('pay').addEventListener('change', function() {
+      document.getElementById("pay").addEventListener("change", function () {
         updateReceiveValue();
-        this.value = formatCurrency(this.value.replace(/[^\d.-]/g, ''));
+        this.value = formatCurrency(this.value.replace(/[^\d.-]/g, ""));
       });
 
       function selectPaymentMethod(method) {
-        const paymentIcon = document.getElementById('payment-icon');
-        const selectedPaymentMethod = document.getElementById('selected-payment-method');
-  
-        let iconSrc = '';
+        const paymentIcon = document.getElementById("payment-icon");
+        const selectedPaymentMethod = document.getElementById(
+          "selected-payment-method"
+        );
+
+        let iconSrc = "";
         switch (method) {
-          case 'bnbpay':
-            iconSrc = 'images/bnb.svg';
+          case "bnbpay":
+            iconSrc = "images/eth.svg";
             break;
-          case 'usdtpay':
-            iconSrc = 'images/usdt.svg';
+          case "usdtpay":
+            iconSrc = "images/usdt.svg";
             break;
-          case 'cardpay':
-            iconSrc = 'images/card.svg';
+          case "cardpay":
+            iconSrc = "images/card.svg";
             break;
         }
-  
+
         if (iconSrc) {
-          paymentIcon.style.display = 'block';
+          paymentIcon.style.display = "block";
           paymentIcon.style.backgroundImage = `url(${iconSrc})`;
-          paymentIcon.style.backgroundSize = 'cover';
+          paymentIcon.style.backgroundSize = "cover";
         } else {
-          paymentIcon.style.display = 'none';
+          paymentIcon.style.display = "none";
         }
-  
+
         selectedPaymentMethod.value = method;
       }
 
-      selectPaymentMethod('bnbpay')
+      selectPaymentMethod("bnbpay");
     </script>
     <script>
       const swiper = new Swiper(".swiper", {
@@ -620,5 +664,4 @@
       });
     </script>
   </body>
-  
 </html>

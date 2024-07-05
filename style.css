@@ -85,7 +85,6 @@ li a {
 .div-normal {
   cursor: pointer;
   color: white;
-  border: 1px solid transparent;
   background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   background-size: 150% 150%;
   /* font-family: jetbrains mono regular, calibri; */
@@ -94,7 +93,7 @@ li a {
 
   animation: animacao;
   animation-timing-function: linear;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 
   transition: 0.2s all;
@@ -429,7 +428,7 @@ main .card-form .converter input:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 15px;
 }
 
 .form .buttons .connect-wallet button {
@@ -444,7 +443,7 @@ main .card-form .converter input:focus {
 
   animation: animacao;
   animation-timing-function: linear;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 
   transition: 0.2s all;
@@ -455,7 +454,7 @@ main .card-form .converter input:focus {
   background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   animation: animacao;
   animation-timing-function: linear;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 
   transition: 0.2s all;
@@ -474,7 +473,7 @@ main .card-form .converter input:focus {
 
   animation: animacao;
   animation-timing-function: linear;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 
   transition: 0.2s all;
@@ -484,7 +483,7 @@ main .card-form .converter input:focus {
   background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   animation: animacao;
   animation-timing-function: linear;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 
   transition: 0.2s all;
@@ -535,6 +534,7 @@ main .banner .banner-area .token-img img {
 }
 
 main .banner .banner-area .banner-text {
+  width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -675,7 +675,7 @@ main .ai-action-card .ai-buttons button {
 
   animation: animacao;
   animation-timing-function: linear;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 
   transition: 0.2s all;
@@ -686,7 +686,7 @@ main .ai-action-card .ai-buttons button {
   background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   animation: animacao;
   animation-timing-function: linear;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 
   transition: 0.2s all;
@@ -700,6 +700,44 @@ main .ai-action-card .channels {
   align-items: center;
   gap: 10px;
 }
+
+main .staking {
+  background: linear-gradient(to bottom, #090e0f, #010d11);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 auto;
+  gap: 20px;
+  color: #ffff;
+  text-align: center;
+}
+
+main .staking .card-staking {
+  width: 80%;
+  padding: 40px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+main .staking .card-staking .staking-title {
+  color: #2ed0ff;
+  font-family: toxigenesis;
+  font-size: 25px;
+}
+
+main .staking .card-staking .staking-text {
+  width: 60%;
+  font-size: 20px;
+}
+
+main .staking .card-staking .staking-image{
+  margin-top: 60px;
+}
+
 
 .channels {
   margin-bottom: 12px;
@@ -946,10 +984,29 @@ main .notebook .notebook-card {
   width: 80vw;
   max-width: 800px;
   margin: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+main .notebook .notebook-card .notebook-title {
+  color: #2ed0ff;
+  font-family: toxigenesis;
+  font-size: 25px;
+}
+
+main .notebook .notebook-card .notebook-text{
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
 }
 
 main .notebook .notebook-card img{
   width: 100%;
+  margin-left: -20px;
+  margin: 30px 0;
 }
 
 main .giveaway {
@@ -963,8 +1020,9 @@ main .giveaway {
 
 main .giveaway .giveaway-card {
   width: 80vw;
-  max-width: 800px;
+  max-width: 1100px;
   margin-right: -6%;
+  margin: 30px 0;
 }
 
 main .giveaway .giveaway-card img {
@@ -990,8 +1048,8 @@ main .apostrofo .apostrofo-card img {
   width: 100%;
 }
 
-footer .ai-startups {
-  /* background-image: url(images/Presale_V3_06.png); */
+main .ai-startups {
+  background: linear-gradient(to bottom, #090e0f, #010d11);
   /* background-size: cover; */
   width: 100%;
   display: flex;
@@ -1003,7 +1061,7 @@ footer .ai-startups {
   color: #ffff;
 }
 
-footer .ai-startups .ai-startups-card {
+main .ai-startups .ai-startups-card {
   color: #ffffff;
   background: rgba(5, 24, 30, 0.7);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -1023,6 +1081,10 @@ footer .ai-startups .ai-startups-card {
   font-family: toxigenesis;
 }
 
+.ai-startups .ai-startups-card .ai-startups-text{
+  width: 900px;
+}
+
 .ai-startups .ai-startups-text {
   width: min-content;
   max-width: 80%;
@@ -1040,6 +1102,7 @@ footer .ai-startups .ai-startups-card {
   align-items: center;
   padding-bottom: 30px;
   padding: 40px 10px 5px 10px;
+  gap: 30px;
 }
 
 .ai-startups .startup-buttons button {
@@ -1055,7 +1118,7 @@ footer .ai-startups .ai-startups-card {
 
   animation: animacao;
   animation-timing-function: linear;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 
   transition: 0.2s all;
@@ -1066,7 +1129,7 @@ footer .ai-startups .ai-startups-card {
   background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   animation: animacao;
   animation-timing-function: linear;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 
   transition: 0.2s all;
@@ -1077,7 +1140,7 @@ footer {
   width: 100%;
   overflow-x: hidden;
   background-image: url("images/4693486_View_Travel_Globe_1920x1080.gif");
-  background-position: top center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1088,20 +1151,36 @@ footer .footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 30px auto;
+  /* padding: 30px auto; */
   background: transparent rgb(0, 0, 0, 0.4);
 }
 
 footer .footer {
   padding: 80px 0px;
-  /* width: 100%; */
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   align-items: center;
-  margin-top: 70px;
   margin-bottom: 0px;
-  background: rgb(0, 0, 0, 0.7);
+  background: rgb(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Desfoque */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(10px);
+  z-index: -1; /* Para ficar atrás do conteúdo */
+}
+
+.parent-container {
+  position: relative;
 }
 
 footer .footer .footer-card {

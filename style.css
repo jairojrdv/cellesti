@@ -116,6 +116,7 @@ header {
 header .bottom-header {
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   transition: all .5s ease-in-out;
   padding: 19px 0;
   position: fixed;
@@ -127,6 +128,8 @@ header .bottom-header {
 
 header .onTop {
   background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .bottom-header-content {
@@ -1363,10 +1366,13 @@ footer .text p {
     padding: 15px 0px;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     width: 100%;
   }
   header .onTop {
     background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter:  none;
+    -webkit-backdrop-filter:  none;
   }
   header .bottom-header .options-list {
     display: none;

@@ -137,6 +137,7 @@ header .onTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 85%;
   max-width: 1800px;
   margin: 0 auto;
 }
@@ -585,6 +586,7 @@ main .choose-cards {
   align-items: center;
   flex-wrap: wrap;
   width: 70vw;
+  max-width: 1800px;
   height: auto;
   gap: 50px;
   padding-top: 20px;
@@ -772,6 +774,7 @@ main .staking .card-staking .staking-image img {
 
 .swiper {
   width: 80vw;
+  max-width: 1800px;
   height: 90px;
   margin: 30px 0;
 }
@@ -1275,6 +1278,7 @@ footer .footer {
 
 footer .footer .footer-card {
   width: 100%;
+  max-width: 1800px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

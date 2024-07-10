@@ -29,44 +29,46 @@
   </head>
   <body>
     <header>
-      <div class="bottom-header">
-        <div id="logo-head">
-          <img
-            src="images/Objeto Inteligente de Vetor@1,5x.webp"
-            alt=""
-            width="180px"
-          />
-        </div>
-        <ul class="options-list">
-          <li>Home</li>
-          <li>Why chose us?</li>
-          <li>Token Details</li>
-          <li>FAQs</li>
-        </ul>
-        <div class="div-normal">
-          <button id="open-wert">Connect Wallet</button>
-        </div>
-        <div class="menu-container">
-          <button id="hamburger-btn" class="hamburger-btn">&#9776;</button>
-          <div id="modal-menu" class="modal-menu">
-            <span id="close-btn" class="close-btn">&times;</span>
-            <ul class="options-list-mobile">
-              <li>
-                <a href="#home"> Home </a>
-              </li>
-              <li>
-                <a href="#why-chose-us"> Why chose us? </a>
-              </li>
-              <li>
-                <a href="#token-details"> Token Details </a>
-              </li>
-              <li>
-                <a href="#faqs"> FAQs </a>
-              </li>
-              <li>
-                <button id="open-wert">Connect Wallet</button>
-              </li>
-            </ul>
+      <div class="bottom-header onTop">
+        <div class="bottom-header-content">
+          <div id="logo-head">
+            <img
+              src="images/Objeto Inteligente de Vetor@1,5x.webp"
+              alt=""
+              width="180px"
+            />
+          </div>
+          <ul class="options-list">
+            <li>Home</li>
+            <li>Why chose us?</li>
+            <li>Token Details</li>
+            <li>FAQs</li>
+          </ul>
+          <div class="connect-wallet">
+            <button id="open-wert">Connect Wallet</button>
+          </div>
+          <div class="menu-container">
+            <button id="hamburger-btn" class="hamburger-btn">&#9776;</button>
+            <div id="modal-menu" class="modal-menu">
+              <span id="close-btn" class="close-btn">&times;</span>
+              <ul class="options-list-mobile">
+                <li>
+                  <a href="#home"> Home </a>
+                </li>
+                <li>
+                  <a href="#why-chose-us"> Why chose us? </a>
+                </li>
+                <li>
+                  <a href="#token-details"> Token Details </a>
+                </li>
+                <li>
+                  <a href="#faqs"> FAQs </a>
+                </li>
+                <li>
+                  <button id="open-wert">Connect Wallet</button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -652,25 +654,64 @@
         });
     </script>
     <script>
+      function bloquearScroll(event) {
+        event.preventDefault();
+      }
+      function desabilitarScroll() {
+        document.body.style.overflow = 'hidden';
+        window.addEventListener('wheel', bloquearScroll, { passive: false });
+        document.addEventListener('touchmove', bloquearScroll, { passive: false });
+      }
+      function habilitarScroll() {
+        document.body.style.overflow = '';
+        window.removeEventListener('wheel', bloquearScroll);
+        document.removeEventListener('touchmove', bloquearScroll);
+      }
+
       document
         .getElementById("hamburger-btn")
         .addEventListener("click", function () {
+          window.scrollTo(0, 0);
           document.getElementById("modal-menu").classList.add("active");
+          document.getElementById("hamburger-btn").style.display = 'none'
+          desabilitarScroll();
         });
 
       document
         .getElementById("close-btn")
         .addEventListener("click", function () {
           document.getElementById("modal-menu").classList.remove("active");
+          document.getElementById("hamburger-btn").style.display = 'block'
+          habilitarScroll();
         });
 
       document.querySelectorAll(".options-list-mobile li").forEach((item) => {
         item.addEventListener("click", function () {
           document.getElementById("modal-menu").classList.remove("active");
+          document.getElementById("hamburger-btn").style.display = 'block'
+          habilitarScroll();
         });
       });
     </script>
     <script>
+      'use strict';
+
+      var onTop = false;
+      
+      var nav = document.querySelector('.bottom-header');
+      window.onscroll = function (evt) {
+
+       if(window.scrollY < 10 && !onTop) {
+         nav.classList.add('onTop');
+         onTop = true;
+       }
+        
+       if(window.scrollY > 89 && onTop) {
+         nav.classList.remove('onTop');
+         onTop = false;
+       }
+      };
+
       function formatCurrency(value) {
         return parseFloat(value).toFixed(2);
       }

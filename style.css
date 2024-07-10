@@ -82,37 +82,18 @@ li a {
   color: white;
 }
 
-.div-normal {
+.connect-wallet {
   cursor: pointer;
   color: white;
   background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   background-size: 150% 150%;
-  /* font-family: jetbrains mono regular, calibri; */
   border-radius: 8px;
   box-shadow: 0 0 10px #12b3eb;
-
   animation: animacao;
   animation-timing-function: linear;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-
   transition: 0.2s all;
-}
-
-.div-dentro {
-  text-shadow: 0 0 10px #5460f988;
-  color: #5460f9;
-  font-weight: bold;
-  background: white;
-  padding: 30px;
-  border-radius: 6px;
-  transition: 0.2s all;
-}
-
-.div-normal:hover .div-dentro {
-  color: white;
-  background: transparent;
-  text-shadow: 0 0 10px #ffffffaa;
 }
 
 /* HEADER */
@@ -124,16 +105,38 @@ header {
   height: auto;
 }
 
-#logo-header {
-  width: 30px;
+#logo-head {
+  width: 200px;
+}
+
+#logo-head img {
+  width: 100%;
 }
 
 header .bottom-header {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  transition: all .5s ease-in-out;
+  padding: 19px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100vw;
+}
+
+header .onTop {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: none;
+}
+
+.bottom-header-content {
+  padding: 0 20px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 100px;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 header .bottom-header .options-list {
@@ -169,10 +172,6 @@ header .button-header {
   border: none;
   font-size: 30px;
   cursor: pointer;
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  z-index: 9999;
 }
 
 .modal-menu {
@@ -182,7 +181,7 @@ header .button-header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.95);
   z-index: 1000;
   flex-direction: column;
   justify-content: center;
@@ -226,6 +225,7 @@ header .button-header {
 /* FORM */
 
 main {
+  margin-top: 84px;
   width: auto;
   height: auto;
 }
@@ -663,7 +663,7 @@ main .ai-action-card .ai-buttons {
 }
 
 main .ai-action-card .ai-buttons button {
-  width: 300px;
+  width: 200px;
   margin: 0 15px;
   cursor: pointer;
   color: white;
@@ -732,6 +732,7 @@ main .staking .card-staking .staking-title {
 
 main .staking .card-staking .staking-text {
   width: 60%;
+  min-width: 317px;
   font-size: 20px;
 }
 
@@ -1067,6 +1068,7 @@ main .ai-startups {
   padding: 50px auto;
   gap: 20px;
   color: #ffff;
+  text-align: center;
 }
 
 main .ai-startups .ai-startups-card {
@@ -1076,7 +1078,7 @@ main .ai-startups .ai-startups-card {
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   margin: 80px auto;
-  padding: 30px 60px;
+  padding: 30px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1095,7 +1097,7 @@ main .ai-startups .ai-startups-card {
 
 .ai-startups .ai-startups-text {
   width: min-content;
-  max-width: 80%;
+  max-width: 900px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1147,7 +1149,6 @@ main .ai-startups .ai-startups-card {
 .faq {
   margin: 0 auto;
   padding: 2rem;
-  width: 100%;
   background: linear-gradient(to bottom, #010d11, #090e0f);
   color: #ffff;
   display: flex;
@@ -1165,16 +1166,20 @@ main .ai-startups .ai-startups-card {
   font-weight: 400;
   text-align: center;
 }
+.accordion {
+  max-width: 900px;
+}
 .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
 }
 .accordion .accordion-button {
-  position: relative;
   text-align: left;
-  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: #7288a2;
   font-size: 1.15rem;
-  padding: 20px 0px;
+  padding: 10px 10px;
   font-weight: 400;
   border: none;
   background: none;
@@ -1193,9 +1198,6 @@ main .ai-startups .ai-startups-card {
 }
 .accordion .accordion-button svg {
   display: inline-block;
-  position: absolute;
-  top: 20px;
-  right: -25px;
   width: 22px;
   height: 22px;
 }
@@ -1206,7 +1208,7 @@ main .ai-startups .ai-startups-card {
   width: 0;
 }
 .accordion .accordion-button[aria-expanded='true'] + .accordion-content {
-  max-height: 9em;
+  max-height: 14em;
   transition: all 200ms linear;
   will-change: opacity, max-height;
 }
@@ -1338,6 +1340,12 @@ footer .text p {
   font-size: 10px;
 }
 
+@media screen and (max-width: 1126px) {
+  main {
+    margin-top: 97px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   body {
     background-size: 200vw;
@@ -1349,26 +1357,27 @@ footer .text p {
   body {
     background-size: 2000px;
   }
-  /* header .bottom-header {
-    flex-direction: column;
-    gap: 45px;
-    justify-content: center;
-    padding: 40px 20px;
-    max-width: 90%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-  } */
   .menu-container {
     display: block;
   }
   header .bottom-header {
-    padding: 30px 30px;
+    padding: 15px 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    width: 100%;
+  }
+  header .onTop {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: none;
   }
   header .bottom-header .options-list {
     display: none;
   }
-  header .bottom-header .div-normal {
+  header .bottom-header .connect-wallet {
     display: none;
+  }
+  main {
+    margin-top: 90px;
   }
   main .form .buttons button {
     width: 80vw;
@@ -1393,8 +1402,7 @@ footer .text p {
     padding: 30px 50px;
   }
   .ai-startups .startup-buttons {
-    flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
   footer .footer .footer-card {
     display: flex;
@@ -1433,7 +1441,16 @@ footer .text p {
   main .card-form .converter input {
     max-width: 80vw;
   }
+  main .banner .banner-area .banner-text h1 {
+    font-size: 24px;
+  }
   main .banner .banner-area .banner-text {
+    font-size: 16px;
+    text-align: justify;
+    min-width: 310px;
+    max-width: 80vw;
+  }
+  main .notebook .notebook-card .notebook-title {
     font-size: 16px;
   }
   main .ai-action-card .title {
@@ -1443,10 +1460,16 @@ footer .text p {
     font-size: 24px;
   }
   main .ai-action-card .ai-buttons {
-    flex-direction: column;
     gap: 10px;
   }
   main .ai-action-card .descript {
+    text-align: justify;
+    min-width: 310px;
+  }
+  main .staking .staking-text {
+    text-align: justify;
+  }
+  main .notebook .notebook-card .notebook-text {
     text-align: justify;
   }
   main .tokenomics .tokenomics-card .title h1 {
@@ -1486,11 +1509,30 @@ footer .text p {
   main .card-form .converter input {
     max-width: 80vw;
   }
+  main .ai-action-card .ai-buttons {
+    flex-direction: column;
+  }
+  main .ai-action-card .ai-buttons button  {
+    width: 90vw;
+  }
   main .tokenomics .tokenomics-card .percents-text {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center;
+  }
+  main .percents {
+    width: 80vw;
+  }
+  main .ai-startups .ai-startups-card h1 {
+    font-size: 24px;
+  }
+  .ai-startups .startup-buttons {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+  .ai-startups .startup-buttons button {
+    width: 90vw;
   }
   footer .ai-startups .ai-startups-card {
     padding: 20px 25px;

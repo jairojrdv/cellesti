@@ -127,7 +127,6 @@ header .bottom-header {
 
 header .onTop {
   background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: none;
 }
 
 .bottom-header-content {
@@ -1368,7 +1367,6 @@ footer .text p {
   }
   header .onTop {
     background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: none;
   }
   header .bottom-header .options-list {
     display: none;

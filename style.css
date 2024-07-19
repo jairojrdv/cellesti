@@ -37,6 +37,7 @@ main {
 
 button {
   /* padding: 8px; */
+  font-weight: 600;
   background: linear-gradient(90deg, #092831 0%, rgba(28, 123, 151, 0) 58%);
   border: none;
   border-radius: 8px;

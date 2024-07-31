@@ -16,7 +16,7 @@ body {
 
 body {
   width: 100vw;
-  background-image: url("images/background4.gif");
+  background-image: url("../images/background4.gif");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 120vw;
@@ -29,7 +29,7 @@ main {
 
 @font-face {
   font-family: Toxigenesis;
-  src: url(toxigenesis\ bd.otf);
+  src: url("../toxigenesis\ bd.otf");
 }
 .fonte-externa {
   font-family: Toxigenesis;
@@ -507,7 +507,7 @@ main .card-form .converter input:focus {
 
 main .banner {
   margin-top: 40px;
-  background-image: url(images/Presale_V3_02.webp);
+  background-image: url("../images/Presale_V3_02.webp");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -554,7 +554,7 @@ main .banner .banner-area .banner-text {
 }
 
 main .choose-us {
-  background-image: url(images/Presale_V3_03.webp);
+  background-image: url("../images/Presale_V3_03.webp");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -620,7 +620,7 @@ main .choose-card img {
 }
 
 main .ai-action {
-  background-image: url(images/Presale_V3_04.webp);
+  background-image: url("../images/Presale_V3_04.webp");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -790,7 +790,7 @@ main .staking .card-staking .staking-image img {
 }
 
 main .how-it-works {
-  background-image: url(images/Presale_V3_05.webp);
+  background-image: url("../images/Presale_V3_05.webp");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1232,7 +1232,7 @@ main .ai-startups .ai-startups-card {
 footer {
   width: 100%;
   overflow-x: hidden;
-  background-image: url("images/4693486_View_Travel_Globe_1920x1080.gif");
+  background-image: url("../images/4693486_View_Travel_Globe_1920x1080.gif");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;

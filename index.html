@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cellesti</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <script
       type="text/javascript"
@@ -26,6 +26,22 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="icon" sizes="16x16" href="images/logo-cellesti.svg" />
+
+    <!-- web3modal -->
+
+    <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal"></script>
+    <script type="text/javascript" src="https://unpkg.com/evm-chains/lib/index.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider"></script>
+    <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <script src="js/web3modal.js"></script>
+
   </head>
   <body>
     <header>
@@ -45,7 +61,7 @@
             <li>FAQs</li>
           </ul>
           <div class="connect-wallet">
-            <button id="open-wert">Connect Wallet</button>
+            <button id="open-wert" onclick="onConnect()">Connect Wallet</button>
           </div>
           <div class="menu-container">
             <button id="hamburger-btn" class="hamburger-btn">&#9776;</button>
@@ -65,7 +81,7 @@
                   <a href="#faqs"> FAQs </a>
                 </li>
                 <li>
-                  <button id="open-wert">Connect Wallet</button>
+                  <button onclick="onConnect()">Connect Wallet</button>
                 </li>
               </ul>
             </div>
@@ -137,7 +153,7 @@
             </form>
             <div class="buttons">
               <div class="connect-wallet">
-                <button id="open-wert-2">Connect Wallet</button>
+                <button id="open-wert-2" onclick="onConnect()">Connect Wallet</button>
               </div>
               <div class="how-to-buy">
                 <a href="Whitepapaper Cellesti V2.pdf" target="_blank">
@@ -629,170 +645,7 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript">
-      document
-        .getElementById("open-wert")
-        .addEventListener("click", function () {
-          const wertWidget = new WertWidget({
-            partner_id: "01HQ3W5T1RBS8DFT3Q746CH9W4",
-            origin: "https://sandbox.wert.io",
-            theme: "dark",
-            lang: "en",
-          });
-          wertWidget.open();
-        });
-      document
-        .getElementById("open-wert-2")
-        .addEventListener("click", function () {
-          const wertWidget = new WertWidget({
-            partner_id: "01HQ3W5T1RBS8DFT3Q746CH9W4",
-            origin: "https://sandbox.wert.io",
-            theme: "dark",
-            lang: "en",
-          });
-          wertWidget.open();
-        });
-    </script>
-    <script>
-      function bloquearScroll(event) {
-        event.preventDefault();
-      }
-      function desabilitarScroll() {
-        document.body.style.overflow = 'hidden';
-        window.addEventListener('wheel', bloquearScroll, { passive: false });
-        document.addEventListener('touchmove', bloquearScroll, { passive: false });
-      }
-      function habilitarScroll() {
-        document.body.style.overflow = '';
-        window.removeEventListener('wheel', bloquearScroll);
-        document.removeEventListener('touchmove', bloquearScroll);
-      }
-
-      document
-        .getElementById("hamburger-btn")
-        .addEventListener("click", function () {
-          window.scrollTo(0, 0);
-          document.getElementById("modal-menu").classList.add("active");
-          document.getElementById("hamburger-btn").style.display = 'none'
-          desabilitarScroll();
-        });
-
-      document
-        .getElementById("close-btn")
-        .addEventListener("click", function () {
-          document.getElementById("modal-menu").classList.remove("active");
-          document.getElementById("hamburger-btn").style.display = 'block'
-          habilitarScroll();
-        });
-
-      document.querySelectorAll(".options-list-mobile li").forEach((item) => {
-        item.addEventListener("click", function () {
-          document.getElementById("modal-menu").classList.remove("active");
-          document.getElementById("hamburger-btn").style.display = 'block'
-          habilitarScroll();
-        });
-      });
-    </script>
-    <script>
-      'use strict';
-
-      var onTop = false;
-      
-      var nav = document.querySelector('.bottom-header');
-      window.onscroll = function (evt) {
-
-       if(window.scrollY < 10 && !onTop) {
-         nav.classList.add('onTop');
-         onTop = true;
-       }
-        
-       if(window.scrollY > 89 && onTop) {
-         nav.classList.remove('onTop');
-         onTop = false;
-       }
-      };
-
-      function formatCurrency(value) {
-        return parseFloat(value).toFixed(2);
-      }
-
-      function updateReceiveValue() {
-        const payInput = document.getElementById("pay");
-        const receiveInput = document.getElementById("recive");
-
-        const payValue = parseFloat(payInput.value) || 0;
-        const receiveValue = payValue / 0.007;
-
-        receiveInput.value = formatCurrency(receiveValue);
-      }
-
-      document.getElementById("pay").addEventListener("change", function () {
-        updateReceiveValue();
-        this.value = formatCurrency(this.value.replace(/[^\d.-]/g, ""));
-      });
-
-      function selectPaymentMethod(method) {
-        const paymentIcon = document.getElementById("payment-icon");
-        const selectedPaymentMethod = document.getElementById(
-          "selected-payment-method"
-        );
-
-        let iconSrc = "";
-        switch (method) {
-          case "bnbpay":
-            iconSrc = "images/eth.svg";
-            break;
-          case "usdtpay":
-            iconSrc = "images/usdt.svg";
-            break;
-          case "cardpay":
-            iconSrc = "images/card.svg";
-            break;
-        }
-
-        if (iconSrc) {
-          paymentIcon.style.display = "block";
-          paymentIcon.style.backgroundImage = `url(${iconSrc})`;
-          paymentIcon.style.backgroundSize = "cover";
-        } else {
-          paymentIcon.style.display = "none";
-        }
-
-        selectedPaymentMethod.value = method;
-      }
-
-      selectPaymentMethod("bnbpay");
-
-      const items = document.querySelectorAll(".accordion-button");
-
-      function toggleAccordion() {
-        const itemToggle = this.getAttribute('aria-expanded');
-        
-        for (var i = 0; i < items.length; i++) {
-          items[i].setAttribute('aria-expanded', 'false');
-        }
-        
-        if (itemToggle == 'false') {
-          this.setAttribute('aria-expanded', 'true');
-        }
-      }
-
-      items.forEach(item => item.addEventListener('click', toggleAccordion));
-    </script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        centeredSlides: true,
-        slidesPerView: 5,
-        //  direction: "horizontal",
-        loop: true,
-        autoplay: {
-          delay: 2000,
-        },
-        speed: 3000, // Velocidade da transição
-        // effect: "fade",
-        // spaceBetween: 100,
-      });
-    </script>
+    <script src="js/functions.js"></script>
+    <script src="js/swiper.js"></script>
   </body>
 </html>

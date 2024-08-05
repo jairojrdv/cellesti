@@ -2,7 +2,6 @@
 const Web3Modal = window.Web3Modal.default;
 const WalletConnectProvider = window.WalletConnectProvider.default;
 const EvmChains = window.EvmChains;
-const Fortmatic = window.Fortmatic;
 
 let web3Modal;
 
@@ -22,14 +21,6 @@ function init() {
       options: {
         // Mikko's test key - don't copy as your mileage may vary
         infuraId: "2527fd9f6cc147be8c74ba8e46528f96",
-      },
-    },
-
-    fortmatic: {
-      package: Fortmatic,
-      options: {
-        // Mikko's TESTNET api key
-        key: "pk_test_391E26A3B43A3350",
       },
     },
   };
@@ -52,15 +43,13 @@ async function fetchAccountData() {
   // Get connected chain id from Ethereum node
   const chainId = await web3.eth.getChainId();
 
-  if (chainId == 1) {
-    document.querySelector("#network-name").innerHTML = "ETH";
-  } else if (chainId === 56) {
-    document.querySelector("#network-name").innerHTML = "BSC";
-  }
+  console.log(chainId)
+
   // Get average gas price of the connected wallet
   const gasPrice = await web3.eth.getGasPrice();
-  document.querySelector("#avg-gas-price").innerHTML =
-    web3.utils.fromWei(gasPrice);
+
+  console.log(gasPrice)
+ 
   // Get list of accounts of the connected wallet
   const accounts = await web3.eth.getAccounts();
 
@@ -115,9 +104,14 @@ async function onConnect() {
     fetchAccountData();
   });
 
-  // Subscribe to networkId change
-  provider.on("networkChanged", (networkId) => {
-    fetchAccountData();
+  // Subscribe to provider connection
+  provider.on("connect", (chainId) => {
+    console.log(info);
+  });
+
+  // Subscribe to provider disconnection
+  provider.on("disconnect", (error) => {
+    console.log(error);
   });
 
   await refreshAccountData();

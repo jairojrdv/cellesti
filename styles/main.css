@@ -1551,7 +1551,7 @@ footer .text p {
     text-align: center; /* Ou outra propriedade desejada */
 }
 #responsive-image {
-  content: url('images/HOW\ IT\ WORKS\ MOBILE.png');
+  content: url("../images/HOW\ IT\ WORKS\ MOBILE.png");
   display: flex;
   flex-direction: column;
   justify-content: center;

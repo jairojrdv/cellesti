@@ -1038,6 +1038,43 @@ main .giveaway .giveaway-card {
   max-width: 1100px;
   margin-right: -6%;
   margin: 30px 0;
+  position: relative;
+}
+
+main .giveaway .giveaway-card .giveway-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+main .giveaway .giveaway-card .giveway-text p {
+  font-size: 14px;
+  color: #ccc;
+  font-weight: 200;
+}
+
+main .giveaway .giveaway-card .giveway-text .giveaway-title {
+  font-family: toxigenesis;
+  color: #2ed0ff;
+  font-size: 20px;
+}
+
+main .giveaway .giveaway-card #gift {
+  position: absolute;
+  right: -40px;
+  top: -20px;
+  width: 200px;
+}
+
+main .giveaway .giveaway-card #car {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 100%;
 }
 
 main .giveaway .giveaway-card img {

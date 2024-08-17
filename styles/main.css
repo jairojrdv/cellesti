@@ -1045,7 +1045,7 @@ main .giveaway .giveaway-card .giveway-text {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   position: absolute;
   top: 30px;
   left: 0;
@@ -1055,6 +1055,9 @@ main .giveaway .giveaway-card .giveway-text p {
   font-size: 14px;
   color: #ccc;
   font-weight: 200;
+  background: rgba(1, 13, 17, .6);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 main .giveaway .giveaway-card .giveway-text .giveaway-title {

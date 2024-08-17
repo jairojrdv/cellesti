@@ -1303,6 +1303,14 @@ footer .footer {
   backdrop-filter: blur(10px); /* Desfoque */
   border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com navegadores baseados em WebKit */
+}
+
+@supports not ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+  footer .footer {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 0 2000px rgba(255, 255, 255, 0.05);
+  }
 }
 
 .footer::before {

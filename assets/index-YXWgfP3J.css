@@ -1026,6 +1026,16 @@ main .percents .progress-bar-5 {
   color: #fff;
   animation: progress-animation-5 2s ease-in-out forwards;
 }
+main .percents .progress-bar-51 {
+  width: 0;
+  height: 10px;
+  background-color: #2ed0ff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  animation: progress-animation-51 2s ease-in-out forwards;
+}
 main .percents .progress-value {
   margin-left: 10px;
   color: #2ed0ff;
@@ -1059,6 +1069,14 @@ main .percents .progress-value {
   }
 }
 @keyframes progress-animation-5 {
+  0% {
+    width: 0;
+  }
+  to {
+    width: 5%;
+  }
+}
+@keyframes progress-animation-51 {
   0% {
     width: 0;
   }

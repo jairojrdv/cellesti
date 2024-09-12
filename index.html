@@ -1,126 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cellesti | Presale Is Live</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cellesti | Presale Is Live</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Swiper CSS (if you need it) -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <!-- Favicon -->
+    <link rel="icon" sizes="16x16" href="./assets/logo-cellesti.png" />
+    <script type="module" crossorigin src="/assets/index-nVuQ03dS.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-YXWgfP3J.css" />
+  </head>
 
-  <!-- Swiper CSS (if you need it) -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
-
-  <!-- Favicon -->
-  <link rel="icon" sizes="16x16" href="./assets/logo-cellesti.png" />
-  <script type="module" crossorigin src="/assets/index-nVuQ03dS.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-YXWgfP3J.css">
-</head>
-
-<style>
-  .waves {
-    position:relative;
-    width: 100%;
-    height:15vh;
-    margin-bottom:-7px; /*Fix for safari gap*/
-    min-height:100px;
-    max-height:150px;
-  }
-
-  .content {
-    position:relative;
-    height:20vh;
-    text-align:center;
-    background-color: linear-gradient(90deg, #092831 0%, rgba(28, 123, 151, 0) 58%);
-  }
-
-  /* Animation */
-
-  .parallax > use {
-    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-  }
-  .parallax > use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s;
-  }
-  .parallax > use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
-  }
-  .parallax > use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
-  }
-  .parallax > use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s;
-  }
-  @keyframes move-forever {
-    0% {
-    transform: translate3d(-90px,0,0);
-    }
-    100% { 
-      transform: translate3d(85px,0,0);
-    }
-  }
-  /*Shrinking for mobile*/
-  @media (max-width: 768px) {
+  <style>
     .waves {
-      height:40px;
-      min-height:40px;
+      position: relative;
+      width: 100%;
+      height: 15vh;
+      margin-bottom: -7px; /*Fix for safari gap*/
+      min-height: 100px;
+      max-height: 150px;
     }
-    .content {
-      height:30vh;
-    }
-    h1 {
-      font-size:24px;
-    }
-  }
-</style>
 
-<body>
-  <nav id="navbar" class="navbar navbartop navbar-expand-lg navbar-light fixed-top" style="z-index: 500;">
-    <div class="container">
-      <!-- Left side logo -->
-      <a class="navbar-brand" href="#">
-        <img src="/assets/Objeto Inteligente de Vetor@1_5x-TryXWyoe.webp" alt="Logo" width="180px" />
-      </a>
-      <!-- Toggler button for mobile -->
-      <button class="navbar-toggler" style="background-color: #ffffff" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Centered navigation links -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item mx-md-3">
-            <a class="nav-link fs-5 text-white" href="#">Home</a>
-          </li>
-          <li class="nav-item mx-md-3">
-            <a class="nav-link fs-5 text-white" href="#">Why Choose Us?</a>
-          </li>
-          <li class="nav-item mx-md-3">
-            <a class="nav-link fs-5 text-white" href="#">Token Details</a>
-          </li>
-          <li class="nav-item mx-md-3">
-            <a class="nav-link fs-5 text-white" href="/whitepaper.pdf" target="_blank">Whitepaper</a>
-          </li>
-        </ul>
-        <div class="d-flex d-md-none d-block">
-          <button id="accountOne" class="btn btn-primary">Connect Wallet</button>
+    .content {
+      position: relative;
+      height: 20vh;
+      text-align: center;
+      background-color: linear-gradient(
+        90deg,
+        #092831 0%,
+        rgba(28, 123, 151, 0) 58%
+      );
+    }
+
+    /* Animation */
+
+    .parallax > use {
+      animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+    }
+    .parallax > use:nth-child(1) {
+      animation-delay: -2s;
+      animation-duration: 7s;
+    }
+    .parallax > use:nth-child(2) {
+      animation-delay: -3s;
+      animation-duration: 10s;
+    }
+    .parallax > use:nth-child(3) {
+      animation-delay: -4s;
+      animation-duration: 13s;
+    }
+    .parallax > use:nth-child(4) {
+      animation-delay: -5s;
+      animation-duration: 20s;
+    }
+    @keyframes move-forever {
+      0% {
+        transform: translate3d(-90px, 0, 0);
+      }
+      100% {
+        transform: translate3d(85px, 0, 0);
+      }
+    }
+    /*Shrinking for mobile*/
+    @media (max-width: 768px) {
+      .waves {
+        height: 40px;
+        min-height: 40px;
+      }
+      .content {
+        height: 30vh;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+
+  <body>
+    <nav
+      id="navbar"
+      class="navbar navbartop navbar-expand-lg navbar-light"
+      style="z-index: 500; margin-bottom: -80px"
+    >
+      <div class="container">
+        <!-- Left side logo -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="/assets/Objeto Inteligente de Vetor@1_5x-TryXWyoe.webp"
+            alt="Logo"
+            width="180px"
+          />
+        </a>
+        <!-- Toggler button for mobile -->
+        <button
+          class="navbar-toggler"
+          style="background-color: #ffffff"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Centered navigation links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item mx-md-3">
+              <a class="nav-link fs-5 text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-md-3">
+              <a class="nav-link fs-5 text-white" href="#">Why Choose Us?</a>
+            </li>
+            <li class="nav-item mx-md-3">
+              <a class="nav-link fs-5 text-white" href="#">Token Details</a>
+            </li>
+            <li class="nav-item mx-md-3">
+              <a
+                class="nav-link fs-5 text-white"
+                href="/whitepaper.pdf"
+                target="_blank"
+                >Whitepaper</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex d-md-none d-block">
+            <button id="accountOne" class="btn btn-primary">
+              Connect Wallet
+            </button>
+          </div>
+        </div>
+        <!-- Right side contact button -->
+        <div class="d-flex d-md-block d-none">
+          <button id="account" class="btn btn-primary">Connect Wallet</button>
         </div>
       </div>
-      <!-- Right side contact button -->
-      <div class="d-flex d-md-block d-none">
-        <button id="account" class="btn btn-primary">Connect Wallet</button>
-      </div>
-    </div>
-  </nav>
-  <!-- <header>
+    </nav>
+    <!-- <header>
       <div class="bottom-header onTop">
         <div class="bottom-header-content">
           <div id="logo-head">
@@ -166,8 +198,8 @@
       </div>
     </header>  -->
 
-  <main>
-    <!-- <div class="form" id="home">
+    <main>
+      <!-- <div class="form" id="home">
         <div class="card-form">
           <div class="title-form">
             <h1>
@@ -241,139 +273,220 @@
         </div>
       </div> -->
 
-    <div class="container newfontcard">
-      <div class="row justify-content-center">
-        <div class="col-12 cardbgset col-md-9 col-lg-6 col-xl-6 mt-md-5">
-          <div class="d-flex" style="justify-content: space-between">
-            <h6 class="text-white buytokenfont newfont">
-              Buy Cellesti Token
-            </h6>
-            <div class="d-flex align-items-center newfontcard">
-              <div class="mx-1 stgbtn" type="button">Stage 2</div>
-              <div class="mx-1 stgbtn22 fw-bold" style="font-size: 22px" type="button">
-                Live
+      <div class="container newfontcard">
+        <div class="row justify-content-center">
+          <div class="col-12 cardbgset col-md-9 col-lg-6 col-xl-6 mt-md-5">
+            <div class="d-flex" style="justify-content: space-between">
+              <h6 class="text-white buytokenfont newfont">
+                Buy Cellesti Token
+              </h6>
+              <div class="d-flex align-items-center newfontcard">
+                <div class="mx-1 stgbtn" type="button">Stage 2</div>
+                <div
+                  class="mx-1 stgbtn22 fw-bold"
+                  style="font-size: 22px"
+                  type="button"
+                >
+                  Live
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="section4">
-            <div class="section2__progressBarContainer mt-4" style="margin: auto">
-              <div class="section2__progressBar">
-                <div class="section2__progressBarRect" id="progressBarRect"></div>
+            <div class="section4">
+              <div
+                class="section2__progressBarContainer mt-4"
+                style="margin: auto"
+              >
+                <div class="section2__progressBar">
+                  <div
+                    class="section2__progressBarRect"
+                    id="progressBarRect"
+                  ></div>
+                </div>
+                <span
+                  class="section2__progressBarPoint section2__progressBarPoint--start"
+                  >ETH 0</span
+                >
+                <span
+                  class="section2__progressBarPoint section2__progressBarPoint--end"
+                  >ETH 50</span
+                >
               </div>
-              <span class="section2__progressBarPoint section2__progressBarPoint--start">ETH 0</span>
-              <span class="section2__progressBarPoint section2__progressBarPoint--end">ETH 50</span>
-            </div>
 
-            <h6 class="mt-2 vin newfontcard" style="
+              <h6
+                class="mt-2 vin newfontcard"
+                style="
                   text-align: end;
                   color: rgb(95, 95, 95);
                   font-weight: 700;
                   text-transform: uppercase;
                   padding-top: 10px;
-                ">
-              $<span id="progress"></span>
-              / $ 1,000,000
-            </h6>
-            <div class="d-flex justify-content-center">
-              <p class="mt-2 text-center text-white add-auster newfontcard">
-                1 CLLS = $0.007 & Next Stage = $0.00875
-              </p>
+                "
+              >
+                $<span id="progress"></span>
+                / $ 1,000,000
+              </h6>
+              <div class="d-flex justify-content-center">
+                <p class="mt-2 text-center text-white add-auster newfontcard">
+                  1 CLLS = $0.007 & Next Stage = $0.00875
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="container" style="
+            <div
+              class="container"
+              style="
                 background-color: #242424;
                 border-radius: 10px;
                 padding: 15px;
-              ">
-            <div class="row">
-              <div class="col-6" style="border-right: 1px solid #6b6b6b">
-                <h6 style="color: gray; font-weight: 400 !important">
-                  TOKENS SOLD
-                </h6>
-                <h4 class="text-white mb-0 numberfont">
-                  <img src="/assets/logocellesti-1Epta8cB.png" style="width: 40px" class="img-fluid" alt="" srcset="" />
-                  <span id="tokens-sold">-</span>
-                </h4>
-                <div class="mx-md-5 mx-4">
-                  <span style="color: gray; text-align: center">
-                    /400,000,000
-                  </span>
+              "
+            >
+              <div class="row">
+                <div class="col-6" style="border-right: 1px solid #6b6b6b">
+                  <h6 style="color: gray; font-weight: 400 !important">
+                    TOKENS SOLD
+                  </h6>
+                  <h4 class="text-white mb-0 numberfont">
+                    <img
+                      src="/assets/logocellesti-1Epta8cB.png"
+                      style="width: 40px"
+                      class="img-fluid"
+                      alt=""
+                      srcset=""
+                    />
+                    <span id="tokens-sold">-</span>
+                  </h4>
+                  <div class="mx-md-5 mx-4">
+                    <span style="color: gray; text-align: center">
+                      /400,000,000
+                    </span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <h6 style="color: gray; font-weight: 400 !important">
+                    USD RAISED
+                  </h6>
+                  <p class="text-white numberfont mt-md-0 mt-3 mb-0">
+                    <!-- $<span id="progress"></span> -->
+                    <span>$</span> <span id="progressTwo">-</span>
+                  </p>
+                  <h6 class="mt-md-0 mt-2" style="color: gray">
+                    / $15,350,000
+                  </h6>
                 </div>
               </div>
-              <div class="col-6">
-                <h6 style="color: gray; font-weight: 400 !important">
-                  USD RAISED
-                </h6>
-                <p class="text-white numberfont mt-md-0 mt-3 mb-0">
-                  <!-- $<span id="progress"></span> -->
-                  <span>$</span> <span id="progressTwo">-</span>
-                </p>
-                <h6 class="mt-md-0 mt-2" style="color: gray">
-                  / $15,350,000
-                </h6>
-              </div>
-            </div>
-          </div>
-
-          <div class="d-flex justify-content-end mt-4">
-            <div class="mx-1 stgbtn tooltipBtn" type="button">
-              Bonus
-              <div class="tooltipContent">
-                <p class="tooltipPara">Stage 1 Bonus 5%</p>
-                <p class="tooltipPara">Stage 2 Bonus 3%</p>
-                <p class="tooltipPara">Stage 3 Bonus 2%</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="d-flex justify-content-center">
-            <p class="fs-5 mt-3 text-center text-white add-auster22">
-              CONNECT WALLET
-            </p>
-          </div>
-
-          <div class="row mx-auto newrowsett" style="width: 93%">
-            <div class="col-md-6 p-0 m-0">
-              <a type="button" id="ETHbutton" class="btn buybtn ETHbtn mb-sm-0 mb-3" style="font-size: 14px;">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAG7klEQVRo3s2ae2xTVRzHZ6LGaGIMBkyMQjT6j4nAeEsYDNa120AYW9s9oMYohDgY4NjWUcYsoAnyHGs7GEx5CIIogmBUFHBCIMYoIY6JIcof7NWtj9v3a21/ntOug3Xn3J7TdchNfn+ec8/nnu/5vc5NS0vRk9sAo6UNIJfpYYdMB98iu4XMjMxburYblq7sCC9Z3dVXWtFtLVKb2pQ15s8UGlt22sPwyHbBKLTwlWixvyILIwOSla7pgrfeu0s0DKdUm67Ia23SBw6QVQ/PyRpgK1qkm7Z4VpABK7sLxet6TIpa27sjDjC5CR5DC1uDzMUCwAVyn5Ws6zHma+3TRgQi2wATkYz+5gFIFgQbPlNKjdWQ2rOgh2X40CYDkSxIzIqrTH+pKo1PpQJCzbPorANByDjqgze+8sDUb1ww5ZwT5jX7QbIvAJK9XpDtccKiLSb8xdmlVtFjLda6n08aIkcH21kWL9kXgpknPZB+3g7jLwlDTLI/NGSM1BBG47yQj6BYYEorjA7FeufoEdmJ7L0hmP61G8ZfFIgAYiCDPkRTAPI39SaWGfJqb2rhSWYIqQ5yxeICtoyjfphwwSYKwAoS2aHIh/HA0tXtojDKatPvrBH6hf6ITH6hHqK7wADAA3JPpkG02C7ReKOstWxOfC70cJYKgXQ9FR1eHogFv9lBcbqPy8thyco3GOmuubwzVLBBGCd2uBdSX4B2AnshHojiGw5ocfbBpm4kmfP8MEUiO1NUbbpBpgB4BE3QSpsYeyUeiCm/CHDOFoDLrihIVbsHFh0JccFImvpARXHTqrJ2UGwU5gzdjQYooE2Y+WkfFwS2XR3eCEQMpLrTA+VtPkDS5YKRGlz0Xaky3SR5qhba4Z70vZ0LQnE9Kql4EGyqH/kkht9fWGuk74raOnYAIk8P42juFkfpZCVFAklOYj7qrshrrIcTBj/s22nRmmY72r2DIOJBkpEYXgfNi5VUGC33QHTwE2mCuZxnI15SNJCIxHi9mN5Nl5fWPipNoYXHaQXSjFPsnmoyktTZOEmJgUQkdpgnUIao8irQWNbhSP4abXA6xyEnSUoMBNuqm75IfGKFUaq7iSAKtfk0juSLaVGcFUJJkVQiEF6JLdgmkN1wpakNH/S1pEHzmoNMEOktApwRAlSIRCB8EnOSs+IKowmD1BGD4KEAE8g2EUmxgEQk1somsexGD7kT877RgT3Wx6RBc44kBpn4swDnHYFhg1R2eGDxiWDiA48qTGLRtbrLi3fkIyLIYbYdWfGvG+q6vbCz1wfNZj98KfjhgpMeEPGi8ZiSNhfMv26HjGs2mNRig5xDwaR3BDUA3Tg1qRlOfjXrqg2q4r6wGhlefD2CO2jxw/LbaNF/RBeNdzF+DukFN1ssMbhpQVFIQ4225cQmQlOI2WvJ/3SISmfGFXolOfOyHXIMbF4rd7edDFLZ247jyBzawAkX2UpZ/JXL7ri5QfC43OMBZveb/yG5UVGkNl+Ntj8pA6eeZa8GsWyqO/hAZIySimXBqnJyPa/QWJpiudYd0uBZn/NlvvJWJzMIj6SiKYqfmqKgfvG8WC3STC43wwlbPSwSiweZgCV1IsCVNM7fTo7qS8o7g/cXVfm0Caad4avTSRKLB5FddPNlvo0hqqyKq3pbB0AiGXADmIipyv4gd5mriJPY/SC8korYHge9sNpoWza4s6iDetpEPOl8TGIr77iGgGBJ5X3BJync51qyityAQM1xH26aDK7ZDfAiGugneozGMKT/wFcpzr5mH5BYDETKKSmcf4m1UtG1wz5yv1cH+2mT4myYtUU6kN7fdA6AzLxiBxmnpHLqHWJXdoFMLTxBvlLTw7Ni7dJIRszlxWyguuWErGtOyDvG2T1pdIv2gOUa4QPxlmkDrBB7AYZhjfjJ9H5jyaGqTKQrj1MSpisFHZwSexGWGU93hRVEqg9D3k6b6E7guFFYa3+VCSRzNzyDJr4t3gEMR26lUgWShW60xBrXsY6JUiO8w3XRg4LkS+gFXQkXgOLM9NPilz1iILi/u3Crhen6WlFr3ZbU1VueDl5ngYnqOgwZx3yRjn28dxsEosexAR18vSvhDgzqXWmsTcO6DJU0wsuJZEbrQ839pA8yDwYgD3U/Fm0xo8UYUXe9netWF0MgD6VN1X8mT6PFnXzQ19Ola7v8yjpbYWr/GECpQL9rto44SBkulkw3Fm93jhmx3zike2FMfwbgHwkQfKdeWGcveWA/1kj2wNj+RNM8XBB8DoorezoL1ttW/G+/OuESoL+ewbv0DysI/tcE3Zt3oP+2jipq7K+kPWxP5Ac0PcxG5+ltBFGNbDPKUi8V1Zi+U663HJdvsGoKtMJsrRYeTeV7/wOWWTmQPFHfDgAAAABJRU5ErkJggg==" style="width: 30px;" alt="" srcset="" />
-                BUY WITH ETH
-              </a>
             </div>
 
-            <div class="col-md-6 p-0 m-0">
-              <a type="button" id="USDTbutton" class="btn buybtn ETHbtn mx-1" style="font-size: 14px;">
-                <img src="/assets/usdt-3d-59GRnOB7.png" style="width: 30px" alt="" srcset="" />
-                BUY WITH USDT
-              </a>
-            </div>
-          </div>
-
-          <div class="row mt-3 d-flex newrowsett justify-content-center align-items-center"
-            style="width: 93%; margin: auto">
-            <div class="col-md-6 d-flex justify-content-center align-items-center p-0 m-0">
-              <div class="input-icon-wrap mx-0 d-flex flex-row justify-content-center mt-2">
-                <div id="change-logo" class="mx-1">
-                  <img id="logo-currency" style="width: 40px" src="data:image/png;base64,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" alt="img" />
+            <div class="d-flex justify-content-end mt-4">
+              <div class="mx-1 stgbtn tooltipBtn" type="button">
+                Bonus
+                <div class="tooltipContent">
+                  <p class="tooltipPara">Stage 1 Bonus 5%</p>
+                  <p class="tooltipPara">Stage 2 Bonus 3%</p>
+                  <p class="tooltipPara">Stage 3 Bonus 2%</p>
                 </div>
-                <input id="bnbInput" class="input-with-icon mx-2 text-white fs-5" type="number" value="" min="0"
-                  placeholder="Enter Amount" autocomplete="off" />
               </div>
             </div>
 
-            <div class="col-md-6 d-flex flex-col align-items-center p-0 m-0">
-              <div class="input-icon-wrap mx-0 d-flex flex-row justify-content-center mt-2">
-                <div class="mx-1">
-                  <img id="button-logo-e" class="input-icon-img" style="width: 50px; height: auto"
-                    src="/assets/logocellesti-1Epta8cB.png" alt="" />
+            <div class="d-flex justify-content-center">
+              <p class="fs-5 mt-3 text-center text-white add-auster22">
+                CONNECT WALLET
+              </p>
+            </div>
+
+            <div class="row mx-auto newrowsett" style="width: 93%">
+              <div class="col-md-6 p-0 m-0">
+                <a
+                  type="button"
+                  id="ETHbutton"
+                  class="btn buybtn ETHbtn mb-sm-0 mb-3"
+                  style="font-size: 14px"
+                >
+                  <img
+                    src="data:image/png;base64,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"
+                    style="width: 30px"
+                    alt=""
+                    srcset=""
+                  />
+                  BUY WITH ETH
+                </a>
+              </div>
+
+              <div class="col-md-6 p-0 m-0">
+                <a
+                  type="button"
+                  id="USDTbutton"
+                  class="btn buybtn ETHbtn mx-1"
+                  style="font-size: 14px"
+                >
+                  <img
+                    src="/assets/usdt-3d-59GRnOB7.png"
+                    style="width: 30px"
+                    alt=""
+                    srcset=""
+                  />
+                  BUY WITH USDT
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="row mt-3 d-flex newrowsett justify-content-center align-items-center"
+              style="width: 93%; margin: auto"
+            >
+              <div
+                class="col-md-6 d-flex justify-content-center align-items-center p-0 m-0"
+              >
+                <div
+                  class="input-icon-wrap mx-0 d-flex flex-row justify-content-center mt-2"
+                >
+                  <div id="change-logo" class="mx-1">
+                    <img
+                      id="logo-currency"
+                      style="width: 40px"
+                      src="data:image/png;base64,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"
+                      alt="img"
+                    />
+                  </div>
+                  <input
+                    id="bnbInput"
+                    class="input-with-icon mx-2 text-white fs-5"
+                    type="number"
+                    value=""
+                    min="0"
+                    placeholder="Enter Amount"
+                    autocomplete="off"
+                  />
                 </div>
-                <input id="novisInput" class="input-with-icon mx-2 text-white fs-5" type="number" value="" min="0"
-                  placeholder="0" readonly autocomplete="off" />
+              </div>
+
+              <div class="col-md-6 d-flex flex-col align-items-center p-0 m-0">
+                <div
+                  class="input-icon-wrap mx-0 d-flex flex-row justify-content-center mt-2"
+                >
+                  <div class="mx-1">
+                    <img
+                      id="button-logo-e"
+                      class="input-icon-img"
+                      style="width: 50px; height: auto"
+                      src="/assets/logocellesti-1Epta8cB.png"
+                      alt=""
+                    />
+                  </div>
+                  <input
+                    id="novisInput"
+                    class="input-with-icon mx-2 text-white fs-5"
+                    type="number"
+                    value=""
+                    min="0"
+                    placeholder="0"
+                    readonly
+                    autocomplete="off"
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- <div class="d-flex justify-content-center mt-2">
+            <!-- <div class="d-flex justify-content-center mt-2">
            
           <div class="input-container mx-1">
             <div id="change-logo" >
@@ -388,241 +501,322 @@
            
         </div> -->
 
-          <div class="row my-2">
-            <div class="app-card-buttons vin my-3">
-              <button type="button" id="purchaseButton" class="show-button btn fs-4 fw-bold conbtn" style="
+            <div class="row my-2">
+              <div class="app-card-buttons vin my-3">
+                <button
+                  type="button"
+                  id="purchaseButton"
+                  class="show-button btn fs-4 fw-bold conbtn"
+                  style="
                     margin-left: 4px;
                     background-color: #1c9cde;
                     color: #ffffff;
                     border-radius: 40px;
-                  ">
-                Buy
-              </button>
-              <button type="button" id="open-connect-modal"
-                class="btn btn-primary conbtn prsale-pantra w-100 fw-bold fs-4 mx-1">
-                Connect Wallet
-              </button>
-              <button type="button" id="approveButton" class="btn fs-4 fw-bold conbtn" style="
+                  "
+                >
+                  Buy
+                </button>
+                <button
+                  type="button"
+                  id="open-connect-modal"
+                  class="btn btn-primary conbtn prsale-pantra w-100 fw-bold fs-4 mx-1"
+                >
+                  Connect Wallet
+                </button>
+                <button
+                  type="button"
+                  id="approveButton"
+                  class="btn fs-4 fw-bold conbtn"
+                  style="
                     background-color: #1c9cde;
                     color: #ffffff;
                     border-radius: 40px;
-                  ">
-                Approve
-              </button>
-              <button type="button" id="purchaseButtonUSDT" class="btn fs-4 conbtn" style="margin-left: 4px" style="
+                  "
+                >
+                  Approve
+                </button>
+                <button
+                  type="button"
+                  id="purchaseButtonUSDT"
+                  class="btn fs-4 conbtn"
+                  style="margin-left: 4px"
+                  style="
                     background-color: #1c9cde;
                     color: #ffffff;
                     border-radius: 40px;
-                  ">
-                Buy
-              </button>
+                  "
+                >
+                  Buy
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="row mx-auto" style="width: 93%">
-            <div class="col-12 d-flex justify-content-end p-0">
-              <img src="data:image/png;base64,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" style="
+            <div class="row mx-auto" style="width: 93%">
+              <div class="col-12 d-flex justify-content-end p-0">
+                <img
+                  src="data:image/png;base64,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"
+                  style="
                     width: 50px;
                     height: 50px;
                     object-fit: cover;
                     padding: 1px;
-                  " alt="" />
-              <img src="/assets/usdt-3d-59GRnOB7.png" style="width: 50px; height: 50px; object-fit: cover" alt="" />
+                  "
+                  alt=""
+                />
+                <img
+                  src="/assets/usdt-3d-59GRnOB7.png"
+                  style="width: 50px; height: 50px; object-fit: cover"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="banner">
-      <div class="banner-area">
-        <div class="banner-text">
-          <h1>THE $CLLS TOKEN</h1>
-          <p>
-            Cellesti is a pioneering platform that allows you to get involved
-            in investing in Al technology. By using SCLLS, our innovative
-            cryptocurrency, you can easily and confidently take part in
-            supporting Al startups and helping to drive forward tech
-            innovation.
-          </p>
-          <p>
-            Our unique fractional investment system lets you own a piece of
-            the action in some of the most promising Al startups across the
-            globe. We transform each investment opportunity into a special
-            digital asset called an NFT (Non-Fungible Token) and break it down
-            into smaller parts. This means you can invest according to your
-            financial situation, all while enjoying the benefits of being an
-            early supporter.
-          </p>
-          <p>
+      <div class="banner">
+        <div class="banner-area">
+          <div class="banner-text">
+            <h1>THE $CLLS TOKEN</h1>
+            <p>
+              Cellesti is a groundbreaking platform that enables investments in
+              AI startups using $CLLS, our innovative cryptocurrency. Through
+              our fractional investment system, we offer the chance to support
+              promising AI startups via NFTs (Non-Fungible Tokens), turning each
+              opportunity into a unique digital asset.
+            </p>
+            <p >
+              This allows you to invest according to your financial capacity,
+              while enjoying the advantages of being an early supporter of
+              emerging technologies. Cellesti makes investing simple, secure,
+              and impactful, giving you the opportunity to actively participate
+              in tech innovation and reap the rewards as an early investor.
+            </p>
+            <!-- <p>
             Cellesti makes it simple for you to invest in exciting Al
             startups, even if you don't have a large amount of money to invest
             upfront. You can be part of shaping the future of technology while
             also enjoying the rewards of being an early supporter.
-          </p>
-        </div>
-        <div class="token-img">
-          <img src="/assets/moeda_site_2-kVjEp-pH.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="choose-us" id="why-chose-us">
-      <div class="choose-us-card">
-        <div class="title-choose">
-          <h1>WHY CHOSE US?</h1>
-        </div>
-        <div class="choose-cards">
-          <div class="choose-card">
-            <img src="/assets/trading-ZcsyNHvh-ZcsyNHvh.gif" alt="" />
-            <h3>Effortheless Investment</h3>
-            <p>
-              Investing in stote-of-the-ort Al stortups is nom affortiess with
-              our intuitive platfam, designad to cater to both seasoned
-              investors and newcomers alike.
-            </p>
+          </p> -->
           </div>
-          <div class="choose-card">
-            <img src="/assets/securelock-x_qqIF37-x_qqIF37.gif" alt="" />
-            <h3>Advanced Security</h3>
-
-            <p>
-              Cellesti places your trust first with cutting-edge blockchain
-              technology, guaranteeing top-tier encryption and decentralized
-              systems to create a secure investment environment.
-            </p>
-          </div>
-          <div class="choose-card">
-            <img src="/assets/rocketani-MBZ24yAI-MBZ24yAI.gif" alt="" />
-            <h3>Revolutionizing Investment</h3>
-
-            <p>
-              Unlock new opportunities with our fractional investment system,
-              gaining ownership in previously inaccessible Al startups through
-              innovative NFT tokenization
-            </p>
-          </div>
-          <div class="choose-card">
-            <img src="/assets/gallary-8o7qblqQ-8o7qblqQ.gif" alt="" />
-            <h3>Expansive Investment Opportunities</h3>
-
-            <p>
-              Expand your investment horizon by effortlessly diversifying your
-              Al sector portfolio. Explore startups at every stage and align
-              your investments with your financial goals seamlessly
-            </p>
-          </div>
-          <div class="choose-card">
-            <img src="/assets/locker-6KZDsSON-6KZDsSON.gif" alt="" />
-            <h3>Pioneering Rewards for Early Supporters</h3>
-
-            <p>
-              Be a pioneer in tech innovation, enjoying exclusive benefits and
-              insights as an early supporter, setting the stage for potential
-              future gains.
-            </p>
-          </div>
-          <div class="choose-card">
-            <img src="/assets/bonus-VSwt12HR-VSwt12HR.gif" alt="" />
-            <h3>Stay Ahead with Live Monitoring</h3>
-
-            <p>
-              Take charge with our user-friendly dashboard, offering real-time
-              monitoring of your investments. Make informed decisions in the
-              ever-evolving Al landscape
-            </p>
+          <div class="token-img">
+            <img src="/assets/moeda_site_2-kVjEp-pH.png" alt="" />
           </div>
         </div>
       </div>
-    </div>
+      <div class="choose-us" id="why-chose-us">
+        <div class="choose-us-card">
+          <div class="title-choose">
+            <h1>WHY CHOSE US?</h1>
+          </div>
+          <div class="choose-cards">
+            <div class="choose-card" >
+              <img src="/assets/trading-ZcsyNHvh-ZcsyNHvh.gif" alt="" />
+              <h3>Effortheless Investment</h3>
+              <p >
+                Investing in cutting-edge AI startups has never been more
+                accessible. With our seamless and intuitive platform, anyone
+                whether you're an experienced investor or just starting out can
+                easily navigate and start investing in the future of AI
+                technology.
+              </p>
+            </div>
+            <div class="choose-card">
+              <img src="/assets/securelock-x_qqIF37-x_qqIF37.gif" alt="" />
+              <h3>Advanced Security</h3>
 
-    <div class="ai-action">
-      <div class="ai-action-card">
-        <div class="title">
-          <h2>AI IN ACTION:</h2>
+              <p >
+                Your trust and security are our top priorities at Cellesti. We
+                use advanced blockchain technology to keep your investments
+                safe, with top-level encryption and decentralized systems that
+                ensure a highly secure environment.
+              </p>
+            </div>
+            <div class="choose-card">
+              <img src="/assets/rocketani-MBZ24yAI-MBZ24yAI.gif" alt="" />
+              <h3>Revolutionizing Investment</h3>
+
+              <p >
+                Unlock new opportunities with our fractional investment system,
+                gaining ownership in previously inaccessible Al startups through
+                innovative NFT tokenization.
+              </p>
+            </div>
+            <div class="choose-card">
+              <img src="/assets/gallary-8o7qblqQ-8o7qblqQ.gif" alt="" />
+              <h3>Expansive Investment Opportunities</h3>
+
+              <p >
+                Expand your investment scope by easily diversifying your AI
+                portfolio. Discover startups at every stage and align your
+                investments with your financial goals with ease.
+              </p>
+            </div>
+            <div class="choose-card">
+              <img src="/assets/locker-6KZDsSON-6KZDsSON.gif" alt="" />
+              <h3>Pioneering Rewards for Early Supporters</h3>
+
+              <p >
+                Be a pioneer in tech innovation, enjoying exclusive benefits and
+                insights as an early supporter, setting the stage for potential
+                future gains.
+              </p>
+            </div>
+            <div class="choose-card">
+              <img src="/assets/bonus-VSwt12HR-VSwt12HR.gif" alt="" />
+              <h3>Stay Ahead with Live Monitoring</h3>
+
+              <p >
+                Use our simple dashboard to monitor your investments in real
+                time. Make strategic decisions in the rapidly evolving AI
+                sector.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="subtitle">
-          <h3>Smart Finance With Cellesti</h3>
-        </div>
-        <div class="descript">
-          <p>
-            Join our cosmic journey, driven by innovation, community, and
-            Satoshi's vision. Buy, sell, and swap seamlessly in our
-            decentralized ecosystem. Your path to prosperity begins here!
-          </p>
-        </div>
-        <div class="ai-buttons">
-          <button>Buy $CLLS</button>
-          <a href="whitepaper.pdf" target="_blank"  style="text-decoration: none; color: white;"><button>Read more</button></a>
-        </div>
-        <div class="channels">
-          <ul>
-            <a href="https://t.me/cellestifinance" target="_blank">
-              <li>
-                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%20512%20512'%3e%3cpath%20fill='%23ffff'%20d='M470.435%2045.423L16.827%20221.249c-18.254%208.188-24.428%2024.585-4.412%2033.484l116.37%2037.173l281.368-174.79c15.363-10.973%2031.091-8.047%2017.557%204.024L186.053%20341.075l-7.591%2093.076c7.031%2014.371%2019.905%2014.438%2028.117%207.295l66.858-63.589l114.505%2086.187c26.595%2015.826%2041.066%205.613%2046.788-23.394l75.105-357.47c7.798-35.705-5.5-51.437-39.4-37.757'/%3e%3c/svg%3e" alt="" />
-              </li>
-            </a>
-            <a href="https://x.com/coincellesti" target="_blank">
-              <li>
-                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%201024%201024'%3e%3cpath%20fill='%23ffff'%20fill-rule='evenodd'%20d='M921%20912L601.11%20445.745l.546.437L890.084%20112h-96.385L558.738%20384L372.15%20112H119.367l298.648%20435.31l-.036-.037L103%20912h96.385l261.222-302.618L668.217%20912zM333.96%20184.727l448.827%20654.546h-76.38l-449.19-654.546z'/%3e%3c/svg%3e" alt="" />
-              </li>
-            </a>
-            <a href="https://discord.gg/adaAKhjt3w" target="_blank">
-              <li>
-                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%2024%2024'%3e%3cg%20fill='none'%20fill-rule='evenodd'%3e%3cpath%20d='M24%200v24H0V0zM12.593%2023.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023%200%20.029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023%200%200%200-.027.006l-.006.014l-.034.614c0%20.012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3e%3cpath%20fill='%23ffff'%20d='M15.003%204c.744%200%201.53.26%202.25.547l.527.216c1.26.528%201.968%201.636%202.517%202.853c.891%201.975%201.51%204.608%201.724%206.61c.102.95.127%201.906-.056%202.549c-.197.687-.867%201.173-1.518%201.555l-.322.183l-.334.186c-.172.096-.349.191-.525.284l-.522.27l-.717.357l-.577.284a1%201%200%201%201-.894-1.788l.79-.39l-.58-.609c-1.39.57-3.027.893-4.766.893c-1.739%200-3.376-.322-4.766-.893l-.58.608l.793.39a1%201%200%201%201-.894%201.79l-.544-.27c-.402-.2-.805-.398-1.203-.607l-.928-.505l-.321-.183c-.651-.382-1.322-.868-1.518-1.555c-.184-.643-.158-1.598-.057-2.55c.214-2.001.833-4.634%201.724-6.609c.549-1.217%201.257-2.325%202.517-2.853C7.059%204.413%208.072%204%209%204c.603%200%201.077.555.99%201.147A13.65%2013.65%200%200%201%2012%205c.691%200%201.366.05%202.014.148A1.012%201.012%200%200%201%2015.004%204ZM8.75%2010.5a1.75%201.75%200%201%200%200%203.5a1.75%201.75%200%200%200%200-3.5m6.5%200a1.75%201.75%200%201%200%200%203.5a1.75%201.75%200%200%200%200-3.5'/%3e%3c/g%3e%3c/svg%3e" alt="" />
-              </li>
-            </a>
-            <a href="https://medium.com/@cellest" target="_blank">
-              <li>
-                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%20512%20512'%3e%3cpath%20fill='%23ffff'%20d='M71.5%20142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3%2072.1V64h140.2l108.4%20237.7L364.2%2064h133.7v8.1l-38.6%2037c-3.3%202.5-5%206.7-4.3%2010.8v272c-.7%204.1%201%208.3%204.3%2010.8l37.7%2037v8.1H307.3v-8.1l39.1-37.9c3.8-3.8%203.8-5%203.8-10.8V171.2L241.5%20447.1h-14.7L100.4%20171.2v184.9c-1.1%207.8%201.5%2015.6%207%2021.2l50.8%2061.6v8.1h-144v-8L65%20377.3c5.4-5.6%207.9-13.5%206.5-21.2z'/%3e%3c/svg%3e" alt="" />
-              </li>
-            </a>
-          </ul>
-        </div>
-        <p>Powered By:</p>
-        <div class="integrations">
-          <marquee onmouseover="stop()" onmouseleave="start()" direction="Left">
-            <div class="swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img src="data:image/webp;base64,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" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="data:image/webp;base64,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" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="data:image/webp;base64,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" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="data:image/webp;base64,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" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="data:image/webp;base64,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" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="data:image/webp;base64,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" alt="" />
+      </div>
+
+      <div class="ai-action">
+        <div class="ai-action-card">
+          <div class="title">
+            <h1>JOIN OUR COMMUNITY</h1>
+          </div>
+          <div class="subtitle">
+            <h3>Smart Finance With Cellesti</h3>
+          </div>
+          <div class="descript">
+            <p>
+              Join our project, driven by innovation, community and our AI
+              vision. Buy, sell, and swap easily in our decentralized ecosystem.
+              Become a member of our AI community.
+            </p>
+          </div>
+          <div class="ai-buttons">
+            <button>Buy $CLLS</button>
+            <a
+              href="whitepaper.pdf"
+              target="_blank"
+              style="text-decoration: none; color: white"
+              ><button>Read more</button></a
+            >
+          </div>
+          <div class="channels">
+            <ul>
+              <a href="https://t.me/cellestifinance" target="_blank">
+                <li>
+                  <img
+                    src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%20512%20512'%3e%3cpath%20fill='%23ffff'%20d='M470.435%2045.423L16.827%20221.249c-18.254%208.188-24.428%2024.585-4.412%2033.484l116.37%2037.173l281.368-174.79c15.363-10.973%2031.091-8.047%2017.557%204.024L186.053%20341.075l-7.591%2093.076c7.031%2014.371%2019.905%2014.438%2028.117%207.295l66.858-63.589l114.505%2086.187c26.595%2015.826%2041.066%205.613%2046.788-23.394l75.105-357.47c7.798-35.705-5.5-51.437-39.4-37.757'/%3e%3c/svg%3e"
+                    alt=""
+                  />
+                </li>
+              </a>
+              <a href="https://x.com/coincellesti" target="_blank">
+                <li>
+                  <img
+                    src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%201024%201024'%3e%3cpath%20fill='%23ffff'%20fill-rule='evenodd'%20d='M921%20912L601.11%20445.745l.546.437L890.084%20112h-96.385L558.738%20384L372.15%20112H119.367l298.648%20435.31l-.036-.037L103%20912h96.385l261.222-302.618L668.217%20912zM333.96%20184.727l448.827%20654.546h-76.38l-449.19-654.546z'/%3e%3c/svg%3e"
+                    alt=""
+                  />
+                </li>
+              </a>
+              <a href="https://discord.gg/adaAKhjt3w" target="_blank">
+                <li>
+                  <img
+                    src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%2024%2024'%3e%3cg%20fill='none'%20fill-rule='evenodd'%3e%3cpath%20d='M24%200v24H0V0zM12.593%2023.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023%200%20.029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023%200%200%200-.027.006l-.006.014l-.034.614c0%20.012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3e%3cpath%20fill='%23ffff'%20d='M15.003%204c.744%200%201.53.26%202.25.547l.527.216c1.26.528%201.968%201.636%202.517%202.853c.891%201.975%201.51%204.608%201.724%206.61c.102.95.127%201.906-.056%202.549c-.197.687-.867%201.173-1.518%201.555l-.322.183l-.334.186c-.172.096-.349.191-.525.284l-.522.27l-.717.357l-.577.284a1%201%200%201%201-.894-1.788l.79-.39l-.58-.609c-1.39.57-3.027.893-4.766.893c-1.739%200-3.376-.322-4.766-.893l-.58.608l.793.39a1%201%200%201%201-.894%201.79l-.544-.27c-.402-.2-.805-.398-1.203-.607l-.928-.505l-.321-.183c-.651-.382-1.322-.868-1.518-1.555c-.184-.643-.158-1.598-.057-2.55c.214-2.001.833-4.634%201.724-6.609c.549-1.217%201.257-2.325%202.517-2.853C7.059%204.413%208.072%204%209%204c.603%200%201.077.555.99%201.147A13.65%2013.65%200%200%201%2012%205c.691%200%201.366.05%202.014.148A1.012%201.012%200%200%201%2015.004%204ZM8.75%2010.5a1.75%201.75%200%201%200%200%203.5a1.75%201.75%200%200%200%200-3.5m6.5%200a1.75%201.75%200%201%200%200%203.5a1.75%201.75%200%200%200%200-3.5'/%3e%3c/g%3e%3c/svg%3e"
+                    alt=""
+                  />
+                </li>
+              </a>
+              <a href="https://medium.com/@cellest" target="_blank">
+                <li>
+                  <img
+                    src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%20512%20512'%3e%3cpath%20fill='%23ffff'%20d='M71.5%20142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3%2072.1V64h140.2l108.4%20237.7L364.2%2064h133.7v8.1l-38.6%2037c-3.3%202.5-5%206.7-4.3%2010.8v272c-.7%204.1%201%208.3%204.3%2010.8l37.7%2037v8.1H307.3v-8.1l39.1-37.9c3.8-3.8%203.8-5%203.8-10.8V171.2L241.5%20447.1h-14.7L100.4%20171.2v184.9c-1.1%207.8%201.5%2015.6%207%2021.2l50.8%2061.6v8.1h-144v-8L65%20377.3c5.4-5.6%207.9-13.5%206.5-21.2z'/%3e%3c/svg%3e"
+                    alt=""
+                  />
+                </li>
+              </a>
+            </ul>
+          </div>
+          <p>Powered By:</p>
+          <div class="integrations">
+            <marquee
+              onmouseover="stop()"
+              onmouseleave="start()"
+              direction="Left"
+            >
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img
+                      src="data:image/webp;base64,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"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="data:image/webp;base64,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"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="data:image/webp;base64,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"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="data:image/webp;base64,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"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="data:image/webp;base64,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"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="data:image/webp;base64,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"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          </marquee>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="pb-5 animate-on-scroll animate__animated" data-animation="animate__fadeInUp">
-          <div class="staking-title">
-            <h1 style="color: #2ed0ff; font-family: toxigenesis">
-              CLAIM YOUR TOKENS
-            </h1>
+            </marquee>
           </div>
+        </div>
 
-          <div class="d-flex justify-content-center">
-            <div class="crom" style="display: flex; justify-content: center; margin-top: 20px">
-              <button type="button" id="connecClaimtButton" class="btn btn-primary claimbtn"
-                style="font-family: toxigenesis">
-                See Your Claimable tokens
-              </button>
-              <button type="button" id="claimTokens" class="btn1 btn text-center prsale-argentabold" style="
+        <div class="container">
+          <div
+            class="pb-5 animate-on-scroll animate__animated"
+            data-animation="animate__fadeInUp"
+          >
+            <div class="staking-title">
+              <h1 style="color: #2ed0ff; font-family: toxigenesis">
+                CLAIM YOUR TOKENS
+              </h1>
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <div
+                class="crom"
+                style="display: flex; justify-content: center; margin-top: 20px"
+              >
+                <button
+                  type="button"
+                  id="connecClaimtButton"
+                  class="btn btn-primary claimbtn"
+                  style="font-family: toxigenesis"
+                >
+                  See Your Claimable tokens
+                </button>
+                <button
+                  type="button"
+                  id="claimTokens"
+                  class="btn1 btn text-center prsale-argentabold"
+                  style="
                     margin-left: 10px;
                     background-color: #1fa2ed;
                     margin-top: 35px;
@@ -631,294 +825,300 @@
                     color: white;
                     font-weight: 800;
                     width: 520px;
-                  ">
-                <h6 class="card-title vin text-center d-flex flex-column justify-content-center ml-2"
-                  style="font-weight: 700; color: white !important">
-                  Claimable Tokens :
-                  <div style="text-align: center" id="tokens-claim"></div>
-                  Bonus Tokens :
-                  <div style="text-align: center" id="bonus-claim"></div>
-                </h6>
-              </button>
+                  "
+                >
+                  <h6
+                    class="card-title vin text-center d-flex flex-column justify-content-center ml-2"
+                    style="font-weight: 700; color: white !important"
+                  >
+                    Claimable Tokens :
+                    <div style="text-align: center" id="tokens-claim"></div>
+                    Bonus Tokens :
+                    <div style="text-align: center" id="bonus-claim"></div>
+                  </h6>
+                </button>
+              </div>
             </div>
-          </div>
-          <p class="text-center crom text-white mt-5 mate__animated" data-animation="animate__zoomInUp">
-            Tokens can be claimed at the end of the presale
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="staking">
-      <div class="card-staking">
-        <div class="staking-title">
-          <h1>STAKING</h1>
-        </div>
-        <div class="staking-text">
-          By staking $CLLS tokens, investors can earn rewards from our 5% sell
-          tax, which goes to a dedicated reward pool. Staking provides a
-          unique opportunity for our community to earn $CLLS token rewards
-          while supporting the growth of Al technology start-ups.
-        </div>
-        <div class="staking-image">
-          <img src="/assets/Macbook Pro-XG8lWYFH.png" width="1000px" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="how-it-works">
-      <div class="how-it-works-card">
-        <div class="title">
-          <h1>How It Works</h1>
-        </div>
-        <div class="image">
-          <img src="/assets/HOW IT WORKS@2x-0UAYVnhP.webp" id="responsive-image" width="1000px" style="margin-right: 20px"
-            alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="tokenomics" id="token-details">
-      <div class="tokenomics-card">
-        <div class="title">
-          <h1>TOKENOMICS</h1>
-        </div>
-        <div class="coin">
-          <img src="/assets/ELEMENT-mX17WglQ.png" alt="" width="700px" />
-        </div>
-        <div class="percents">
-          <div class="percents-text">
-            <div class="title">Public Sale</div>
-            <div class="value">975,000,000</div>
-          </div>
-          <div class="progress">
-            <div class="progress-container">
-              <div class="progress-bar"></div>
-            </div>
-            <div class="progress-value">
-              <h1>65%</h1>
-            </div>
-          </div>
-        </div>
-        <div class="percents">
-          <div class="percents-text">
-            <div class="title">Development Team</div>
-            <div class="value">225,000,000</div>
-          </div>
-          <div class="progress">
-            <div class="progress-container">
-              <div class="progress-bar-15"></div>
-            </div>
-            <div class="progress-value">
-              <h1>15%</h1>
-            </div>
-          </div>
-        </div>
-        <div class="percents">
-          <div class="percents-text">
-            <div class="title">LP + Exchange Listing + Reward Pool</div>
-            <div class="value">150,000,000</div>
-          </div>
-          <div class="progress">
-            <div class="progress-container">
-              <div class="progress-bar-10"></div>
-            </div>
-            <div class="progress-value">
-              <h1>10%</h1>
-            </div>
-          </div>
-        </div>
-        <div class="percents">
-          <div class="percents-text">
-            <div class="title">Marketing</div>
-            <div class="value">75,000,000</div>
-          </div>
-          <div class="progress">
-            <div class="progress-container">
-              <div class="progress-bar-5"></div>
-            </div>
-            <div class="progress-value">
-              <h1>5%</h1>
-            </div>
-          </div>
-        </div>
-        <div class="percents">
-          <div class="percents-text">
-            <div class="title">Legal & Advisors</div>
-            <div class="value">75,000,000</div>
-          </div>
-          <div class="progress">
-            <div class="progress-container">
-              <div class="progress-bar-5"></div>
-            </div>
-            <div class="progress-value">
-              <h1>5%</h1>
-            </div>
+            <p
+              class="text-center crom text-white mt-5 mate__animated"
+              data-animation="animate__zoomInUp"
+            >
+              Tokens can be claimed at the end of the presale
+            </p>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="notebook">
-      <div class="notebook-card">
-        <div class="notebook-title">
-          <h1>GOVERNANCE</h1>
-        </div>
-        <div class="notebook-text">
-          <p>
-            The $CLLS token is designed to act as a governance token,
-            empowering its holders to actively participate in the
-            decision-making processes of the platform. As a governance token,
-            $CLLS holders will have the ability to propose, discuss, and vote
-            on various aspects related to the platform's development,
-            operation, and future direction. Cellesti is creating a more
-            democratic and community-driven ecosystem. This function
-            encourages active participation from token holders, allowing them
-            to shape the platform's future and contribute to the growth and
-            success of Al technology start-ups.
-          </p>
-        </div>
-        <img src="/assets/Macbook Pro_01-91MSnaJ4.png" alt="" />
-      </div>
-    </div>
-
-    <div class="giveaway">
-      <div class="giveaway-card">
-        <img src="/assets/BACKGROUND-fy0gDmrd.png" alt="" />
-        <img src="/assets/GIFT-dPKtxJqc.png" alt="" id="gift" />
-        <img src="/assets/CAR-4FD8AK8M.png" alt="" id="car" />
-        <div class="giveway-text">
-          <h1 class="giveaway-title">JOIN THE GIVEAWAY!</h1>
-          <p>
-            Ready to win big? Participate in the great
-            <b>Tesla Model S Giveaway</b>. Participate and complete all
-            entries for you chance to win the grand prize. Dont't miss your
-            chace to be the lucky winner!
-          </p>
-          <button id="giveaway-button" class="connect-wallet">
-            LET'S PLAY RAFFLE
-          </button>
+      <div class="staking">
+        <div class="card-staking">
+          <div class="staking-title">
+            <h1>STAKING</h1>
+          </div>
+          <div class="staking-text">
+            By staking $CLLS tokens, investors can earn rewards from our 10%
+            sell tax, which is allocated to a dedicated reward pool. The staking
+            mechanism offers a unique opportunity for our community to earn
+            $CLLS token rewards while helping drive the growth of AI technology
+            startups.
+          </div>
+          <div class="staking-image">
+            <img src="/assets/Macbook Pro-XG8lWYFH.png" width="1000px" alt="" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="apostrofo">
-      <div class="apostrofo-card">
-        <img src="/assets/REFERENCE-Z3VF13DG.png" alt="" />
+      <div class="how-it-works">
+        <div class="how-it-works-card">
+          <div class="title">
+            HOW IT WORKS
+          </div>
+          <div class="image">
+            <img
+              src="/assets/HOW IT WORKS@2x-0UAYVnhP.webp"
+              id="responsive-image"
+              width="1000px"
+              style="margin-right: 20px"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="ai-startups">
-      <div class="ai-startups-card">
-        <h1>AI START-UPS APPLY</h1>
-        <div class="ai-startups-text">
-          <p>
-            Are you an Al start-up looking to raise funds and engage with your
-            community?
-          </p>
-          <br />
-          <p>
-            Our FT marketplace provides an Innovative way to mint investment
-            acoess to our passionate community of investors who are dedicated
-            to supporting the growth of Al technology. Our FT marketplace
-            provides an Innovative way to mint investment acoess to our
-            passionate community of investors who are dedicated to supporting
-            the growth of Al technology
-          </p>
-          <div class="startup-buttons">
-            <button target="_blank">
-              <a href="https://1iqedh3ycv3.typeform.com/to/NFIFxgJs" target="_blank"
-                style="text-decoration: none; color: inherit">
-                Apply
-              </a>
+      <div class="tokenomics" id="token-details">
+        <div class="tokenomics-card">
+          <div class="title">
+            <h1>TOKENOMICS</h1>
+          </div>
+          <div class="coin">
+            <img src="/assets/ELEMENT-mX17WglQ.png" alt="" width="700px" />
+          </div>
+          <div class="percents">
+            <div class="percents-text">
+              <div class="title">Public Sale</div>
+              <div class="value">975,000,000</div>
+            </div>
+            <div class="progress">
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="progress-value">
+                <h1>65%</h1>
+              </div>
+            </div>
+          </div>
+          <div class="percents">
+            <div class="percents-text">
+              <div class="title">Development Team</div>
+              <div class="value">225,000,000</div>
+            </div>
+            <div class="progress">
+              <div class="progress-container">
+                <div class="progress-bar-15"></div>
+              </div>
+              <div class="progress-value">
+                <h1>15%</h1>
+              </div>
+            </div>
+          </div>
+          <div class="percents">
+            <div class="percents-text">
+              <div class="title">LP + Exchange Listing + Reward Pool</div>
+              <div class="value">150,000,000</div>
+            </div>
+            <div class="progress">
+              <div class="progress-container">
+                <div class="progress-bar-10"></div>
+              </div>
+              <div class="progress-value">
+                <h1>10%</h1>
+              </div>
+            </div>
+          </div>
+          <div class="percents">
+            <div class="percents-text">
+              <div class="title">Marketing</div>
+              <div class="value">75,000,000</div>
+            </div>
+            <div class="progress">
+              <div class="progress-container">
+                <div class="progress-bar-5"></div>
+              </div>
+              <div class="progress-value">
+                <h1>5%</h1>
+              </div>
+            </div>
+          </div>
+          <div class="percents">
+            <div class="percents-text">
+              <div class="title">Legal & Advisors</div>
+              <div class="value">75,000,000</div>
+            </div>
+            <div class="progress">
+              <div class="progress-container">
+                <div class="progress-bar-5"></div>
+              </div>
+              <div class="progress-value">
+                <h1>5%</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notebook">
+        <div class="notebook-card">
+          <div class="notebook-title">
+            <h1>GOVERNANCE</h1>
+          </div>
+          <div class="notebook-text">
+            <p>
+              The $CLLS token empowers holders to actively participate in the
+              platform's decision-making. By proposing, discussing, and voting
+              on key issues, they help shape the platform’s future. This
+              community-driven approach supports the growth of AI startups while
+              promoting a more collaborative ecosystem.
+            </p>
+          </div>
+          <img src="/assets/Macbook Pro_01-91MSnaJ4.png" alt="" />
+        </div>
+      </div>
+
+      <div class="giveaway">
+        <div class="giveaway-card">
+          <img src="/assets/BACKGROUND-fy0gDmrd.png" alt="" />
+          <img src="/assets/GIFT-dPKtxJqc.png" alt="" id="gift" />
+          <img src="/assets/CAR-4FD8AK8M.png" alt="" id="car" />
+          <div class="giveway-text">
+            <h1 class="giveaway-title">JOIN THE GIVEAWAY!</h1>
+            <p>
+              Ready to win big? Participate in the great
+              <b>Tesla Model S Giveaway</b>. Participate and complete all
+              entries for you chance to win the grand prize. Dont't miss your
+              chace to be the lucky winner!
+            </p>
+            <button id="giveaway-button" class="connect-wallet">
+              LET'S PLAY RAFFLE
             </button>
-            <button>Buy $CLLS</button>
           </div>
         </div>
       </div>
-    </div>
-    <div id="faqs" class="faq">
-      <div class="faq-title">
-        <h1>FAQS</h1>
-      </div>
-      <h3>You may have question, we have the answers.</h3>
-      <div class="faqWrapper">
-        <input id="faq-a" type="checkbox" />
-        <label for="faq-a">
-          <p class="faq-heading">What is Cellesti TOKEN?</p>
-          <div class="faq-arrow"></div>
-          <p class="faq-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-            suspendisse potenti.
-          </p>
-        </label>
-        <input id="faq-b" type="checkbox" />
-        <label for="faq-b">
-          <p class="faq-heading">
-            How do i purchase Cellesti token from presale?
-          </p>
-          <div class="faq-arrow"></div>
-          <p class="faq-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-            suspendisse potenti.
-          </p>
-        </label>
-        <input id="faq-c" type="checkbox" />
-        <label for="faq-c">
-          <p class="faq-heading">
-            Which Blockchain network is Cellesti token on?
-          </p>
-          <div class="faq-arrow"></div>
-          <p class="faq-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-            suspendisse potenti.
-          </p>
-        </label>
-        <input id="faq-d" type="checkbox" />
-        <label for="faq-d">
-          <p class="faq-heading">How do claim my Tokens?</p>
-          <div class="faq-arrow"></div>
-          <p class="faq-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-            suspendisse potenti.
-          </p>
-        </label>
-        <input id="faq-e" type="checkbox" />
-        <label for="faq-e">
-          <p class="faq-heading">
-            How Can i Store and Manage My Cellesti Tokens?
-          </p>
-          <div class="faq-arrow"></div>
-          <p class="faq-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-            suspendisse potenti.
-          </p>
-        </label>
 
-        <div class="faq faq-item-hide">
-          <input id="faq-g" type="checkbox" />
-          <label for="faq-g">
-            <p class="faq-heading">Como é calculada a taxa de juros?</p>
+      <div class="apostrofo">
+        <div class="apostrofo-card">
+          <img src="/assets/REFERENCE-Z3VF13DG.png" alt="" />
+        </div>
+      </div>
+
+      <div class="ai-startups">
+        <div class="ai-startups-card">
+          <h1>AI START-UPS APPLY</h1>
+          <div class="ai-startups-text">
+            <p>
+              Are you an Al start-up looking to raise funds and engage with your
+              community?
+            </p>
+            <br />
+            <p>
+              Our NFT marketplace offers an innovative platform for minting
+              investment opportunities, connecting a dedicated community of
+              investors committed to advancing AI technology. Through this
+              marketplace, investors can access unique investment options while
+              supporting the growth and development of cutting-edge AI startups.
+            </p>
+            <div class="startup-buttons">
+              <button target="_blank">
+                <a
+                  href="https://1iqedh3ycv3.typeform.com/to/NFIFxgJs"
+                  target="_blank"
+                  style="text-decoration: none; color: inherit"
+                >
+                  Apply
+                </a>
+              </button>
+              <button>Buy $CLLS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="faqs" class="faq">
+        <div class="faq-title">
+          <h1>FAQS</h1>
+        </div>
+        <h3>You may have question, we have the answers.</h3>
+        <div class="faqWrapper">
+          <input id="faq-a" type="checkbox" />
+          <label for="faq-a">
+            <p class="faq-heading">What is Cellesti TOKEN?</p>
             <div class="faq-arrow"></div>
             <p class="faq-text">
-              Os juros são a partir de 2% ao mês, podendo sofrer alterações.
-              Contudo, toda solicitação passa por uma análise de crédito que
-              avalia o perfil do solicitante.
+              Cellesti is a crypto crowdfunding NFT platform that allows users
+              to invest in AI start-up projects using Fiat and Crypto. The NFT
+              marketplace enables start-ups to raise funds and engage with their
+              community by offering reward and equity based NFTs.
             </p>
           </label>
+          <input id="faq-b" type="checkbox" />
+          <label for="faq-b">
+            <p class="faq-heading">
+              How do i purchase Cellesti token from presale?
+            </p>
+            <div class="faq-arrow"></div>
+            <p class="faq-text">
+              $CLLS tokens can be purchased during the presale period through
+              the Cellesti website using ETH, USDT, BTC and many more supported
+              cryptocurrencies.
+            </p>
+          </label>
+          <input id="faq-c" type="checkbox" />
+          <label for="faq-c">
+            <p class="faq-heading">
+              Which Blockchain network is Cellesti token on?
+            </p>
+            <div class="faq-arrow"></div>
+            <p class="faq-text">
+              Cellesti is built on the Ethereum (ETH), leveraging its speed,
+              usability and compatibility with decentralized applications to
+              create a seamless user experience.
+            </p>
+          </label>
+          <input id="faq-d" type="checkbox" />
+          <label for="faq-d">
+            <p class="faq-heading">How do claim my Tokens?</p>
+            <div class="faq-arrow"></div>
+            <p class="faq-text">
+              Once the presale ends, you just need to connect your wallet and
+              press the claim button. Once the transaction is complete, import
+              the Cellesti token address into your wallet and you’ll be able to
+              see your tokens.
+            </p>
+          </label>
+          <input id="faq-e" type="checkbox" />
+          <label for="faq-e">
+            <p class="faq-heading">
+              How can I storage and manage my Cellesti tokens?
+            </p>
+            <div class="faq-arrow"></div>
+            <p class="faq-text">
+              Cellesti tokens can be stored and managed in compatible
+              cryptocurrency wallets. We recommend using wallets that support
+              Ethereum, such as MetaMask or Trust Wallet.
+            </p>
+          </label>
+
+          <div class="faq faq-item-hide">
+            <input id="faq-g" type="checkbox" />
+            <label for="faq-g">
+              <p class="faq-heading">Como é calculada a taxa de juros?</p>
+              <div class="faq-arrow"></div>
+              <p class="faq-text">
+                Os juros são a partir de 2% ao mês, podendo sofrer alterações.
+                Contudo, toda solicitação passa por uma análise de crédito que
+                avalia o perfil do solicitante.
+              </p>
+            </label>
+          </div>
         </div>
-      </div>
-      <!-- <div class="accordion">
+        <!-- <div class="accordion">
           <div class="accordion-item">
             <div
               id="accordion-button-1"
@@ -1126,128 +1326,190 @@
             </div>
           </div>
         </div> -->
-    </div>
-  </main>
+      </div>
+    </main>
 
-  <footer style="background: linear-gradient(to bottom, #090e0f, #071e25);padding-bottom: 10px;">
-    <div>
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-      <defs>
-      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-      </defs>
-      <g class="parallax">
-      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(8, 68, 83, .2)" />
-      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(8, 68, 83, .5)" />
-      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(8, 68, 83, .3)" />
-      <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(8, 68, 83, .8)" />
-      </g>
-      </svg>
-    </div>
-    <div class="footer content" style="background: linear-gradient(to bottom, rgb(8, 68, 83), #071e25) !important;backdrop-filter: none;max-width: none;margin-bottom: -17px;">
-      <!--Waves Container-->
+    <footer
+      style="
+        background: linear-gradient(to bottom, #090e0f, #071e25);
+        padding-bottom: 10px;
+      "
+    >
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(8, 68, 83, .2)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(8, 68, 83, .5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(8, 68, 83, .3)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="7"
+              fill="rgba(8, 68, 83, .8)"
+            />
+          </g>
+        </svg>
+      </div>
+      <div
+        class="footer content"
+        style="
+          background: linear-gradient(
+            to bottom,
+            rgb(8, 68, 83),
+            #071e25
+          ) !important;
+          backdrop-filter: none;
+          max-width: none;
+          margin-bottom: -17px;
+        "
+      >
+        <!--Waves Container-->
         <!--Waves end-->
-      <div class="footer-card" style="background: transparent !important;">
-        <div class="logo">
-          <img src="/assets/Objeto Inteligente de Vetor@1_5x-TryXWyoe.webp" alt="" />
-          <p>Copyright © 2024. All rights reserved by Cellesti.</p>
-        </div>
-        <div class="our-sociais">
-          <p>Our socials</p>
-          <div class="channels">
-            <ul>
-              <a href="https://t.me/cellestifinance" target="_blank">
-                <li>
-                  <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%20512%20512'%3e%3cpath%20fill='%23ffff'%20d='M470.435%2045.423L16.827%20221.249c-18.254%208.188-24.428%2024.585-4.412%2033.484l116.37%2037.173l281.368-174.79c15.363-10.973%2031.091-8.047%2017.557%204.024L186.053%20341.075l-7.591%2093.076c7.031%2014.371%2019.905%2014.438%2028.117%207.295l66.858-63.589l114.505%2086.187c26.595%2015.826%2041.066%205.613%2046.788-23.394l75.105-357.47c7.798-35.705-5.5-51.437-39.4-37.757'/%3e%3c/svg%3e" alt="" />
-                </li>
-              </a>
-              <a href="https://x.com/coincellesti" target="_blank">
-                <li>
-                  <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%201024%201024'%3e%3cpath%20fill='%23ffff'%20fill-rule='evenodd'%20d='M921%20912L601.11%20445.745l.546.437L890.084%20112h-96.385L558.738%20384L372.15%20112H119.367l298.648%20435.31l-.036-.037L103%20912h96.385l261.222-302.618L668.217%20912zM333.96%20184.727l448.827%20654.546h-76.38l-449.19-654.546z'/%3e%3c/svg%3e" alt="" />
-                </li>
-              </a>
-              <a href="https://discord.gg/adaAKhjt3w" target="_blank">
-                <li>
-                  <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%2024%2024'%3e%3cg%20fill='none'%20fill-rule='evenodd'%3e%3cpath%20d='M24%200v24H0V0zM12.593%2023.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023%200%20.029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023%200%200%200-.027.006l-.006.014l-.034.614c0%20.012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3e%3cpath%20fill='%23ffff'%20d='M15.003%204c.744%200%201.53.26%202.25.547l.527.216c1.26.528%201.968%201.636%202.517%202.853c.891%201.975%201.51%204.608%201.724%206.61c.102.95.127%201.906-.056%202.549c-.197.687-.867%201.173-1.518%201.555l-.322.183l-.334.186c-.172.096-.349.191-.525.284l-.522.27l-.717.357l-.577.284a1%201%200%201%201-.894-1.788l.79-.39l-.58-.609c-1.39.57-3.027.893-4.766.893c-1.739%200-3.376-.322-4.766-.893l-.58.608l.793.39a1%201%200%201%201-.894%201.79l-.544-.27c-.402-.2-.805-.398-1.203-.607l-.928-.505l-.321-.183c-.651-.382-1.322-.868-1.518-1.555c-.184-.643-.158-1.598-.057-2.55c.214-2.001.833-4.634%201.724-6.609c.549-1.217%201.257-2.325%202.517-2.853C7.059%204.413%208.072%204%209%204c.603%200%201.077.555.99%201.147A13.65%2013.65%200%200%201%2012%205c.691%200%201.366.05%202.014.148A1.012%201.012%200%200%201%2015.004%204ZM8.75%2010.5a1.75%201.75%200%201%200%200%203.5a1.75%201.75%200%200%200%200-3.5m6.5%200a1.75%201.75%200%201%200%200%203.5a1.75%201.75%200%200%200%200-3.5'/%3e%3c/g%3e%3c/svg%3e" alt="" />
-                </li>
-              </a>
-              <a href="https://medium.com/@cellest" target="_blank">
-                <li>
-                  <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%20512%20512'%3e%3cpath%20fill='%23ffff'%20d='M71.5%20142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3%2072.1V64h140.2l108.4%20237.7L364.2%2064h133.7v8.1l-38.6%2037c-3.3%202.5-5%206.7-4.3%2010.8v272c-.7%204.1%201%208.3%204.3%2010.8l37.7%2037v8.1H307.3v-8.1l39.1-37.9c3.8-3.8%203.8-5%203.8-10.8V171.2L241.5%20447.1h-14.7L100.4%20171.2v184.9c-1.1%207.8%201.5%2015.6%207%2021.2l50.8%2061.6v8.1h-144v-8L65%20377.3c5.4-5.6%207.9-13.5%206.5-21.2z'/%3e%3c/svg%3e" alt="" />
-                </li>
-              </a>
-            </ul>
+        <div class="footer-card" style="background: transparent !important">
+          <div class="logo">
+            <img
+              src="/assets/Objeto Inteligente de Vetor@1_5x-TryXWyoe.webp"
+              alt=""
+            />
+            <p>Copyright © 2024. All rights reserved by Cellesti.</p>
+          </div>
+          <div class="our-sociais">
+            <p>Our socials</p>
+            <div class="channels">
+              <ul>
+                <a href="https://t.me/cellestifinance" target="_blank">
+                  <li>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%20512%20512'%3e%3cpath%20fill='%23ffff'%20d='M470.435%2045.423L16.827%20221.249c-18.254%208.188-24.428%2024.585-4.412%2033.484l116.37%2037.173l281.368-174.79c15.363-10.973%2031.091-8.047%2017.557%204.024L186.053%20341.075l-7.591%2093.076c7.031%2014.371%2019.905%2014.438%2028.117%207.295l66.858-63.589l114.505%2086.187c26.595%2015.826%2041.066%205.613%2046.788-23.394l75.105-357.47c7.798-35.705-5.5-51.437-39.4-37.757'/%3e%3c/svg%3e"
+                      alt=""
+                    />
+                  </li>
+                </a>
+                <a href="https://x.com/coincellesti" target="_blank">
+                  <li>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%201024%201024'%3e%3cpath%20fill='%23ffff'%20fill-rule='evenodd'%20d='M921%20912L601.11%20445.745l.546.437L890.084%20112h-96.385L558.738%20384L372.15%20112H119.367l298.648%20435.31l-.036-.037L103%20912h96.385l261.222-302.618L668.217%20912zM333.96%20184.727l448.827%20654.546h-76.38l-449.19-654.546z'/%3e%3c/svg%3e"
+                      alt=""
+                    />
+                  </li>
+                </a>
+                <a href="https://discord.gg/adaAKhjt3w" target="_blank">
+                  <li>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%2024%2024'%3e%3cg%20fill='none'%20fill-rule='evenodd'%3e%3cpath%20d='M24%200v24H0V0zM12.593%2023.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023%200%20.029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023%200%200%200-.027.006l-.006.014l-.034.614c0%20.012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3e%3cpath%20fill='%23ffff'%20d='M15.003%204c.744%200%201.53.26%202.25.547l.527.216c1.26.528%201.968%201.636%202.517%202.853c.891%201.975%201.51%204.608%201.724%206.61c.102.95.127%201.906-.056%202.549c-.197.687-.867%201.173-1.518%201.555l-.322.183l-.334.186c-.172.096-.349.191-.525.284l-.522.27l-.717.357l-.577.284a1%201%200%201%201-.894-1.788l.79-.39l-.58-.609c-1.39.57-3.027.893-4.766.893c-1.739%200-3.376-.322-4.766-.893l-.58.608l.793.39a1%201%200%201%201-.894%201.79l-.544-.27c-.402-.2-.805-.398-1.203-.607l-.928-.505l-.321-.183c-.651-.382-1.322-.868-1.518-1.555c-.184-.643-.158-1.598-.057-2.55c.214-2.001.833-4.634%201.724-6.609c.549-1.217%201.257-2.325%202.517-2.853C7.059%204.413%208.072%204%209%204c.603%200%201.077.555.99%201.147A13.65%2013.65%200%200%201%2012%205c.691%200%201.366.05%202.014.148A1.012%201.012%200%200%201%2015.004%204ZM8.75%2010.5a1.75%201.75%200%201%200%200%203.5a1.75%201.75%200%200%200%200-3.5m6.5%200a1.75%201.75%200%201%200%200%203.5a1.75%201.75%200%200%200%200-3.5'/%3e%3c/g%3e%3c/svg%3e"
+                      alt=""
+                    />
+                  </li>
+                </a>
+                <a href="https://medium.com/@cellest" target="_blank">
+                  <li>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%20512%20512'%3e%3cpath%20fill='%23ffff'%20d='M71.5%20142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3%2072.1V64h140.2l108.4%20237.7L364.2%2064h133.7v8.1l-38.6%2037c-3.3%202.5-5%206.7-4.3%2010.8v272c-.7%204.1%201%208.3%204.3%2010.8l37.7%2037v8.1H307.3v-8.1l39.1-37.9c3.8-3.8%203.8-5%203.8-10.8V171.2L241.5%20447.1h-14.7L100.4%20171.2v184.9c-1.1%207.8%201.5%2015.6%207%2021.2l50.8%2061.6v8.1h-144v-8L65%20377.3c5.4-5.6%207.9-13.5%206.5-21.2z'/%3e%3c/svg%3e"
+                      alt=""
+                    />
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="text">
+            <h4>info@cellesti.ai</h4>
+            <hr />
+            <h4>Disclaimer</h4>
+            <p>
+              Cryptocurrency investments carry a high risk of volatility. Be
+              aware of the tax implications, as profits may be subject to
+              capital gains or other taxes in your jurisdiction. Cryptocurrency
+              regulations can vary, so ensure you understand the rules in your
+              area. Conduct thorough research and invest only what you can
+              afford to lose.
+            </p>
           </div>
         </div>
-        <div class="text">
-          <h4>info@cellesti.ai</h4>
-          <hr />
-          <h4>Disclaimer</h4>
-          <p>
-            Cryptocurrency investments carry a high risk of volatility. Be
-            aware of the tax implications, as profits may be subject to
-            capital gains or other taxes in your jurisdiction. Cryptocurrency
-            regulations can vary, so ensure you understand the rules in your
-            area. Conduct thorough research and invest only what you can
-            afford to lose.
-          </p>
-        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 
-  <!-- Bootstrap JS Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Swiper JS (if you need it) -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <!-- Swiper JS (if you need it) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
-  <!-- Web3 and Web3Modal Scripts (if you need them) -->
+    <!-- Web3 and Web3Modal Scripts (if you need them) -->
 
-  <!-- <script type="module" src="js/functions.js"></script> -->
-  <!-- <script src="js/swiper.js"></script> -->
+    <!-- <script type="module" src="js/functions.js"></script> -->
+    <!-- <script src="js/swiper.js"></script> -->
 
+    <script>
+      // Select the buttons
+      const ethButton = document.getElementById("ETHbutton");
+      const usdtButton = document.getElementById("USDTbutton");
 
-  <script>
-    // Select the buttons
-    const ethButton = document.getElementById("ETHbutton");
-    const usdtButton = document.getElementById("USDTbutton");
+      // Initially set ETHbutton as active
+      ethButton.classList.add("active");
 
-    // Initially set ETHbutton as active
-    ethButton.classList.add("active");
-
-    // Function to toggle active class
-    function toggleActive(clickedButton, otherButton) {
-      clickedButton.classList.add("active");
-      otherButton.classList.remove("active");
-    }
-
-    // Add event listeners to the buttons
-    ethButton.addEventListener("click", () => {
-      toggleActive(ethButton, usdtButton);
-    });
-
-    usdtButton.addEventListener("click", () => {
-      toggleActive(usdtButton, ethButton);
-    });
-  </script>
-  <script>
-    // Change navbar color on scroll
-    window.addEventListener("scroll", function () {
-      const navbar = document.getElementById("navbar");
-      if (window.scrollY > 50) {
-        navbar.classList.add("navbar-scrolled");
-      } else {
-        navbar.classList.remove("navbar-scrolled");
+      // Function to toggle active class
+      function toggleActive(clickedButton, otherButton) {
+        clickedButton.classList.add("active");
+        otherButton.classList.remove("active");
       }
-    });
-  </script>
-  <!-- <script>
+
+      // Add event listeners to the buttons
+      ethButton.addEventListener("click", () => {
+        toggleActive(ethButton, usdtButton);
+      });
+
+      usdtButton.addEventListener("click", () => {
+        toggleActive(usdtButton, ethButton);
+      });
+    </script>
+    <script>
+      // Change navbar color on scroll
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("navbar-scrolled");
+        } else {
+          navbar.classList.remove("navbar-scrolled");
+        }
+      });
+    </script>
+    <!-- <script>
       const items = document.querySelectorAll(".accordion-button");
 
       function toggleAccordion() {
@@ -1264,31 +1526,30 @@
 
       items.forEach((item) => item.addEventListener("click", toggleAccordion));
     </script> -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const showMoreBtn = document.getElementById("showMore");
-      const showLessBtn = document.getElementById("showLess");
-      const hiddenFaqItems = document.querySelectorAll(".faq-item-hide"); // Seleciona as perguntas ocultas
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const showMoreBtn = document.getElementById("showMore");
+        const showLessBtn = document.getElementById("showLess");
+        const hiddenFaqItems = document.querySelectorAll(".faq-item-hide"); // Seleciona as perguntas ocultas
 
-      // Mostrar mais perguntas
-      showMoreBtn.addEventListener("click", function () {
-        hiddenFaqItems.forEach((item) => {
-          item.style.display = "block"; // Altera para 'block' para exibir
+        // Mostrar mais perguntas
+        showMoreBtn.addEventListener("click", function () {
+          hiddenFaqItems.forEach((item) => {
+            item.style.display = "block"; // Altera para 'block' para exibir
+          });
+          showMoreBtn.style.display = "none"; // Esconde o botão "Ver mais"
+          showLessBtn.style.display = "inline"; // Mostra o botão "Ver menos"
         });
-        showMoreBtn.style.display = "none"; // Esconde o botão "Ver mais"
-        showLessBtn.style.display = "inline"; // Mostra o botão "Ver menos"
-      });
 
-      // Esconder as perguntas
-      showLessBtn.addEventListener("click", function () {
-        hiddenFaqItems.forEach((item) => {
-          item.style.display = "none"; // Esconde novamente
+        // Esconder as perguntas
+        showLessBtn.addEventListener("click", function () {
+          hiddenFaqItems.forEach((item) => {
+            item.style.display = "none"; // Esconde novamente
+          });
+          showLessBtn.style.display = "none"; // Esconde o botão "Ver menos"
+          showMoreBtn.style.display = "inline"; // Mostra o botão "Ver mais"
         });
-        showLessBtn.style.display = "none"; // Esconde o botão "Ver menos"
-        showMoreBtn.style.display = "inline"; // Mostra o botão "Ver mais"
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

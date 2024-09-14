@@ -928,7 +928,7 @@ main .how-it-works .how-it-works-card .image {
   align-items: center;
 }
 main .tokenomics {
-  background: linear-gradient(to bottom, #020a0c, #071e25);
+  background: linear-gradient(to bottom, #020a0c, #071e25, rgba(7, 30, 37, .9), rgba(0, 0, 0, .8));
   display: flex;
   flex-direction: column;
   justify-content: center;

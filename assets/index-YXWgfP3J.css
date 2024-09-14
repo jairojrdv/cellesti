@@ -1134,7 +1134,7 @@ main .giveaway .giveaway-card {
   background: url('/assets/BACKGROUND-fy0gDmrd.png') right bottom;
 }
 main .giveaway .giveaway-card .giveway-text {
-  padding: 13px 50px;;
+  padding: 13px 50px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1567,6 +1567,9 @@ footer .text p {
   main .giveaway .giveaway-card #gift {
     width: 200px;
     right: -40px;
+  }
+  main .giveaway .giveaway-card .giveway-text {
+    padding: 13px 20px;
   }
   main .giveaway .giveaway-card .giveway-text .giveaway-title {
     font-size: 14px;

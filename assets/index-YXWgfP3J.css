@@ -821,7 +821,7 @@ main .ai-action-card .channels {
   gap: 10px;
 }
 main .staking {
-  background: linear-gradient(to bottom, #090e0f, #010d11);
+  background: linear-gradient(to top, #020a0c, #071e25);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1211,7 +1211,7 @@ main .apostrofo .apostrofo-card img {
   width: 100%;
 }
 main .ai-startups {
-  background: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8), #ffffff00);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1287,12 +1287,13 @@ main .ai-startups .ai-startups-card {
 .faq {
   margin: 0 auto;
   padding: 2rem;
-  background: linear-gradient(to bottom, #010d11, #090e0f);
+  background: linear-gradient(to top, #010d11, #021e27, #092831b2, #0928316b, #ffffff00);
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  transform: translateY(5px);
 }
 .faq-title {
   color: #2ed0ff;
@@ -1305,13 +1306,68 @@ main .ai-startups .ai-startups-card {
   font-weight: 400;
   text-align: center;
 }
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  background-color: linear-gradient(
+    90deg,
+    #092831 0%,
+    rgba(28, 123, 151, 0) 58%
+  );
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
 footer {
   width: 100%;
   overflow-x: hidden;
-  background-image: url(/assets/4693486_View_Travel_Globe_1920x1080-h454xCic.gif);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(to bottom, #010d11, #021e27);
 }
 footer .footer {
   width: 100%;
@@ -1319,10 +1375,16 @@ footer .footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: transparent rgb(0, 0, 0, 0.4);
+  background: linear-gradient(
+    to bottom,
+    rgb(8, 68, 83),
+    #071e25
+  ) !important;
+  backdrop-filter: none;
+  max-width: none;
 }
 footer .footer {
-  padding: 80px 0;
+  padding: 50px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1363,6 +1425,7 @@ footer .footer .footer-card {
   justify-content: space-between;
   align-items: center;
   margin: 0 130px;
+  background: transparent !important;
 }
 footer .footer .logo {
   display: flex;
@@ -2099,7 +2162,7 @@ footer .text p {
     font-weight: 700;
 }
 .cardbgset {
-  background-color: rgba(0, 0, 0, 0.308);
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
   padding: 30px;
   border: 2px solid #353535;

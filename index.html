@@ -26,71 +26,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
   </head>
 
-  <style>
-    .waves {
-      position: relative;
-      width: 100%;
-      height: 15vh;
-      margin-bottom: -7px; /*Fix for safari gap*/
-      min-height: 100px;
-      max-height: 150px;
-    }
-
-    .content {
-      position: relative;
-      height: 20vh;
-      text-align: center;
-      background-color: linear-gradient(
-        90deg,
-        #092831 0%,
-        rgba(28, 123, 151, 0) 58%
-      );
-    }
-
-    /* Animation */
-
-    .parallax > use {
-      animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-    }
-    .parallax > use:nth-child(1) {
-      animation-delay: -2s;
-      animation-duration: 7s;
-    }
-    .parallax > use:nth-child(2) {
-      animation-delay: -3s;
-      animation-duration: 10s;
-    }
-    .parallax > use:nth-child(3) {
-      animation-delay: -4s;
-      animation-duration: 13s;
-    }
-    .parallax > use:nth-child(4) {
-      animation-delay: -5s;
-      animation-duration: 20s;
-    }
-    @keyframes move-forever {
-      0% {
-        transform: translate3d(-90px, 0, 0);
-      }
-      100% {
-        transform: translate3d(85px, 0, 0);
-      }
-    }
-    /*Shrinking for mobile*/
-    @media (max-width: 768px) {
-      .waves {
-        height: 40px;
-        min-height: 40px;
-      }
-      .content {
-        height: 30vh;
-      }
-      h1 {
-        font-size: 24px;
-      }
-    }
-  </style>
-
   <body>
     <div class="background">
       <span></span>
@@ -879,7 +814,7 @@
         </div>
       </div>
 
-      <div class="how-it-works">
+      <!-- <div class="how-it-works">
         <div class="how-it-works-card">
           <div class="title">
             HOW IT WORKS
@@ -894,7 +829,7 @@
             />
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="tokenomics" id="token-details">
         <div class="tokenomics-card">
@@ -1358,12 +1293,7 @@
       </div>
     </main>
 
-    <footer
-      style="
-        background: linear-gradient(to bottom, #090e0f, #071e25);
-        padding-bottom: 10px;
-      "
-    >
+    <footer>
       <div>
         <svg
           class="waves"
@@ -1409,20 +1339,10 @@
       </div>
       <div
         class="footer content"
-        style="
-          background: linear-gradient(
-            to bottom,
-            rgb(8, 68, 83),
-            #071e25
-          ) !important;
-          backdrop-filter: none;
-          max-width: none;
-          margin-bottom: -17px;
-        "
       >
         <!--Waves Container-->
         <!--Waves end-->
-        <div class="footer-card" style="background: transparent !important">
+        <div class="footer-card">
           <div class="logo">
             <img
               src="/assets/Objeto Inteligente de Vetor@1_5x-TryXWyoe.webp"

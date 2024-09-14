@@ -1085,7 +1085,7 @@ main .percents .progress-value {
   }
 }
 main .notebook {
-  background: linear-gradient(to bottom, #010d11, #090e0f);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1117,7 +1117,7 @@ main .notebook .notebook-card img {
   margin: 30px 0;
 }
 main .giveaway {
-  background: linear-gradient(to bottom, #090e0f, #010d11);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1129,49 +1129,69 @@ main .giveaway .giveaway-card {
   max-width: 1100px;
   margin: 30px 0;
   position: relative;
+  min-height: 501px;
+  border-radius: 15px;
+  background: url('/assets/BACKGROUND-fy0gDmrd.png') right bottom;
 }
 main .giveaway .giveaway-card .giveway-text {
-  padding: 20px;
+  padding: 13px 50px;;
   display: flex;
   flex-direction: column;
   gap: 20px;
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: 0;
+}
+main .giveaway .giveaway-card .giveway-text .giveaway-title {
+  font-weight: 700;
+  color: #2ed0ff;
+  font-size: 30px;
 }
 main .giveaway .giveaway-card .giveway-text p {
   font-size: 14px;
   color: #ccc;
   font-weight: 200;
-  background: rgba(1, 13, 17, 0.6);
-  border-radius: 10px;
-  padding: 10px;
+  max-width: 400px;
 }
-main .giveaway .giveaway-card .giveway-text .giveaway-title {
-    font-weight: 700;
-  color: #2ed0ff;
-  font-size: 20px;
+main .giveaway .giveaway-card .giveway-text h3 {
+  font-size: 45px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(left, #eee, #333, #eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 5px;
+  line-height: 38px;
+}
+main .giveaway .giveaway-card .giveway-text h4 {
+  font-size: 35px;
+  font-weight: 800;
+  background: -webkit-linear-gradient(right, #1481c0, #1b5155);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 main .giveaway .giveaway-card .giveway-text #giveaway-button {
-  width: 200px;
+  width: 118px;
+  font-size: 9px;
+  padding: 5px 0px;
 }
 main .giveaway .giveaway-card #gift {
   position: absolute;
-  right: -40px;
-  top: -20px;
-  width: 200px;
+  right: -70px;
+  top: -50px;
+  width: 250px;
 }
 main .giveaway .giveaway-card #car {
   position: absolute;
-  right: 0;
-  bottom: 10px;
   width: 100%;
+  right: -27px;
+  bottom: 0px;
+  min-width: 562px;
 }
 main .giveaway .giveaway-card img {
   width: 100%;
 }
 main .apostrofo {
-  background: linear-gradient(to bottom, #010d11, #090e0f);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1540,6 +1560,22 @@ footer .text p {
   footer .ai-startups .ai-startups-card h1 {
       font-weight: 700;
     font-size: 24px;
+  }
+  main .giveaway .giveaway-card {
+    min-height: 626px;
+  }
+  main .giveaway .giveaway-card #gift {
+    width: 200px;
+    right: -40px;
+  }
+  main .giveaway .giveaway-card .giveway-text .giveaway-title {
+    font-size: 14px;
+  }
+  main .giveaway .giveaway-card .giveway-text h3 {
+    font-size: 30px;
+  }
+  main .giveaway .giveaway-card .giveway-text h4 {
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 540px) {

@@ -65,6 +65,10 @@ li a {
   color: #fff;
 }
 
+#bnbInput, #novisInput {
+  color: #fafafa !important;
+}
+
 .background {
   position: fixed;
   top: 0;

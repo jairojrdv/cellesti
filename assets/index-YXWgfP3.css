@@ -9,6 +9,7 @@ body {
   justify-content: center;
   overflow-x: hidden;
   font-family: "Sora", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   width: 100vw;
@@ -2044,7 +2045,7 @@ footer .text p {
 .section2__progressBarPoint {
   color: #1df9ab;
   margin-top: 8px;
-  font-size: 12px;
+  font-size: 12px;be
   font-weight: var(--boldFont);
   position: absolute;
 }

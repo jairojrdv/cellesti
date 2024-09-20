@@ -292,6 +292,15 @@
                       />
                     </li>
                   </a>
+                      <a href="#" class="copiar-email">
+                        <li>
+                          <img
+                            src="./assets/mail.svg"
+                            alt=""
+                          />
+                        </li>
+                      <div id="alerta">E-mail copiado!</div>
+                    </a>
                 </ul>
               </div>
             </div>
@@ -772,6 +781,15 @@
                   />
                 </li>
               </a>
+              <a href="#" class="copiar-email">
+                <li>
+                  <img
+                    src="./assets/mail.svg"
+                    alt=""
+                  />
+                </li>
+              <div id="alerta">E-mail copiado!</div>
+            </a>
             </ul>
           </div>
           <p>Powered By:</p>
@@ -1439,9 +1457,20 @@
             <img
               src="/assets/Objeto Inteligente de Vetor@1_5x-TryXWyoe.webp"
               alt=""
-            />
-            <p>Copyright © 2024. All rights reserved by Cellesti.</p>
-          </div>
+              />
+              <p>Copyright © 2024. All rights reserved by Cellesti.</p>
+            </div>
+            <div class="text">
+              <h4>Disclaimer</h4>
+              <p>
+                Cryptocurrency investments carry a high risk of volatility. Be
+                aware of the tax implications, as profits may be subject to
+                capital gains or other taxes in your jurisdiction. Cryptocurrency
+                regulations can vary, so ensure you understand the rules in your
+                area. Conduct thorough research and invest only what you can
+                afford to lose.
+              </p>
+            </div>
           <div class="our-sociais">
             <p>Our socials</p>
             <div class="channels">
@@ -1478,21 +1507,17 @@
                     />
                   </li>
                 </a>
+                <a href="#" class="copiar-email">
+                  <li>
+                    <img
+                      src="./assets/mail.svg"
+                      alt=""
+                    />
+                  </li>
+                <div id="alerta">E-mail copiado!</div>
+                </a>
               </ul>
             </div>
-          </div>
-          <div class="text">
-            <h4>info@cellesti.ai</h4>
-            <hr />
-            <h4>Disclaimer</h4>
-            <p>
-              Cryptocurrency investments carry a high risk of volatility. Be
-              aware of the tax implications, as profits may be subject to
-              capital gains or other taxes in your jurisdiction. Cryptocurrency
-              regulations can vary, so ensure you understand the rules in your
-              area. Conduct thorough research and invest only what you can
-              afford to lose.
-            </p>
           </div>
         </div>
       </div>
@@ -1500,6 +1525,44 @@
 
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+
+
+    <script>
+      // Seleciona todos os botões com a classe "copiar-email"
+      const botoes = document.querySelectorAll(".copiar-email");
+      
+      // Itera sobre cada botão e adiciona o evento de clique
+      botoes.forEach(function(botao) {
+          botao.addEventListener("click", function(event) {
+              event.preventDefault();
+              
+              // Texto a ser copiado
+              const email = "info@cellesti.ai";
+              
+              // Cria um elemento temporário
+              const inputTemporario = document.createElement("input");
+              inputTemporario.value = email;
+              document.body.appendChild(inputTemporario);
+              
+              // Seleciona o texto e copia para a área de transferência
+              inputTemporario.select();
+              document.execCommand("copy");
+              
+              // Remove o elemento temporário
+              document.body.removeChild(inputTemporario);
+              
+              // Exibe o alerta de copiado
+              const alerta = document.querySelector("#alerta");
+              alerta.classList.add("mostrar");
+              
+              // Esconde o alerta após 2 segundos
+              setTimeout(function() {
+                  alerta.classList.remove("mostrar");
+              }, 2000);
+          });
+      });
+  </script>
+
 
     <!-- Bootstrap JS Bundle (includes Popper) -->
     <script

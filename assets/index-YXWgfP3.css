@@ -943,8 +943,35 @@ main .staking .card-staking .staking-image img {
   height: 90px !important;
 }
 .swiper-slide img {
-  width: 100px;
+  width: 40px;
 }
+
+.swiper-container-with-shadow {
+  position: relative;
+  width: 100%;
+}
+
+.swiper-container-with-shadow::before,
+.swiper-container-with-shadow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px; /* Largura da sombra */
+  pointer-events: none; /* Não interferir no carrossel */
+  z-index: 10;
+}
+
+.swiper-container-with-shadow::before {
+  left: 0;
+  background: linear-gradient(to right,rgba(7, 30, 37, 0.5), rgba(7, 30, 37, 0));
+}
+
+.swiper-container-with-shadow::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(7, 30, 37, 0.5), rgba(7, 30, 37, 0));
+}
+
 main .how-it-works {
   background-image: url(/assets/Presale_V3_05-2HcFWoas.webp);
   display: flex;

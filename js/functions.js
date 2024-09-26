@@ -126,3 +126,11 @@ document.getElementById("closeFormGiveaway").addEventListener("click", function 
   document.querySelector('#form-giveaway').style.display = 'none'
   habilitarScroll()
 })
+
+var l = new LanguageSelector();
+$(document).on("change", "#langSelector", function () {
+  var s = $(this).children("option:selected").val();
+  l.setLang(s);
+  window.location = "/";
+});
+l.parse();

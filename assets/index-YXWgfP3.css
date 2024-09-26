@@ -319,6 +319,26 @@ header .onTop {
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
+.change-language {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 10px;
+}
+.change-language select {
+  background: transparent;
+  color: #cacaca;
+  width: 50px;
+}
+.change-language option {
+  color: #000;
+}
+.change-language .flag-language {
+  width: 30px;
+}
+.change-language .flag-language img {
+  width: 100%;
+}
 .bottom-header-content {
   padding: 0 20px;
   display: flex;
@@ -436,6 +456,9 @@ main {
 }
 .apresentation p {
   color: #fff;
+}
+.apresentation .check {
+  margin-bottom: 5px;
 }
 .apresentation .apresentation-actions {
   display: flex;

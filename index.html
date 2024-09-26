@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cellesti | Presale Is Live</title>
+    <title>Cellesti | :title</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
@@ -76,10 +76,10 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item mx-md-3">
-              <a class="nav-link fs-5 text-white" href="#apresentation">Home</a>
+              <a class="nav-link fs-5 text-white" href="#apresentation">:menu-home</a>
             </li>
             <li class="nav-item mx-md-3">
-              <a class="nav-link fs-5 text-white" href="#whyChooseUs">Why Choose Us?</a>
+              <a class="nav-link fs-5 text-white" href="#whyChooseUs">:menu-why-choose-us</a>
             </li>
             <li class="nav-item mx-md-3">
               <a class="nav-link fs-5 text-white" href="#tokenomics">Token Details</a>
@@ -89,19 +89,32 @@
                 class="nav-link fs-5 text-white"
                 href="/whitepaper.pdf"
                 target="_blank"
-                >Whitepaper</a
+                >:whitepaper</a
               >
             </li>
           </ul>
           <div class="d-flex d-md-none d-block">
             <button id="accountOne" class="btn btn-primary">
-              Connect Wallet
+              :connect-wallet
             </button>
           </div>
         </div>
         <!-- Right side contact button -->
-        <div class="d-flex d-md-block d-none">
-          <button id="account" class="btn btn-primary">Connect Wallet</button>
+        <div class="d-block d-sm-flex align-center">
+          <div class="change-language d-none d-sm-flex">
+            <select id="langSelector">
+              <option>:choose</option>
+              <option value="en">English</option>
+              <option value="pt">Portugês</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="es">Español</option>
+            </select>
+            <div class="flag-language">
+              <img src="assets/flag-:choose.png" alt="">
+            </div>
+          </div>
+          <button id="account" class="btn btn-primary">:connect</button>
         </div>
       </div>
     </nav>
@@ -233,20 +246,30 @@
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6 col-xl-6 mt-md-5">
           <div class="apresentation-text">
-            <h5>Join the Presale</h5>
-            <h1>Invest in the Future of Ai Technology with Cellesti</h1>
-            <h7>Invest easily in AI startups with fractional tokens and be part of the next tech revolution.</h7>
+            <h5>:apresentation-h5</h5>
+            <h1>:apresentation-h1</h1>
+            <h7>:apresentation-h7</h7>
             <hr>
             <div class="paragraphs">
-              <p>✅ AI powered investments support some of the promising AI Startups across the globe.</p>
-              <p>✅ Fractional NFTs: Invest according to your budget and receive ownership in exciting whitepaper ventures.</p>
+              <p>
+                <svg class="check" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+                  <path fill="#2ed0ff" d="M40.6 12.1L17 35.7 7.4 26.1 4.6 29 17 41.3 43.4 14.9z"></path>
+                </svg>
+                :apresentation-paragraph-1
+              </p>
+              <p>
+                <svg class="check" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+                  <path fill="#2ed0ff" d="M40.6 12.1L17 35.7 7.4 26.1 4.6 29 17 41.3 43.4 14.9z"></path>
+                </svg>
+                :apresentation-paragraph-2
+              </p>
             </div>
             <div class="apresentation-actions">
               <a
                 href="whitepaper.pdf"
                 target="_blank"
                 style="text-decoration: none; color: white"
-                ><button>Whitepaper</button></a
+                ><button class="gradient-box">:whitepaper</button></a
               >
               <div class="socials">
                 <ul>
@@ -289,7 +312,7 @@
                             alt=""
                           />
                         </li>
-                      <div id="alerta">E-mail copiado!</div>
+                      <div id="alerta">:alert-copy-mail</div>
                     </a>
                 </ul>
               </div>
@@ -299,13 +322,13 @@
         <div class="col-12 cardbgset col-lg-6 col-xl-6 mt-md-5">
           <div class="d-flex" style="justify-content: space-between">
             <h6 class="text-white buytokenfont newfont">
-              Buy Cellesti Token
+              :buy-cellesti-token
             </h6>
             <div class="d-flex align-items-center newfontcard">
-              <div class="mx-1 stgbtn" type="button">Stage 1</div>
+              <div class="mx-1 stgbtn" type="button" style="font-size: 13px;">:stage</div>
               <div
                 class="mx-1 stgbtn22 fw-bold"
-                style="font-size: 22px"
+                style="font-size: 16px"
                 type="button"
               >
                 Live
@@ -349,7 +372,7 @@
             </h6>
             <div class="d-flex justify-content-center">
               <p class="mt-2 text-center text-white add-auster newfontcard">
-                1 CLLS = $0.007 & Next Stage = $0.00875
+                :next-stage-value
               </p>
             </div>
           </div>
@@ -364,7 +387,7 @@
             <div class="row">
               <div class="col-6" style="border-right: 1px solid #6b6b6b">
                 <h6 style="color: gray; font-weight: 400 !important">
-                  TOKENS SOLD
+                  :tokens-sold
                 </h6>
                 <h4 class="text-white mb-0 numberfont">
                   <img
@@ -384,7 +407,7 @@
               </div>
               <div class="col-6">
                 <h6 style="color: gray; font-weight: 400 !important">
-                  USD RAISED
+                  :usd-raised
                 </h6>
                 <p class="text-white numberfont mt-md-0 mt-3 mb-0">
                   <!-- $<span id="progress"></span> -->
@@ -399,7 +422,7 @@
   
           <div class="d-flex justify-content-end mt-4">
             <div class="mx-1 stgbtn tooltipBtn" type="button">
-              Bonus
+              :bonus
               <div class="tooltipContent">
                 <p class="tooltipPara">Stage 1 Bonus 5%</p>
                 <p class="tooltipPara">Stage 2 Bonus 3%</p>
@@ -410,7 +433,7 @@
   
           <div class="d-flex justify-content-center">
             <p class="fs-5 mt-3 text-center text-white add-auster22">
-              Payment Method
+              :payment-method
             </p>
           </div>
   
@@ -428,7 +451,7 @@
                   alt=""
                   srcset=""
                 />
-                BUY W5TH ETH
+                :buy-with-eth
               </a>
             </div>
   
@@ -445,7 +468,7 @@
                   alt=""
                   srcset=""
                 />
-                BUY WITH USDT
+                :buy-with-usdt
               </a>
             </div>
           </div>
@@ -536,7 +559,7 @@
                       border-radius: 40px;
                     "
                   >
-                    Buy
+                    :buy-button
                   </button>
                   <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
                 <button
@@ -545,14 +568,14 @@
                     class="btn btn-primary conbtn prsale-pantra w-100 fw-bold fs-4 mx-1"
                     style="margin-bottom: 10px;"
                 >
-                    Connect Wallet
+                    :connect-wallet
                   </button>
                   <a href="./whitepaper.pdf" target="_blank" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
                   <button
                     type="button"
                     class="btn btn-primary conbtn prsale-pantra w-100 fw-bold fs-4 mx-1"
                   >
-                    How to Buy?
+                    :how-to-buy
                   </button>
                 </a>
               </div>
@@ -566,7 +589,7 @@
                       border-radius: 40px;
                     "
                   >
-                    Approve
+                  :approve
                   </button>
                   <button
                     type="button"
@@ -579,7 +602,7 @@
                       border-radius: 40px;
                     "
                   >
-                    Buy
+                  :buy-button
                   </button>
                 </div>
               </div>
@@ -591,20 +614,12 @@
       <div class="banner">
         <div class="banner-area">
           <div class="banner-text">
-            <h1>THE $CLLS TOKEN</h1>
+            <h1>:clls-token</h1>
             <p>
-              Cellesti is a groundbreaking platform that enables investments in
-              AI startups using $CLLS, our innovative cryptocurrency. Through
-              our fractional investment system, we offer the chance to support
-              promising AI startups via NFTs (Non-Fungible Tokens), turning each
-              opportunity into a unique digital asset.
+              :clls-token-paragraph-1
             </p>
             <p>
-              This allows you to invest according to your financial capacity,
-              while enjoying the advantages of being an early supporter of
-              emerging technologies. Cellesti makes investing simple, secure,
-              and impactful, giving you the opportunity to actively participate
-              in tech innovation and reap the rewards as an early investor.
+              :clls-token-paragraph-2
             </p>
             <!-- <p>
             Cellesti makes it simple for you to invest in exciting Al
@@ -623,69 +638,54 @@
   <div class="choose-us" id="why-chose-us">
     <div class="choose-us-card">
       <div class="title-choose" style="margin-bottom: 30px">
-        <h1>WHY CHOSE US?</h1>
+        <h1>:menu-why-choose-us</h1>
       </div>
       <div class="choose-cards">
         <div class="choose-card">
           <img src="/assets/trading-ZcsyNHvh-ZcsyNHvh.gif" alt="" />
-          <h3>Effortheless Investment</h3>
+          <h3>:why-choose-us-card-1-title</h3>
           <p>
-            Investing in cutting-edge AI startups has never been more
-            accessible. With our seamless and intuitive platform, anyone
-            whether you're an experienced investor or just starting out can
-            easily navigate and start investing in the future of AI
-            technology.
+            :why-choose-us-card-1-text
           </p>
         </div>
         <div class="choose-card">
           <img src="/assets/securelock-x_qqIF37-x_qqIF37.gif" alt="" />
-          <h3>Advanced Security</h3>
+          <h3>:why-choose-us-card-2-title</h3>
   
           <p>
-            Your trust and security are our top priorities at Cellesti. We
-            use advanced blockchain technology to keep your investments
-            safe, with top-level encryption and decentralized systems that
-            ensure a highly secure environment.
+            :why-choose-us-card-2-text
           </p>
         </div>
         <div class="choose-card">
           <img src="/assets/rocketani-MBZ24yAI-MBZ24yAI.gif" alt="" />
-          <h3>Revolutionizing Investment</h3>
+          <h3>:why-choose-us-card-3-title</h3>
   
           <p>
-            Unlock new opportunities with our fractional investment system,
-            gaining ownership in previously inaccessible Al startups through
-            innovative NFT tokenization.
+            :why-choose-us-card-3-text
           </p>
         </div>
         <div class="choose-card">
           <img src="/assets/gallary-8o7qblqQ-8o7qblqQ.gif" alt="" />
-          <h3>Expansive Investment Opportunities</h3>
+          <h3>:why-choose-us-card-4-title</h3>
   
           <p>
-            Expand your investment scope by easily diversifying your AI
-            portfolio. Discover startups at every stage and align your
-            investments with your financial goals with ease.
+            :why-choose-us-card-4-text
           </p>
         </div>
         <div class="choose-card">
           <img src="/assets/locker-6KZDsSON-6KZDsSON.gif" alt="" />
-          <h3>Pioneering Rewards for Early Supporters</h3>
+          <h3>:why-choose-us-card-5-title</h3>
   
           <p>
-            Be a pioneer in tech innovation, enjoying exclusive benefits and
-            insights as an early supporter, setting the stage for potential
-            future gains.
+            :why-choose-us-card-5-text
           </p>
         </div>
         <div class="choose-card">
           <img src="/assets/bonus-VSwt12HR-VSwt12HR.gif" alt="" />
-          <h3>Stay Ahead with Live Monitoring</h3>
+          <h3>:why-choose-us-card-6-title</h3>
   
           <p>
-            Use our simple dashboard to monitor your investments in real
-            time. Make strategic decisions in the rapidly evolving AI
-            sector.
+            :why-choose-us-card-6-text
           </p>
         </div>
       </div>
@@ -696,25 +696,23 @@
       <div class="ai-action">
         <div class="ai-action-card">
           <div class="title">
-            <h1>JOIN OUR COMMUNITY</h1>
+            <h1>:ai-action-title</h1>
           </div>
           <div class="subtitle">
-            <h3>Smart Finance With Cellesti</h3>
+            <h3>:ai-action-subtitle</h3>
           </div>
           <div class="descript">
             <p>
-              Join our project, driven by innovation, community and our AI
-              vision. Buy, sell, and swap easily in our decentralized ecosystem.
-              Become a member of our AI community.
+              :ai-action-descript
             </p>
           </div>
           <div class="ai-buttons">
-            <button>Buy $CLLS</button>
+            <button> :buy-button-3 $CLLS</button>
             <a
               href="whitepaper.pdf"
               target="_blank"
               style="text-decoration: none; color: white"
-              ><button>Read more</button></a
+              ><button>:read-more</button></a
             >
           </div>
           <div class="channels">
@@ -758,11 +756,11 @@
                     alt=""
                   />
                 </li>
-              <div id="alerta">E-mail copiado!</div>
+              <div id="alerta">:alert-copy-mail-2</div>
             </a>
             </ul>
           </div>
-          <p>Powered By:</p>
+          <p>:powered-by</p>
           <div class="integrations">
             <div onmouseover="stop()" onmouseleave="start()" direction="Left">
               <div class="swiper-container-with-shadow">
@@ -802,7 +800,7 @@
           >
             <div class="staking-title">
               <h1 style="color: #2ed0ff; font-family: toxigenesis">
-                CLAIM YOUR TOKENS
+                :claim-your-tokens
               </h1>
             </div>
 
@@ -817,7 +815,7 @@
                   class="btn btn-primary claimbtn"
                   style="font-family: toxigenesis"
                 >
-                  See Your Claimable tokens
+                :see-tokens-button
                 </button>
                 <button
                   type="button"
@@ -838,9 +836,9 @@
                     class="card-title vin text-center d-flex flex-column justify-content-center ml-2"
                     style="font-weight: 700; color: white !important"
                   >
-                    Claimable Tokens :
+                  :claimable-tokens :
                     <div style="text-align: center" id="tokens-claim"></div>
-                    Bonus Tokens :
+                    :bonus-tokens :
                     <div style="text-align: center" id="bonus-claim"></div>
                   </h6>
                 </button>
@@ -862,11 +860,7 @@
             <h1>STAKING</h1>
           </div>
           <div class="staking-text">
-            By staking $CLLS tokens, investors can earn rewards from our 10%
-            sell tax, which is allocated to a dedicated reward pool. The staking
-            mechanism offers a unique opportunity for our community to earn
-            $CLLS token rewards while helping drive the growth of AI technology
-            startups.
+            :staking-text
           </div>
           <div class="staking-image">
             <img src="/assets/Macbook Pro-XG8lWYFH.png" width="1000px" alt="" />
@@ -902,7 +896,7 @@
       </div>
       <div class="percents">
         <div class="percents-text">
-          <div class="title">Public Sale</div>
+          <div class="title">:percents-text-1</div>
           <div class="value">900,000,000</div>
         </div>
         <div class="progress">
@@ -916,7 +910,7 @@
       </div>
       <div class="percents">
         <div class="percents-text">
-          <div class="title">Development Team</div>
+          <div class="title">:percents-text-2</div>
           <div class="value">225,000,000</div>
           <button
                 style="
@@ -934,7 +928,7 @@
             <div class="lock" style="margin-right: 10px; margin-top: -3px">
                   <img src="./assets/locked.svg" alt="" />
                 </div>
-            <div class="">3 years locked</div>
+            <div class="">:percents-text-lock</div>
           </button>
         </div>
         <div class="progress">
@@ -948,7 +942,7 @@
       </div>
       <div class="percents">
         <div class="percents-text">
-          <div class="title">LP + Exchange Listing + Reward Pool</div>
+          <div class="title">:percents-text-3</div>
           <div class="value">150,000,000</div>
         </div>
         <div class="progress">
@@ -976,7 +970,7 @@
       </div>
       <div class="percents">
         <div class="percents-text">
-          <div class="title">Legal & Advisors</div>
+          <div class="title">:percents-text-5</div>
           <div class="value">75,000,000</div>
         </div>
         <div class="progress">
@@ -1008,15 +1002,11 @@
       <div class="notebook">
         <div class="notebook-card">
           <div class="notebook-title">
-            <h1>GOVERNANCE</h1>
+            <h1>:notebook-title</h1>
           </div>
           <div class="notebook-text">
             <p>
-              The $CLLS token empowers holders to actively participate in the
-              platform's decision-making. By proposing, discussing, and voting
-              on key issues, they help shape the platform’s future. This
-              community-driven approach supports the growth of AI startups while
-              promoting a more collaborative ecosystem.
+              :notebook-text
             </p>
           </div>
           <img src="/assets/Macbook Pro_01-91MSnaJ4.png" alt="" />
@@ -1028,12 +1018,10 @@
           <img src="/assets/GIFT-dPKtxJqc.png" alt="" id="gift" />
           <img src="/assets/CAR-4FD8AK8M.png" alt="" id="car" />
           <div class="giveway-text">
-            <h1 class="giveaway-title">JOIN THE GIVEAWAY!</h1>
+            <h1 class="giveaway-title">:giveaway-title</h1>
             <p>
-              Ready to win big? Participate in the great
-              <b>Tesla Model S Giveaway</b>. Participate and complete all
-              entries for you chance to win the grand prize. Dont't miss your
-              chace to be the lucky winner!
+              :giveaway-text-part-a
+              <b>:giveaway-text-part-b</b>. :giveaway-text-part-c
             </p>
             <div id="tesla-models">
               <h3>
@@ -1043,7 +1031,7 @@
               <h4>GIVEAWAY</h4>
             </div>
             <button id="giveaway-button" class="connect-wallet">
-              LET'S PLAY RAFFLE
+              :giveaway-button
             </button>
           </div>
         </div>
@@ -1070,19 +1058,14 @@
 
       <div class="ai-startups">
         <div class="ai-startups-card">
-          <h1>AI START-UPS APPLY</h1>
+          <h1>:ai-startups-title</h1>
           <div class="ai-startups-text">
             <p>
-              Are you an Al start-up looking to raise funds and engage with your
-              community?
+              :ai-startups-text-1
             </p>
             <br />
             <p>
-              Our NFT marketplace offers an innovative platform for minting
-              investment opportunities, connecting a dedicated community of
-              investors committed to advancing AI technology. Through this
-              marketplace, investors can access unique investment options while
-              supporting the growth and development of cutting-edge AI startups.
+              :ai-startups-text-2
             </p>
             <div class="startup-buttons">
               <button target="_blank">
@@ -1091,10 +1074,10 @@
                   target="_blank"
                   style="text-decoration: none; color: inherit"
                 >
-                  Apply
+                :ai-startups-buttons-apply
                 </a>
               </button>
-              <button>Buy $CLLS</button>
+              <button>:ai-startups-buttons-buy</button>
             </div>
           </div>
         </div>
@@ -1103,64 +1086,52 @@
         <div class="faq-title">
           <h1>FAQS</h1>
         </div>
-        <h3>You may have question, we have the answers.</h3>
+        <h3>:faqs-title</h3>
         <div class="faqWrapper">
           <input id="faq-a" type="checkbox" />
           <label for="faq-a">
-            <p class="faq-heading">What is Cellesti TOKEN?</p>
+            <p class="faq-heading">:faq-heading-1</p>
             <div class="faq-arrow"></div>
             <p class="faq-text">
-              Cellesti is a crypto crowdfunding NFT platform that allows users
-              to invest in AI start-up projects using Fiat and Crypto. The NFT
-              marketplace enables start-ups to raise funds and engage with their
-              community by offering reward and equity based NFTs.
+              :faq-text-1
             </p>
           </label>
           <input id="faq-b" type="checkbox" />
           <label for="faq-b">
             <p class="faq-heading">
-              How do i purchase Cellesti token from presale?
+              :faq-heading-2
             </p>
             <div class="faq-arrow"></div>
             <p class="faq-text">
-              $CLLS tokens can be purchased during the presale period through
-              the Cellesti website using ETH, USDT, BTC and many more supported
-              cryptocurrencies.
+              :faq-text-2
             </p>
           </label>
           <input id="faq-c" type="checkbox" />
           <label for="faq-c">
             <p class="faq-heading">
-              Which Blockchain network is Cellesti token on?
+              :faq-heading-3
             </p>
             <div class="faq-arrow"></div>
             <p class="faq-text">
-              Cellesti is built on the Ethereum (ETH), leveraging its speed,
-              usability and compatibility with decentralized applications to
-              create a seamless user experience.
+              :faq-text-3
             </p>
           </label>
           <input id="faq-d" type="checkbox" />
           <label for="faq-d">
-            <p class="faq-heading">How do claim my Tokens?</p>
+            <p class="faq-heading">:faq-heading-4</p>
             <div class="faq-arrow"></div>
             <p class="faq-text">
-              Once the presale ends, you just need to connect your wallet and
-              press the claim button. Once the transaction is complete, import
-              the Cellesti token address into your wallet and you’ll be able to
-              see your tokens.
+              :faq-text-4
             </p>
           </label>
           <input id="faq-e" type="checkbox" />
           <label for="faq-e">
             <p class="faq-heading">
-              How can I storage and manage my Cellesti tokens?
+              :faq-heading-5
             </p>
             <div class="faq-arrow"></div>
             <p class="faq-text">
-              Cellesti tokens can be stored and managed in compatible
-              cryptocurrency wallets. We recommend using wallets that support
-              Ethereum, such as MetaMask or Trust Wallet.
+              :faq-text-5
             </p>
           </label>
 
@@ -1441,21 +1412,16 @@
               src="/assets/Objeto Inteligente de Vetor@1_5x-TryXWyoe.webp"
               alt=""
               />
-              <p>Copyright © 2024. All rights reserved by Cellesti.</p>
+              <p>:copyright</p>
             </div>
             <div class="text">
-              <h4>Disclaimer</h4>
+              <h4>:disclaimer-title</h4>
               <p>
-                Cryptocurrency investments carry a high risk of volatility. Be
-                aware of the tax implications, as profits may be subject to
-                capital gains or other taxes in your jurisdiction. Cryptocurrency
-                regulations can vary, so ensure you understand the rules in your
-                area. Conduct thorough research and invest only what you can
-                afford to lose.
+                :disclaimer-text
               </p>
             </div>
           <div class="our-sociais">
-            <p>Our socials</p>
+            <p>:our-socials-title</p>
             <div class="channels">
               <ul>
                 <a href="https://t.me/cellestifinance" target="_blank">
@@ -1497,7 +1463,7 @@
                       alt=""
                     />
                   </li>
-                <div id="alerta">E-mail copiado!</div>
+                <div id="alerta">:alert-copy-mail-3</div>
                 </a>
               </ul>
             </div>
@@ -1506,8 +1472,8 @@
       </div>
     </footer>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
 
     <script>
@@ -1559,6 +1525,9 @@
 
     <!-- Web3 and Web3Modal Scripts (if you need them) -->
 
+    <script src="js/language.js"></script>
+    <script src="js/LanguageSelector.js"></script>
+    <script src="js/LanguageSelector.min.js"></script>
     <script type="module" src="js/functions.js"></script>
     <script src="js/swiper.js"></script>
 

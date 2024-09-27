@@ -1044,6 +1044,7 @@ main .tokenomics .tokenomics-card .title h1 {
 }
 main .tokenomics .tokenomics-card .title {
   font-size: 18px;
+  margin-bottom: -40px;
 }
 main .tokenomics .tokenomics-card .progress-value h1 {
   font-size: 18px;
@@ -1053,7 +1054,7 @@ main .tokenomics .tokenomics-card .progress-value h1 {
   align-items: center;
 }
 main .tokenomics .tokenomics-card .coin {
-  margin: 50px 0;
+  margin: -50px 0;
 }
 main .percents {
   width: 100%;

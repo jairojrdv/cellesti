@@ -2526,3 +2526,10 @@ footer .text p {
     margin-right: -40px;
   }
 }
+
+/* chat support huspot */
+
+.hs-shadow-container {
+  background: transparent;
+  border: none;
+}

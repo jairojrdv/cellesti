@@ -441,39 +441,22 @@ header {
   width: auto;
   height: auto;
 }
-#logo-head {
-  width: 200px;
-}
-#logo-head img {
-  width: 100%;
-}
-header .bottom-header {
-  background-color: #000c;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  transition: all 0.5s ease-in-out;
-  padding: 19px 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 9999;
-  width: 100vw;
-}
-header .onTop {
-  background-color: #000c;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-}
+
 .change-language {
   display: flex;
   align-items: center;
   gap: 10px;
   margin: 0 10px;
+  position: relative;
 }
 .change-language select {
   background: transparent;
   color: #cacaca;
-  width: 50px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 .change-language option {
   color: #000;
@@ -483,86 +466,6 @@ header .onTop {
 }
 .change-language .flag-language img {
   width: 100%;
-}
-.bottom-header-content {
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85%;
-  max-width: 1800px;
-  margin: 0 auto;
-}
-header .bottom-header .options-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 40px;
-  margin: 0 150px;
-  list-style: none;
-  font-size: 16px;
-}
-.options-list li {
-  transition: all ease-in-out 0.2s;
-}
-.options-list li:hover {
-  opacity: 0.6;
-  cursor: pointer;
-}
-header .button-header {
-  display: flex;
-  gap: 15px;
-}
-.menu-container {
-  display: none;
-}
-.hamburger-btn {
-  background: none;
-  border: none;
-  font-size: 30px;
-  cursor: pointer;
-}
-.modal-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000f2;
-  z-index: 1000;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.3s ease;
-}
-.modal-menu.active {
-  display: flex;
-  opacity: 1;
-}
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  font-size: 40px;
-  color: #fff;
-  cursor: pointer;
-}
-.menu-container .options-list-mobile {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-.menu-container .options-list-mobile li {
-  padding: 15px 0;
-  font-size: 24px;
-  color: #fff;
-  cursor: pointer;
-}
-.menu-container .options-list-mobile li:hover {
-  cursor: pointer;
-  color: #fff;
 }
 main {
   margin-top: 84px;
@@ -2513,7 +2416,6 @@ footer .text p {
   font-size: 28px;
 }
 .navbartop {
-  background-color: #0000006e !important;
   padding: 18px 10px !important;
 }
 .navbar-scrolled {

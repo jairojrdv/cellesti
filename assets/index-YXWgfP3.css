@@ -473,7 +473,7 @@ main {
   height: auto;
 }
 .apresentation {
-  padding-top: 40px;
+  padding-top: 20px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), transparent);
 }
 .apresentation-text {
@@ -481,7 +481,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 20px;
+  padding: 0 20px;
 }
 .apresentation-text h5 {
   color: #fff;
@@ -495,7 +495,7 @@ main {
   -webkit-text-fill-color: transparent;
 }
 .apresentation h7 {
-  color: #ccc;
+  color: #fff;
   font-size: 20px;
   font-weight: 300;
 }
@@ -512,13 +512,29 @@ main {
   display: flex;
   align-items: center;
 }
+.apresentation .apresentation-actions .apresentation-button {
+  font-size: 14px;
+  border: solid 1px #ccc;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+}
+.apresentation .apresentation-actions .apresentation-button:hover {
+  background: #ccc;
+  color: #071a1f;
+}
 .apresentation .apresentation-actions .socials ul {
   list-style: none;
   display: flex;
   gap: 15px;
+  margin-top: 14px;
 }
 .apresentation .apresentation-actions .socials ul img {
-  width: 30px;
+  width: 28px;
+  transition: opacity .2s ease-in-out;
+}
+.apresentation .apresentation-actions .socials ul img:hover {
+  opacity: .7;
 }
 main .form {
   display: flex;
@@ -1719,10 +1735,10 @@ footer .text p {
     background-size: 200vw;
   }
   .apresentation-text {
-    padding: 80px 40px;
+    padding: 30px 40px;
   }
   .apresentation-text h5 {
-    margin-top: 40px;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 1070px) {
@@ -1795,6 +1811,9 @@ footer .text p {
 @media screen and (max-width: 768px) {
   body {
     background-size: 1900px;
+  }
+  .apresentation .apresentation-actions {
+    margin-bottom: 70px;
   }
   .card-form .title-form {
     font-size: 18px;
@@ -2051,6 +2070,9 @@ footer .text p {
   .navbar-collapse {
     background-color: #000 !important;
     padding: 10px;
+  }
+  .navbar-brand {
+    margin: 0;
   }
   .faq-text {
     font-size: 12px;

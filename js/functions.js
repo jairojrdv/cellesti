@@ -117,14 +117,19 @@ function habilitarScroll() {
 //   });
 // });
 
-document.getElementById("giveaway-button").addEventListener("click", function () {
+// document.getElementById("giveaway-button").addEventListener("click", function () {
+//   document.querySelector('#form-giveaway').style.display = 'flex'
+//   desabilitarScroll()
+// })
+
+$(document).on("click", "#giveaway-button", function () {
+  console.log('clicou no giveaway')
   document.querySelector('#form-giveaway').style.display = 'flex'
-  desabilitarScroll()
 })
 
-document.getElementById("closeFormGiveaway").addEventListener("click", function () {
+$(document).on("click", "#closeFormGiveaway", function () {
   document.querySelector('#form-giveaway').style.display = 'none'
-  habilitarScroll()
+
 })
 
 var l = new LanguageSelector();
@@ -134,3 +139,38 @@ $(document).on("change", "#langSelector", function () {
   window.location = "/";
 });
 l.parse();
+
+// Seleciona todos os botões com a classe "copiar-email"
+const botoes = document.querySelectorAll(".copiar-email");
+
+// Itera sobre cada botão e adiciona o evento de clique
+botoes.forEach(function(botao) {
+    botao.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        
+        // Texto a ser copiado
+        const email = "info@cellesti.ai";
+        
+        // Cria um elemento temporário
+        const inputTemporario = document.createElement("input");
+        inputTemporario.value = email;
+        document.body.appendChild(inputTemporario);
+        
+        // Seleciona o texto e copia para a área de transferência
+        inputTemporario.select();
+        document.execCommand("copy");
+        
+        // Remove o elemento temporário
+        document.body.removeChild(inputTemporario);
+        
+        // Exibe o alerta de copiado
+        const alerta = document.querySelector("#alerta");
+        alerta.classList.add("mostrar");
+        
+        // Esconde o alerta após 2 segundos
+        setTimeout(function() {
+            alerta.classList.remove("mostrar");
+        }, 2000);
+    });
+});

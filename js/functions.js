@@ -174,3 +174,8 @@ botoes.forEach(function(botao) {
         }, 2000);
     });
 });
+
+setTimeout(() => {
+  document.querySelector('.giveaway-card').style.display = 'flex'
+  document.querySelector('.giveaway-loading').style.display = 'none'
+}, 10000)

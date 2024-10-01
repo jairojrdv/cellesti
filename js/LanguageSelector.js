@@ -67,7 +67,9 @@ class LanguageSelector {
 		document.querySelector('.flag-language img').src = document.querySelector('.flag-language img').src.replace(':choose', lang[':choose'])
 		document.querySelector('title').innerHTML = document.querySelector('title').innerHTML.replace(':title', lang[':title'])
   
-		document.querySelector('.face').style.display = 'none'
+		setTimeout(() => {
+			document.querySelector('.face').style.display = 'none'
+		}, 4000)
 		if (rtl.includes(this.getLang())) {
 			document.body.style.direction = 'rtl';
 		}

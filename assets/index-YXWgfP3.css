@@ -28,7 +28,6 @@ h3{
 }
 button {
   font-weight: 600;
-  background: linear-gradient(90deg, #092831 0%, rgba(28, 123, 151, 0) 58%);
   border: none;
   border-radius: 8px;
   display: inline-block;
@@ -810,6 +809,7 @@ main .banner .banner-area .banner-text {
   color: #2ed0ff;
   margin-bottom: 15px;
   font-size: 40px;
+  text-align: center;
 }
 main .choose-us {
   background: rgba(0, 0, 0, 0.8);
@@ -1102,6 +1102,17 @@ main .tokenomics .tokenomics-card {
   align-items: center;
   margin: 60px auto;
   width: 50vw;
+}
+main .tokenomics .tokenomics-card .lock {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: solid 1px #6b6b6b;
+  font-size: 12px;
+  background: linear-gradient(90deg, #092831 0%, transparent 58%);
 }
 main .tokenomics .tokenomics-card .title h1 {
   font-size: 40px;
@@ -1516,12 +1527,13 @@ main .ai-startups .ai-startups-card {
 }
 .faq-title {
   color: #2ed0ff;
-    font-weight: 700;
+  font-weight: 700;
   font-size: 25px;
   text-align: center;
 }
 .faq h3 {
-    font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
   font-weight: 400;
   text-align: center;
 }
@@ -2135,6 +2147,8 @@ footer .text p {
 .section2__progressBarContainer {
   flex: 1;
   width: 100%;
+  height: 25px;
+  max-width: 400px;
   margin-top: 15px;
   border-radius: 45px;
   overflow: hidden;
@@ -2222,7 +2236,7 @@ footer .text p {
 .section2__progressBarPoint {
   color: #1df9ab;
   margin-top: 8px;
-  font-size: 12px;be
+  font-size: 12px;
   font-weight: var(--boldFont);
   position: absolute;
 }
@@ -2267,47 +2281,8 @@ footer .text p {
   font-weight: var(--boldFont);
   letter-spacing: 1px;
 }
-.add-auster {
-  position: relative;
-  display: inline-block;
-  font-size: 18px;
-}
-.add-auster:before,
-.add-auster:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 50px;
-  border-top: 1px solid rgb(95, 95, 95);
-}
-.add-auster:before {
-  left: 0;
-  margin-left: -70px;
-}
-.add-auster:after {
-  right: 0;
-  margin-right: -70px;
-}
-.add-auster22 {
-  position: relative;
-  display: inline-block;
-  padding: 0 20px;
-}
-.add-auster22:before,
-.add-auster22:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 170px;
-  border-top: 1px solid rgb(82, 82, 82);
-}
-.add-auster22:before {
-  left: 0;
-  margin-left: -170px;
-}
-.add-auster22:after {
-  right: 0;
-  margin-right: -170px;
+.numbers {
+  max-width: 400px;
 }
 .ETHbtn {
   color: #fff !important;
@@ -2413,6 +2388,17 @@ footer .text p {
   background-color: #242424 !important;
   border: 2px solid #1c9cde;
 }
+.conbtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #12b3eb, #5460f9 80%);
+  transition: all .2s ease-in-out;
+}
+.conbtn:hover {
+  opacity: .7;
+}
 @font-face {
   font-family: cardfont;
   src: url(/assets/Poppins-Light-0-vgrCHX.ttf);
@@ -2421,21 +2407,23 @@ footer .text p {
     font-weight: 700;
 }
 .cardbgset {
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(5px);
-  padding: 30px;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+  padding: 20px;
   border: 2px solid #353535;
   border-radius: 10px;
 }
 .newrowsett {
-  width: 93% !important;
+  width: 93%;
+  max-width: 400px;
   margin: auto !important;
 }
 .buytokenfont {
-  font-size: 32px;
+  font-size: 24px;
 }
 .numberfont {
-  font-size: 28px;
+  font-size: 22px;
 }
 .navbartop {
   padding: 18px 10px !important;
@@ -2462,6 +2450,7 @@ footer .text p {
   left: 50%;
   transform: translate(-50%);
   white-space: nowrap;
+  font-size: 14px;
 }
 .tooltipPara {
   color: #fff;
@@ -2491,16 +2480,9 @@ footer .text p {
     width: 100% !important;
     margin: auto !important;
   }
-  .cardbgset {
-    padding: 12px;
-  }
   .input-icon-wrap {
     width: 100%;
     padding: 0 2px;
-  }
-  .ETHbtn {
-    padding: 10px 8px !important;
-    font-size: 13px !important;
   }
   .add-auster:before {
     left: 0;

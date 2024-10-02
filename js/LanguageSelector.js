@@ -69,7 +69,7 @@ class LanguageSelector {
   
 		setTimeout(() => {
 			document.querySelector('.face').style.display = 'none'
-		}, 4000)
+		}, 2000)
 		if (rtl.includes(this.getLang())) {
 			document.body.style.direction = 'rtl';
 		}

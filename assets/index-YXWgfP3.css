@@ -441,6 +441,16 @@ header {
   height: auto;
 }
 
+#account {
+  max-width: 200px;
+  max-height: 40px;
+  font-size: 12px;
+}
+
+#account svg {
+  max-width: 24px;
+}
+
 .change-language {
   display: flex;
   align-items: center;
@@ -2407,7 +2417,8 @@ footer .text p {
     font-weight: 700;
 }
 .cardbgset {
-  max-width: 500px;
+  width: 500px;
+  max-width: 85vw;
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(50px);
   padding: 20px;

@@ -14,6 +14,10 @@ body {
 body {
   width: 100vw;
 }
+html {
+  color-scheme: dark;
+}
+
 .fonte-externa {
   font-weight: 700;
 }
@@ -213,6 +217,32 @@ animation: bounce 1.4s ease infinite;
   }
 }  
 
+.background {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.background::before {
+  --size: 2.75rem;
+  --line: color-mix(in oklch, canvasText, transparent 85%);
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    var(--line) 0.0625rem,
+    transparent 0.0625rem var(--size)
+    )
+    50% 50% / var(--size) var(--size),
+    linear-gradient(var(--line) 0.0625rem, transparent 0.0625rem var(--size)) 50% 50% / var(--size) var(--size);
+  mask: linear-gradient(-20deg, transparent 50%, #f0f0f0);
+  top: 0;
+  transform-style: flat;
+  pointer-events: none;
+  position: fixed;
+  z-index: -1;
+}
 
 .background {
   position: fixed;
@@ -225,13 +255,14 @@ animation: bounce 1.4s ease infinite;
 }
 
 .background span {
+  opacity: .1;
   width: 20vmin;
   height: 20vmin;
   border-radius: 20vmin;
   backface-visibility: hidden;
   position: absolute;
   animation-name: move;
-  animation-duration: 6s;
+  animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }

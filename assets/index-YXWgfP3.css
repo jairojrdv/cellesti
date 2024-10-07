@@ -1107,11 +1107,16 @@ main .tokenomics {
 main .tokenomics .tokenomics-card {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
   justify-content: space-between;
   align-items: center;
   margin: 60px auto;
   width: 50vw;
+}
+main .tokenomics .tokenomics-card .container-lock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 main .tokenomics .tokenomics-card .lock {
   padding: 5px;
@@ -1126,9 +1131,6 @@ main .tokenomics .tokenomics-card .lock {
 }
 main .tokenomics .tokenomics-card .title h1 {
   font-size: 40px;
-}
-main .tokenomics .tokenomics-card .title {
-  font-size: 18px;
   margin-bottom: -40px;
 }
 main .tokenomics .tokenomics-card .progress-value h1 {
@@ -1153,11 +1155,7 @@ main .percents .progress-container {
 }
 main .percents .percents-text {
   display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  text-align: start;
-  gap: 30px;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 main .percents .percents-text .title {
@@ -1866,11 +1864,11 @@ footer .text p {
     text-align: justify;
   }
   main .tokenomics .tokenomics-card .title h1 {
-      font-weight: 700;
+    font-weight: 700;
     font-size: 24px;
   }
   main .tokenomics .tokenomics-card .percents .title {
-    font-size: 18px;
+    font-size: 14px;
   }
   main .tokenomics .tokenomics-card .coin {
     width: 90vw;
@@ -1880,7 +1878,7 @@ footer .text p {
     width: 100%;
   }
   footer .ai-startups .ai-startups-card h1 {
-      font-weight: 700;
+    font-weight: 700;
     font-size: 24px;
   }
   main .giveaway .giveaway-card {
@@ -1929,7 +1927,6 @@ footer .text p {
   }
   main .tokenomics .tokenomics-card .percents-text {
     display: flex;
-    flex-direction: column;
     gap: 10px;
     text-align: center;
   }
@@ -1968,12 +1965,6 @@ footer .text p {
     align-items: center;
     margin-left: 20px;
     width: 320px;
-  }
-  main .tokenomics .tokenomics-card .percents-text {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    text-align: start;
   }
 }
 .faq-item-hide {

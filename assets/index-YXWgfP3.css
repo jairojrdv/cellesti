@@ -2263,12 +2263,6 @@ footer .text p {
 .numbers {
   max-width: 400px;
 }
-.ETHbtn {
-  color: #fff !important;
-  background-color: #242424 !important;
-  padding: 15px 40px !important;
-  width: 95% !important;
-}
 .input-container {
   position: relative;
   display: inline-block;
@@ -2326,14 +2320,13 @@ footer .text p {
   width: 96%;
   height: 60px;
   align-items: center;
-  background: #242424;
-  border: 3px solid #3f3f3f;
-  border-radius: 10px;
+  border: 1px solid #3f3f3f;
+  border-radius: 25px;
   padding: 0 15px;
   color: #fff !important;
 }
 .input-with-icon {
-  background: none;
+  background: transparent;
   border: none;
   outline: none;
   color: #000 !important;
@@ -2355,16 +2348,31 @@ footer .text p {
   background-color: transparent;
   cursor: pointer;
 }
-.active {
-  background-color: #575757;
-  border: 2px solid #1c9cde;
+
+.payment-types {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
-#ETHbutton {
-  margin-left: 7px;
+
+.payment-types a {
+  color: #fff;
+  padding: 10px 10px;
+  width: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  border: 2px solid #636363;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
 }
+
 #ETHbutton.active,
 #USDTbutton.active {
-  background-color: #242424 !important;
   border: 2px solid #1c9cde;
 }
 .conbtn {

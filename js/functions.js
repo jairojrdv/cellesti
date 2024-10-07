@@ -164,3 +164,25 @@ setTimeout(() => {
   document.querySelector('.giveaway-card').style.display = 'flex'
   document.querySelector('.giveaway-loading').style.display = 'none'
 }, 10000)
+
+// Select the buttons
+const ethButton = document.getElementById("ETHbutton");
+const usdtButton = document.getElementById("USDTbutton");
+
+// Initially set ETHbutton as active
+ethButton.classList.add("active");
+
+// Function to toggle active class
+function toggleActive(clickedButton, otherButton) {
+  clickedButton.classList.add("active");
+  otherButton.classList.remove("active");
+}
+
+// Add event listeners to the buttons
+ethButton.addEventListener("click", () => {
+  toggleActive(ethButton, usdtButton);
+});
+
+usdtButton.addEventListener("click", () => {
+  toggleActive(usdtButton, ethButton);
+});

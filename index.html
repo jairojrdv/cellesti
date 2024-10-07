@@ -329,41 +329,28 @@
               :payment-method
             </p>
           </div>
+          
   
-          <div class="row mx-auto newrowsett" style="width: 93%">
-            <div class="col-md-6 p-0 m-0">
-              <a
-                type="button"
-                id="ETHbutton"
-                class="btn buybtn ETHbtn"
-                style="font-size: 14px"
-              >
-                <img
-                  src="/assets/eth-logo.png"
-                  style="width: 30px"
-                  alt=""
-                  srcset=""
-                />
-                :buy-with-eth
-              </a>
-            </div>
-  
-            <div class="col-md-6 p-0 m-0">
-              <a
-                type="button"
-                id="USDTbutton"
-                class="btn buybtn ETHbtn"
-                style="font-size: 14px"
-              >
-                <img
-                  src="/assets/usdt-3d-59GRnOB7.png"
-                  style="width: 30px"
-                  alt=""
-                  srcset=""
-                />
-                :buy-with-usdt
-              </a>
-            </div>
+          <div class="payment-types">
+            <a
+              id="ETHbutton"
+            >
+              <img
+                src="/assets/eth-logo.png"
+                style="width: 30px"
+              />
+              :buy-with-eth
+            </a>
+
+            <a
+              id="USDTbutton"
+            >
+              <img
+                src="/assets/usdt-3d-59GRnOB7.png"
+                style="width: 30px"
+              />
+              :buy-with-usdt
+            </a>
           </div>
   
           <div
@@ -1158,30 +1145,6 @@
     <script type="module" src="js/swiper.js"></script>
     <script type="module" crossorigin src="/assets/index-nVuQ03dS.js"></script>
 
-
-    <script>
-      // Select the buttons
-      const ethButton = document.getElementById("ETHbutton");
-      const usdtButton = document.getElementById("USDTbutton");
-
-      // Initially set ETHbutton as active
-      ethButton.classList.add("active");
-
-      // Function to toggle active class
-      function toggleActive(clickedButton, otherButton) {
-        clickedButton.classList.add("active");
-        otherButton.classList.remove("active");
-      }
-
-      // Add event listeners to the buttons
-      ethButton.addEventListener("click", () => {
-        toggleActive(ethButton, usdtButton);
-      });
-
-      usdtButton.addEventListener("click", () => {
-        toggleActive(usdtButton, ethButton);
-      });
-    </script>
     <script>
       // Change navbar color on scroll
       window.addEventListener("scroll", function () {

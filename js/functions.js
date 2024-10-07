@@ -186,3 +186,23 @@ ethButton.addEventListener("click", () => {
 usdtButton.addEventListener("click", () => {
   toggleActive(usdtButton, ethButton);
 });
+
+// redirect buy buttons
+
+function redirectFunctionBuy () {
+  if (localStorage.getItem('wagmi.connected')) {
+    $('#purchaseButton').click()
+  } else {
+    $('#open-connect-modal').click()
+  }
+}
+
+$(document).on("click", "#buyButtonAiAction", function () {
+  redirectFunctionBuy()
+});
+
+$(document).on("click", "#buyButtonAiStartups", function () {
+  redirectFunctionBuy()
+});
+
+

@@ -117,21 +117,6 @@ function habilitarScroll() {
 //   });
 // });
 
-// document.getElementById("giveaway-button").addEventListener("click", function () {
-//   document.querySelector('#form-giveaway').style.display = 'flex'
-//   desabilitarScroll()
-// })
-
-$(document).on("click", "#giveaway-button", function () {
-  console.log('clicou no giveaway')
-  document.querySelector('#form-giveaway').style.display = 'flex'
-})
-
-$(document).on("click", "#closeFormGiveaway", function () {
-  document.querySelector('#form-giveaway').style.display = 'none'
-
-})
-
 var l = new LanguageSelector();
 $(document).on("change", "#langSelector", function () {
   var s = $(this).children("option:selected").val();

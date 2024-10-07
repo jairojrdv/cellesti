@@ -1392,6 +1392,8 @@ main .giveaway .giveaway-card .giveway-text #giveaway-button {
   width: 118px;
   font-size: 9px;
   padding: 5px 0px;
+  text-decoration: none;
+  text-align: center;
 }
 main .giveaway .giveaway-card #gift {
   position: absolute;
@@ -1409,33 +1411,8 @@ main .giveaway .giveaway-card #car {
 main .giveaway .giveaway-card img {
   width: 100%;
 }
-main .giveaway #form-giveaway {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, .9);
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-main .giveaway #form-giveaway #closeFormGiveaway {
-  position: absolute;
-  top: 50px;
-  right: 60px;
-  cursor: pointer;
-}
-main .giveaway #form-giveaway .hbspt-form {
-  min-width: 300px;
-  width: 60vw;
-  max-width: 700px;
-}
 
 main .apostrofo {
-  background: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1451,7 +1428,7 @@ main .apostrofo .apostrofo-card img {
   width: 100%;
 }
 main .ai-startups {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8), #ffffff00);
+  background: linear-gradient(to bottom, transparent,rgba(0, 0, 0, 0.8), #ffffff00);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1525,6 +1502,7 @@ main .ai-startups .ai-startups-card {
   color: #fff;
 }
 .faq {
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   background: linear-gradient(to top, #010d11, #021e27, #092831b2, #0928316b, #ffffff00);

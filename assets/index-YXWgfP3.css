@@ -1933,6 +1933,9 @@ footer .text p {
   main .staking .staking-text {
     text-align: justify;
   }
+  main .how-it-works .how-it-works-card .image img {
+    content: url(HOW\ IT\ WORKS\ MOBILE.png);
+  }
   main .notebook .notebook-card .notebook-text {
     text-align: justify;
   }
@@ -2029,15 +2032,6 @@ footer .text p {
   main .notebook .notebook-card .notebook-text,
   main .ai-action-card .descript {
     text-align: center;
-  }
-  #responsive-image {
-    content: url("../images/HOW IT WORKS MOBILE.png");
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px;
-    width: 320px;
   }
 }
 .faq-item-hide {

@@ -1143,7 +1143,7 @@ main .how-it-works .how-it-works-card {
 main .how-it-works .how-it-works-card .title {
   color: #2ed0ff;
   padding: 70px 0;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
     font-weight: 700;
 }
@@ -1949,6 +1949,9 @@ footer .text p {
   }
   main .staking .staking-text {
     text-align: justify;
+  }
+  main .how-it-works .how-it-works-card .title h1 {
+    font-size: 25px !important;
   }
   main .how-it-works .how-it-works-card .image img {
     content: url(HOW\ IT\ WORKS\ MOBILE.png);

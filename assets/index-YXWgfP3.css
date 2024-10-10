@@ -674,8 +674,9 @@ main .form .card-form {
   font-size: 20px;
   padding: 5px 12px;
   text-decoration: none;
-    font-weight: 700;
+  font-weight: 700;
 }
+
 .card-form .converter-options {
   font-size: 18px;
   margin-top: -20px;
@@ -2175,6 +2176,61 @@ footer .text p {
   border-radius: 50px !important;
   font-size: 13px;
 }
+
+.stgbtn.stage{
+  box-shadow: 
+  0 0 0 8px rgba(14, 157, 168, 0.6),
+  inset 0 0 5px rgba(12, 138, 144, .7),
+  0 1px 1px 1px rgba(255, 255, 255, 0.4);
+  -webkit-animation: loading 2s infinite ease-in-out;
+  -moz-animation: loading 2s infinite ease-in-out;
+  animation: loading 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    box-shadow: 
+      0 0 0 8px rgba(11, 121, 133, 0.45),
+      0 0 0 4px rgba(11, 121, 133, 0.65),
+      0 0 0 2px rgba(11, 121, 133, 0.85),
+      inset 0 0 1px 1px rgba(0, 0, 0, 0.5),
+      0 0 5px 2px #02191B;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 
+      0 0 0 8px rgba(11, 121, 133, 0.45),
+      0 0 0 4px rgba(11, 121, 133, 0.65),
+      0 0 0 2px rgba(11, 121, 133, 0.85),
+      inset 0 0 1px 1px rgba(0, 0, 0, 0.5),
+      0 0 5px 2px #02191B;
+  }
+}
+
+@keyframes loading {
+  0% {
+    box-shadow: 
+      0 0 0 8px rgba(11, 121, 133, 0.45),
+      0 0 0 4px rgba(11, 121, 133, 0.65),
+      0 0 0 2px rgba(11, 121, 133, 0.85),
+      inset 0 0 1px 1px rgba(0, 0, 0, 0.5),
+      0 0 5px 2px #02191B;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 
+      0 0 0 8px rgba(11, 121, 133, 0.45),
+      0 0 0 4px rgba(11, 121, 133, 0.65),
+      0 0 0 2px rgba(11, 121, 133, 0.85),
+      inset 0 0 1px 1px rgba(0, 0, 0, 0.5),
+      0 0 5px 2px #02191B;
+  }
+}
+
 .stgbtn22 {
   background-color: #3f87d9;
   color: #1d1d1d;

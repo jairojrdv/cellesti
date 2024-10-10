@@ -86,7 +86,9 @@ lang = {
         ':copyright': "Copyright © 2024. All rights reserved by Cellesti.",
         ':disclaimer-title': "Disclaimer",
         ':disclaimer-text': "Cryptocurrency investments carry a high risk of volatility. Be aware of the tax implications, as profits may be subject to capital gains or other taxes in your jurisdiction. Cryptocurrency regulations can vary, so ensure you understand the rules in your area. Conduct thorough research and invest only what you can afford to lose.",
-        ':our-socials-title': "Our socials"
+        ':our-socials-title': "Our socials",
+        ":apostofro-text": "\"The global artificial intelligence (AI) market size was estimated at US$ 119.78 billion in 2022 and it is expected to hit US$ 1,591.03 billion by 2030 with a registered CAGR of 38.1% from 2022 to 2030. The North America artificial intelligence market was valued at USD 51 billion in 2021.\"",
+        ':apostofro-source': "Source: Precedence Research"
     },
     'pt': {
         ':title' : 'Pré-venda Está Ao Vivo',
@@ -175,7 +177,9 @@ lang = {
         ':copyright': "Direitos autorais © 2024. Todos os direitos reservados pela Cellesti.",
         ':disclaimer-title': "Isenção de responsabilidade",
         ':disclaimer-text': "Os investimentos em criptomoedas apresentam um alto risco de volatilidade. Esteja ciente das implicações fiscais, pois os lucros podem estar sujeitos a impostos sobre ganhos de capital ou outros impostos em sua jurisdição. As regulamentações de criptomoedas podem variar, então certifique-se de entender as regras em sua área. Realize uma pesquisa completa e invista apenas o que você pode se dar ao luxo de perder.",
-        ':our-socials-title': "Nossas redes sociais"
+        ':our-socials-title': "Nossas redes sociais",
+        ":apostofro-text": "\"O tamanho do mercado global de inteligência artificial (IA) foi estimado em US$ 119,78 bilhões em 2022 e espera-se que atinja US$ 1.591,03 bilhões até 2030, com uma taxa de crescimento anual composta (CAGR) de 38,1% de 2022 a 2030. O mercado de inteligência artificial da América do Norte foi avaliado em USD 51 bilhões em 2021.\"",
+        ':apostofro-source': "Fonte: Precedence Research"
     },
     'fr': {
         ':title' : 'La Prévente Est En Direct',
@@ -264,7 +268,9 @@ lang = {
         ':copyright': "Copyright © 2024. Tous droits réservés à Cellesti.",
         ':disclaimer-title': "Avertissement",
         ':disclaimer-text': "Les investissements en cryptomonnaies présentent un risque élevé de volatilité. Soyez conscient des implications fiscales, car les bénéfices peuvent être soumis à des impôts sur les gains en capital ou d'autres taxes dans votre juridiction. Les réglementations sur les cryptomonnaies peuvent varier, alors assurez-vous de comprendre les règles dans votre région. Effectuez des recherches approfondies et n'investissez que ce que vous pouvez vous permettre de perdre.",
-        ':our-socials-title': "Nos réseaux sociaux"
+        ':our-socials-title': "Nos réseaux sociaux",
+        ":apostofro-text": "\"La taille du marché mondial de l'intelligence artificielle (IA) était estimée à 119,78 milliards de dollars en 2022 et devrait atteindre 1 591,03 milliards de dollars d'ici 2030 avec un TCAC de 38,1% de 2022 à 2030. Le marché nord-américain de l'intelligence artificielle était évalué à 51 milliards USD en 2021.\"",
+        ':apostofro-source': "Source : Precedence Research"
     },
     'de': {
         ':title' : 'Die Vorverkaufsaktion Ist Aktiv',
@@ -353,7 +359,9 @@ lang = {
         ':copyright': "Urheberrecht © 2024. Alle Rechte vorbehalten für Cellesti.",
         ':disclaimer-title': "Haftungsausschluss",
         ':disclaimer-text': "Investitionen in Kryptowährungen bergen ein hohes Risiko der Volatilität. Seien Sie sich der steuerlichen Auswirkungen bewusst, da Gewinne möglicherweise der Kapitalertragssteuer oder anderen Steuern in Ihrer Gerichtsbarkeit unterliegen. Die Vorschriften für Kryptowährungen können variieren, daher sollten Sie die Regeln in Ihrem Bereich verstehen. Führen Sie gründliche Recherchen durch und investieren Sie nur das, was Sie sich leisten können zu verlieren.",
-        ':our-socials-title': "Unsere sozialen Medien"
+        ':our-socials-title': "Unsere sozialen Medien",
+        ":apostofro-text": "\"Die Größe des globalen Marktes für künstliche Intelligenz (KI) wurde 2022 auf 119,78 Milliarden US-Dollar geschätzt, und es wird erwartet, dass er bis 2030 1.591,03 Milliarden US-Dollar erreicht, mit einer jährlichen Wachstumsrate (CAGR) von 38,1% von 2022 bis 2030. Der nordamerikanische Markt für künstliche Intelligenz wurde 2021 auf 51 Milliarden USD geschätzt.\"",
+        ':apostofro-source': "Quelle: Precedence Research"
     },
     'es': {
         ':title' : 'La Preventa Está Activa',
@@ -442,6 +450,8 @@ lang = {
         ':copyright': "Copyright © 2024. Todos los derechos reservados por Cellesti.",
         ':disclaimer-title': "Descargo de responsabilidad",
         ':disclaimer-text': "Las inversiones en criptomonedas conllevan un alto riesgo de volatilidad. Tenga en cuenta las implicaciones fiscales, ya que las ganancias pueden estar sujetas a impuestos sobre ganancias de capital u otros impuestos en su jurisdicción. Las regulaciones de criptomonedas pueden variar, así que asegúrese de comprender las reglas en su área. Realice una investigación exhaustiva e invierta solo lo que pueda permitirse perder.",
-        ':our-socials-title': "Nuestras redes sociales"
+        ':our-socials-title': "Nuestras redes sociales",
+        ":apostofro-text": "\"El tamaño del mercado global de inteligencia artificial (IA) se estimó en US$ 119,78 mil millones en 2022 y se espera que alcance los US$ 1,591.03 mil millones para 2030 con una tasa de crecimiento anual compuesta (CAGR) del 38,1% de 2022 a 2030. El mercado de inteligencia artificial de América del Norte fue valorado en 51 mil millones de USD en 2021.\"",
+        ':apostofro-source': "Fuente: Precedence Research"
     }
 }

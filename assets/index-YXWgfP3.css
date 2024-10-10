@@ -1480,9 +1480,26 @@ main .apostrofo .apostrofo-card {
   width: 80vw;
   max-width: 800px;
   margin: 50px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main .apostrofo .apostrofo-card img {
+  width: 250px;
+  max-width: 24vw;
+}
+main .apostrofo .apostrofo-card .apostofro-text {
   width: 100%;
+  min-width: 300px;
+  max-width: 70vw;
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  margin-left: -20px;
+}
+main .apostrofo .apostrofo-card .apostofro-text p {
+  margin-top: 15px;
+  font-weight: 700;
 }
 main .ai-startups {
   background: linear-gradient(to bottom, transparent,rgba(0, 0, 0, 0.8), #ffffff00);
@@ -1975,6 +1992,22 @@ footer .text p {
   }
   main .giveaway .giveaway-card .giveway-text h4 {
     font-size: 25px;
+  }
+  main .apostrofo .apostrofo-card {
+    margin: 80px 10px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(50px);
+  }
+  main .apostrofo .apostrofo-card img {
+    width: 250px;
+    max-width: 70vw;
+    margin-bottom: -250px;
+    opacity: .4;
+  }
+  main .apostrofo .apostrofo-card .apostofro-text {
+    text-align: center;
+    margin: 0;
   }
 }
 @media screen and (max-width: 540px) {

@@ -2515,7 +2515,6 @@ footer .text p {
 
 /* chat support huspot */
 
-.hs-shadow-container {
-  background: transparent;
-  border: none;
+#hubspot-messages-iframe-container {
+  color-scheme : light;
 }

@@ -472,10 +472,9 @@ header {
   height: auto;
 }
 
-#account {
-  max-width: 200px;
-  max-height: 40px;
+#account .contbtn-content {
   font-size: 12px;
+  background: #04152f;
 }
 
 #account svg {
@@ -554,13 +553,24 @@ main {
 }
 .apresentation .apresentation-actions .apresentation-button {
   font-size: 14px;
-  border: solid 1px #ccc;
   text-decoration: none;
   color: white;
-  background: transparent;
+  background: linear-gradient(104deg, rgb(0, 115, 255) 0%, rgb(170, 170, 170) 94%);
+  border-radius: 58px;
+  padding: 2px;
 }
-.apresentation .apresentation-actions .apresentation-button:hover {
-  background: #ccc;
+.apresentation-button-content {
+  background-color: rgb(2, 7, 13);
+  border-radius: 58px;
+  padding: 9px 24px;
+  transition: all .3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  transition: all .3s ease-in-out;
+}
+.apresentation .apresentation-actions .apresentation-button:hover > .apresentation-button-content {
+  background: transparent;
   color: #071a1f;
 }
 .apresentation .apresentation-actions .socials ul {
@@ -900,11 +910,14 @@ main .choose-card {
   text-align: center;
   color: #fff;
   padding: 30px;
-  background: rgba(79, 97, 124, 0.2);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
-  border-radius: 15px;
   min-height: 428px;
+  border: 1px solid rgba(0, 115, 255, 0.28);
+  background-color: rgba(2, 22, 47, 0.07);
+  border-radius: 16px;
+  box-shadow: inset 1px 9px 58px rgba(170, 170, 170, 0.09);
+
 }
 main .choose-card h3 {
     font-weight: 600;
@@ -968,16 +981,30 @@ main .ai-action-card .ai-buttons button {
   margin: 0 15px;
   cursor: pointer;
   color: #fff;
-  border: 1px solid transparent;
   background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   background-size: 150% 150%;
-  border-radius: 8px;
   box-shadow: 1px 1px 1px 1px #0a2d38;
   animation: animacao;
   animation-timing-function: linear;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transition: 0.2s all;
+
+  border-radius: 100px;
+  border-radius: 58px;
+  padding: 2px;
+}
+main .ai-action-card .ai-buttons button .ai-buttons-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #071e25;
+  border-radius: 58px;
+  padding: 9px 24px;
+  transition: all .3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 .ai-action-card .ai-buttons button:hover {
   box-shadow: 0 0 10px #12b3eb;
@@ -1507,18 +1534,32 @@ main .ai-startups .ai-startups-card {
 }
 .ai-startups .startup-buttons button {
   width: 200px;
+  margin: 0 15px;
   cursor: pointer;
   color: #fff;
-  border: 1px solid transparent;
   background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   background-size: 150% 150%;
-  border-radius: 8px;
   box-shadow: 1px 1px 1px 1px #0a2d38;
   animation: animacao;
   animation-timing-function: linear;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transition: 0.2s all;
+  border-radius: 100px;
+  border-radius: 58px;
+  padding: 2px;
+}
+.ai-startups .startup-buttons button .ai-startup-buttons-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #10151E;
+  border-radius: 58px;
+  padding: 9px 24px;
+  transition: all .3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 .ai-startups .startup-buttons button:hover {
   box-shadow: 0 0 10px #12b3eb;
@@ -2407,15 +2448,22 @@ footer .text p {
   border: 2px solid #1c9cde;
 }
 .conbtn {
+  border-radius: 100px;
+  background: linear-gradient(104deg, rgb(0, 115, 255) 0%, rgb(170, 170, 170) 94%);
+  border-radius: 58px;
+  padding: 2px;
+}
+.contbtn-content {
+  background-color: rgb(2, 7, 13);
+  border-radius: 58px;
+  padding: 9px 24px;
+  transition: all .3s ease-in-out;
   display: flex;
   align-items: center;
-  gap: 10px;
-  border-radius: 100px;
-  background: linear-gradient(90deg, #12b3eb, #5460f9 80%);
-  transition: all .2s ease-in-out;
+  gap: 3px;
 }
-.conbtn:hover {
-  opacity: .7;
+.conbtn:hover > .contbtn-content {
+  background: transparent;
 }
 @font-face {
   font-family: cardfont;

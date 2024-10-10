@@ -2593,6 +2593,9 @@ footer .text p {
     text-align: center;
     align-content: center;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .buytokenfont {
     font-size: 18px;

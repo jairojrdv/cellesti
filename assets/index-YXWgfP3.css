@@ -1123,7 +1123,7 @@ main .staking .card-staking .staking-image img {
 }
 
 main .how-it-works {
-  background-image: url(/assets/Presale_V3_05-2HcFWoas.webp);
+  background: #020a0c;
   display: flex;
   flex-direction: column;
   justify-content: center;

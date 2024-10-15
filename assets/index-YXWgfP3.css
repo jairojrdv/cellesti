@@ -1902,6 +1902,11 @@ footer .text p {
   }
   .apresentation .apresentation-actions {
     margin-bottom: 70px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .apresentation .apresentation-actions ul {
+    padding: 0;
   }
   .card-form .title-form {
     font-size: 18px;

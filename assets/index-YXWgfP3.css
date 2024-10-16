@@ -1910,6 +1910,9 @@ footer .footer .logo img {
 footer .footer .logo p {
   font-size: 10px;
 }
+.footer .localization {
+  margin-top: -12px;
+}
 footer .our-sociais {
   color: #fff;
   display: flex;

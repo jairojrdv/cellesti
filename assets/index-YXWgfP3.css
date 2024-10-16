@@ -29,6 +29,7 @@ h1{
   font-family: NeuePlak;
 }
 h3{
+  font-family: NeuePlakSemi;
   font-weight: 600;
 }
 button {
@@ -687,6 +688,7 @@ main {
   -webkit-text-fill-color: transparent;
 }
 .apresentation h7 {
+  font-family: NeuePlakSemi;
   color: #fff;
   font-size: 20px;
   font-weight: 300;
@@ -2740,8 +2742,12 @@ footer .text p {
   src: url(/assets/NeuePlak-WideBold.ttf);
 }
 @font-face {
+  font-family: NeuePlakSemi;
+  src: url(/assets/NeuePlak-WideSemiBold.ttf);
+}
+@font-face {
   font-family: NeuePlakBlack;
-  src: url(/assets/NeuePlak-WideExtraBlack.ttf);
+  src: url(/assets/NeuePlak-WideBlack.ttf);
 }
 .newfontcard {
     font-weight: 700;

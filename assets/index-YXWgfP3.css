@@ -689,7 +689,7 @@ main {
   -webkit-text-fill-color: transparent;
 }
 .apresentation h7 {
-  font-family: NeuePlakSemi;
+  font-family: NeuePlakRegular;
   color: #fff;
   font-size: 20px;
   font-weight: 300;
@@ -2741,6 +2741,10 @@ footer .text p {
 @font-face {
   font-family: NeuePlak;
   src: url(/assets/NeuePlak-WideBold.ttf);
+}
+@font-face {
+  font-family: NeuePlakRegular;
+  src: url(/assets/NeuePlak-WideRegular.ttf);
 }
 @font-face {
   font-family: NeuePlakSemi;

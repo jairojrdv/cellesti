@@ -69,6 +69,7 @@ class LanguageSelector {
   
 		setTimeout(() => {
 			document.querySelector('.face').style.display = 'none'
+			document.querySelector('#hubspot-messages-iframe-container').style.opacity = '1'
 		}, 2000)
 		if (rtl.includes(this.getLang())) {
 			document.body.style.direction = 'rtl';

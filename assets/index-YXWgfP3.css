@@ -2859,4 +2859,5 @@ footer .text p {
 
 #hubspot-messages-iframe-container {
   color-scheme : light;
+  opacity: 0;
 }

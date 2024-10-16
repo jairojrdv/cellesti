@@ -1163,7 +1163,7 @@ main .ai-action-card .ai-buttons button .ai-buttons-content {
   align-items: center;
   gap: 3px;
 }
-.ai-action-card .ai-buttons button:hover {
+main .ai-action-card .ai-buttons button:hover {
   box-shadow: 0 0 10px #12b3eb;
   background: linear-gradient(90deg, #12b3eb, #5460f9, #12b3eb);
   animation: animacao;
@@ -1172,6 +1172,9 @@ main .ai-action-card .ai-buttons button .ai-buttons-content {
   animation-iteration-count: infinite;
   transition: 0.2s all;
   color: #fff;
+}
+main .ai-action-card .powered-by {
+  font-family: NeuePlakRegular;
 }
 main .staking {
   background: linear-gradient(to top, #020a0c, #071e25);

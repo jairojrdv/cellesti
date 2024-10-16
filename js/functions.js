@@ -223,6 +223,8 @@ function toggleMenu() {
   $("#hamburger").toggleClass('open');
   console.log(estado);
   if (estado === 0) {
+    $("#menu-mobile ul").css("display", "block");
+
     TweenMax.to($("#bg-menu-mobile"), 1, {
       x:-vw,
       ease: Expo.easeInOut
@@ -256,5 +258,9 @@ function toggleMenu() {
       });
       delay_time += .02;
     });
+
+    setTimeout(function() {
+      $("#menu-mobile ul").css("display", "none");
+    }, 1200);
   }
 }

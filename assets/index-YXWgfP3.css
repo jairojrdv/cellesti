@@ -459,6 +459,7 @@ animation: bounce 1.4s ease infinite;
 
 #menu-mobile {
   z-index: 999;
+  position: relative;
 }
 
 #menu-mobile a {
@@ -486,13 +487,14 @@ animation: bounce 1.4s ease infinite;
 
 #menu-mobile ul {
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 100px;
   left: 25px; 
   /*left: 0;*/
   list-style: none;
   color: #fff;
   z-index:99;
+  display: none;
 }
 
 #menu-mobile ul li {

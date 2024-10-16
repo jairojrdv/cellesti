@@ -1204,7 +1204,7 @@ main .staking .card-staking .staking-title {
 main .staking .card-staking .staking-text {
   width: 60%;
   min-width: 317px;
-  font-size: 20px;
+  font-size: 16px;
 }
 main .staking .card-staking .staking-image {
   width: 80vw;
@@ -1508,7 +1508,7 @@ main .notebook .notebook-card .notebook-title {
 }
 main .notebook .notebook-card .notebook-text {
   color: #fff;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
 }
 main .notebook .notebook-card img {

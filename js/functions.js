@@ -207,9 +207,20 @@ $(document).on("click", "#buyButtonAiStartups", function () {
 
 var estado = 0,
     vw = $(window).width();
+    
 $("#hamburger").click(function() {
+  toggleMenu();
+});
+
+$("#menu-mobile li").click(function() {
+  if (estado === 1) { // Fecha o menu apenas se ele estiver aberto
+    toggleMenu();
+  }
+});
+
+function toggleMenu() {
   var delay_time = 0;
-  $(this).toggleClass('open');
+  $("#hamburger").toggleClass('open');
   console.log(estado);
   if (estado === 0) {
     TweenMax.to($("#bg-menu-mobile"), 1, {
@@ -217,7 +228,7 @@ $("#hamburger").click(function() {
       ease: Expo.easeInOut
     });
     
-    $("li").each(function() {
+    $("#menu-mobile li").each(function() {
       TweenMax.to($(this), 1.2, {
         x:-vw,
         scaleX: 1,
@@ -233,7 +244,7 @@ $("#hamburger").click(function() {
       x:0,
       ease: Expo.easeInOut
     });
-    $("li").each(function() {
+    $("#menu-mobile li").each(function() {
       TweenMax.to($(this), 1, {
         x:0,
         /*
@@ -246,4 +257,4 @@ $("#hamburger").click(function() {
       delay_time += .02;
     });
   }
-});
+}

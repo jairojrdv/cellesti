@@ -1695,6 +1695,10 @@ main .ai-startups .ai-startups-card {
 .ai-startups .ai-startups-card .ai-startups-text {
   width: 80%;
 }
+.ai-startups .ai-startups-card .ai-startups-text .subtitle {
+  font-family: NeuePlakRegular;
+  font-size: 20px;
+}
 .ai-startups .ai-startups-text {
   width: min-content;
   max-width: 900px;

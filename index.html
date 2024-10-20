@@ -80,22 +80,19 @@
               <option value="de">Deutsch</option>
               <option value="es">Español</option>
             </select>
-            <div class="flag-language">
-              <img src="assets/flag-:choose.png" alt="">
-            </div>
           </div>
         </li>
         <li>
-          <a class="nav-link text-white" href="#apresentation">:menu-home</a>
+          <a class="nav-link text-white" href="#apresentation" onclick="closeMenuMobile()">:menu-home</a>
         </li>
         <li>
-          <a class="nav-link text-white" href="#whyChooseUs">:menu-why-choose-us</a>
+          <a class="nav-link text-white" href="#whyChooseUs" onclick="closeMenuMobile()">:menu-why-choose-us</a>
         </li>
         <li>
-          <a class="nav-link text-white" href="#tokenomics">Token Details</a>
+          <a class="nav-link text-white" href="#tokenomics" onclick="closeMenuMobile()">Token Details</a>
         </li>
         <li>
-          <a class="nav-link text-white" href="/whitepaper.pdf" target="_blank">:whitepaper</a>
+          <a class="nav-link text-white" href="/whitepaper.pdf" target="_blank" onclick="closeMenuMobile()">:whitepaper</a>
         </li>
         <li>
           <div class="d-flex flex-column align-center">
@@ -154,8 +151,8 @@
           </div>
         </div>
 
-        <div class="d-none d-flex align-center d-lg-flex">
-          <div class="change-language">
+        <div class="d-flex align-center">
+          <div class="change-language mr-10">
             <select id="langSelector">
               <option></option>
               <option value="en">English</option>
@@ -168,7 +165,7 @@
               <img src="assets/flag-:choose.png" alt="">
             </div>
           </div>
-          <button id="account" class="conbtn">
+          <button id="account" class="conbtn d-none d-lg-block">
             <div id="accountOne" class="contbtn-content">
               <span>:connect</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>

@@ -2070,6 +2070,9 @@ footer .text p {
     display: block;
     right: 100px;
   }
+  .change-language {
+    margin-right: 115px;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
